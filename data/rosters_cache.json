@@ -1,0 +1,6531 @@
+{
+  "bra.1_819": {
+    "ts": 1788999438.998831,
+    "data": {
+      "gk": [
+        "#1 Agustín Rossi",
+        "#42 Andrew",
+        "#49 Dyogo Alves",
+        "#58 Leó Nannetti"
+      ],
+      "def": [
+        "#26 Alex Sandro",
+        "#4 Léo Pereira",
+        "#13 Danilo",
+        "#2 Guillermo Varela",
+        "#6 Ayrton Lucas",
+        "#22 Emerson Royal",
+        "#3 Léo Ortiz",
+        "#44 Vitão"
+      ],
+      "mid": [
+        "#21 Jorginho",
+        "#8 Saúl Ñíguez",
+        "#10 Giorgian de Arrascaeta",
+        "#5 Erick Pulgar",
+        "#15 Jorge Carrascal",
+        "#20 Lucas Paquetá",
+        "#18 Nicolás de la Cruz",
+        "#16 Samuel Lino"
+      ],
+      "fwd": [
+        "#69 Luiz Da Silva",
+        "#11 Everton",
+        "#27 Bruno Henrique",
+        "#7 Luiz Araújo",
+        "#9 Pedro",
+        "#19 Gonzalo Plata",
+        "#14 Anthony Valencia"
+      ],
+      "craque": {
+        "nome": "Jorginho",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 15,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Pedro",
+        "gols": 15
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "bra.1_9318": {
+    "ts": 1789003116.7135751,
+    "data": {
+      "gk": [
+        "#1 Rafael Santos",
+        "#30 Matheus",
+        "#98 Anderson Paixão",
+        "Gabriel Werner"
+      ],
+      "def": [
+        "#15 Rafael Thyere",
+        "#91 Bruno Pacheco",
+        "#25 Victor Caetano",
+        "#5 Heitor",
+        "#12 Fernando",
+        "#4 João Paulo",
+        "#26 Everton",
+        "#6 Mancha"
+      ],
+      "mid": [
+        "#10 Giovanni Augusto",
+        "#16 Bruno Matias",
+        "#88 Yago Felipe",
+        "#27 Camilo",
+        "#22 Max",
+        "#80 Miguel Carvalho",
+        "#17 Vinicius",
+        "#70 Rubens Tadeu Hartmann Ricoldi"
+      ],
+      "fwd": [
+        "#7 Marcinho",
+        "#11 Yannick Bolasie",
+        "#94 Kevin Ramírez",
+        "#20 Bruno",
+        "#18 Neto",
+        "#77 Dylan Borrero",
+        "#31 Maurício Garcez"
+      ],
+      "craque": {
+        "nome": "Giovanni Augusto",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 5,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Marcinho",
+        "gols": 5
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "bra.1_6079": {
+    "ts": 1788999517.2576196,
+    "data": {
+      "gk": [
+        "#18 Tiago Volpi",
+        "#1 Cleiton",
+        "#37 Fabrício",
+        "#56 Gustavo Reis"
+      ],
+      "def": [
+        "#29 Juninho Capixaba",
+        "#23 Agustín Sant'Anna",
+        "#4 Alix Vinicius",
+        "#3 Eduardo Santos",
+        "#2 Guzmán Rodríguez",
+        "#12 Vanderlan",
+        "#34 José Hurtado",
+        "#16 Gustavo Marques"
+      ],
+      "mid": [
+        "#6 Gabriel",
+        "#35 Matheus Fernandes",
+        "#21 Lucas Barbosa",
+        "#7 Ramires",
+        "#33 Ignacio Laquintana",
+        "#25 Bruno Conceicão",
+        "#5 Fabinho",
+        "#15 Ignacio Sosa"
+      ],
+      "fwd": [
+        "#8 Eduardo Sasha",
+        "#11 Fernando",
+        "#9 Isidro Pitta",
+        "#19 Bruno Gonçalves",
+        "#30 Henry Mosquera",
+        "#32 José Herrera",
+        "#47 Wallace Yan"
+      ],
+      "craque": {
+        "nome": "Gabriel",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 5,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Lucas Barbosa",
+        "gols": 5
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "bra.1_9169": {
+    "ts": 1789003121.6952732,
+    "data": {
+      "gk": [
+        "#22 Walter",
+        "#1 Georgemy",
+        "#90 Thomazella",
+        "#23 Alex Muralha"
+      ],
+      "def": [
+        "#46 Gabriel",
+        "#6 Reinaldo",
+        "#20 Daniel Borges",
+        "#12 Victor Luis",
+        "#2 Lucas Oliveira",
+        "#34 João Victor",
+        "#18 Elias",
+        "#3 Willian Machado"
+      ],
+      "mid": [
+        "#33 Carlos Eduardo",
+        "#10 Chico",
+        "#25 Neto Moura",
+        "#55 Gustavo Cazonatti",
+        "#19 Gustavo Mosquito",
+        "#7 Shaylon",
+        "#80 Wallison Luiz",
+        "#21 José Aldo"
+      ],
+      "fwd": [
+        "#95 Edson Carioca",
+        "#11 Negueba",
+        "#99 André Luis",
+        "#17 Fernando",
+        "#96 Carlos Eduardo",
+        "#77 Alesson",
+        "#30 Bruno Santos"
+      ],
+      "craque": {
+        "nome": "Carlos Eduardo",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 4,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Igor Marques",
+        "gols": 4
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "bra.1_3457": {
+    "ts": 1788999518.053324,
+    "data": {
+      "gk": [
+        "#71 Yuri Sena",
+        "#1 Lucas Arcanjo",
+        "#35 Fintelman"
+      ],
+      "def": [
+        "#2 Emanuel Britez",
+        "#5 Riccieli",
+        "#36 Luan Cândido",
+        "#13 Ramon",
+        "#25 Cacá",
+        "#4 Camutanga",
+        "#83 Jamerson",
+        "#43 Edu"
+      ],
+      "mid": [
+        "#65 Nicolas Celis",
+        "#15 Walace",
+        "#8 Tomás Pochettino",
+        "#32 Emmanuel Martínez",
+        "#10 Matheus",
+        "#46 Alejandro Almaraz",
+        "#95 Caique",
+        "#44 Gabriel Baralhas"
+      ],
+      "fwd": [
+        "#16 Ruben Ramos",
+        "#11 Osvaldo",
+        "#7 Marinho",
+        "#79 Renato Kayzer",
+        "#20 Lucas",
+        "#33 Erick",
+        "#23 Fabrício Santos"
+      ],
+      "craque": {
+        "nome": "Nicolas Celis",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Renê",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "bra.1_4936": {
+    "ts": 1789003122.145313,
+    "data": {
+      "gk": [
+        "#97 Ivan",
+        "#88 Marcelo Rangel",
+        "#94 Ygor Vinhas",
+        "#1 Alexandre"
+      ],
+      "def": [
+        "#13 Marllon",
+        "#6 Marlon Lopes",
+        "#17 Cristian Tassano",
+        "#18 Duplexe Tchamba",
+        "#5 Léo Andrade",
+        "#4 Matheus Piauí",
+        "#98 Mayk",
+        "#2 Matheus Alexandre"
+      ],
+      "mid": [
+        "#22 Yago Pikachu",
+        "#8 Patrick",
+        "#28 José Welison",
+        "#55 Zé Ricardo",
+        "#14 Leonel Picco",
+        "#35 Edson Fernando",
+        "#37 Jajá",
+        "#23 Franco Catarozzi"
+      ],
+      "fwd": [
+        "#15 Vitor Bueno",
+        "#19 Gabriel Taliari",
+        "#10 Jaderson",
+        "#21 Antonio Galeano",
+        "#99 Gabriel Poveda",
+        "#11 Alef Manga",
+        "#39 Eduardo"
+      ],
+      "craque": {
+        "nome": "Yago Pikachu",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 7,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Jajá",
+        "gols": 7
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_349": {
+    "ts": 1789003122.7492359,
+    "data": {
+      "gk": [
+        "#17 Fraser Forster",
+        "#20 Michele Di Gregorio"
+      ],
+      "def": [
+        "#1 Djordje Petrovic",
+        "#15 Adam Smith",
+        "#28 Max Aarons",
+        "#5 James Hill",
+        "#2 Julián Araujo",
+        "#18 Bafodé Diakité",
+        "#3 Adrien Truffert",
+        "#6 Julio Soler"
+      ],
+      "mid": [
+        "#7 David Brooks",
+        "#10 Ryan Christie",
+        "#12 Tyler Adams",
+        "#4 Lewis Cook",
+        "#16 Marcus Tavernier",
+        "#24 Juanlu Sanchez",
+        "#8 Alex Scott",
+        "#27 Alex Tóth"
+      ],
+      "fwd": [
+        "#9 Evanilson",
+        "#19 Justin Kluivert",
+        "#21 Amine Adli",
+        "#29 Daniel Jebbison",
+        "#11 Ben Gannon-Doak",
+        "#30 Álvaro Rodríguez",
+        "#37 Rayan"
+      ],
+      "craque": {
+        "nome": "David Brooks",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Marcus Tavernier",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_337": {
+    "ts": 1789003123.0080006,
+    "data": {
+      "gk": [
+        "#31 Ellery Balcombe",
+        "#1 Caoimhín Kelleher",
+        "#12 Hákon Valdimarsson"
+      ],
+      "def": [
+        "#20 Kristoffer Ajer",
+        "#3 Rico Henry",
+        "#4 Sepp van den Berg",
+        "#22 Nathan Collins",
+        "#2 Aaron Hickey",
+        "#33 Michael Kayode",
+        "#25 El Hadji Malick Diouf",
+        "#36 Kim Ji-Soo"
+      ],
+      "mid": [
+        "#27 Vitaly Janelt",
+        "#8 Mathias Jensen",
+        "#18 Mamadou Sangare",
+        "#14 Fábio Carvalho",
+        "#10 Josh Dasilva",
+        "#24 Mikkel Damsgaard",
+        "#7 Kevin Schade",
+        "#17 Antoni Milambo"
+      ],
+      "fwd": [
+        "#13 Callum Wilson",
+        "#23 Keane Lewis-Potter",
+        "#9 Igor Thiago",
+        "#19 Jaidon Anthony",
+        "#11 Dango Ouattara",
+        "#39 Gustavo Nunes",
+        "#47 Kaye Furo"
+      ],
+      "craque": {
+        "nome": "Vitaly Janelt",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Vitaly Janelt",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_362": {
+    "ts": 1788999520.008371,
+    "data": {
+      "gk": [
+        "#40 Marco Bizot",
+        "#42 James Wright",
+        "#1 Zion Suzuki",
+        "#60 Owen Asemota"
+      ],
+      "def": [
+        "#5 Tyrone Mings",
+        "#3 Victor Lindelöf",
+        "#2 Matty Cash",
+        "#29 Aaron Wan-Bissaka",
+        "#14 Pau Torres",
+        "#4 Taylor Harwood-Bellis",
+        "#22 Ian Maatsen",
+        "#13 Matteo Ruggeri"
+      ],
+      "mid": [
+        "#6 Ross Barkley",
+        "#7 John McGinn",
+        "#27 Leon Goretzka",
+        "#10 Emiliano Buendía",
+        "#8 Boubacar Kamara",
+        "#35 João Gomes",
+        "#24 Amadou Onana",
+        "#26 Lamare Bogarde"
+      ],
+      "fwd": [
+        "#18 Tammy Abraham",
+        "#11 Nicolas Jackson",
+        "#17 Alejandro Garnacho",
+        "#47 Alysson",
+        "#19 Ibrahim Mbaye",
+        "#39 Brian Madjo"
+      ],
+      "craque": {
+        "nome": "Ross Barkley",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Tammy Abraham",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_393": {
+    "ts": 1789003123.2802012,
+    "data": {
+      "gk": [
+        "#26 Matz Sels",
+        "#12 John Victor",
+        "#33 Steven Benda"
+      ],
+      "def": [
+        "#27 Daniel Muñoz",
+        "#34 Ola Aina",
+        "#31 Nikola Milenkovic",
+        "#3 Neco Williams",
+        "#25 Luca Netz",
+        "#23 Jair Paula",
+        "#5 Murillo",
+        "#2 Ousmane Diomande"
+      ],
+      "mid": [
+        "#6 Ibrahim Sangaré",
+        "#21 Xaver Schlager",
+        "#22 Ryan Yates",
+        "#10 Morgan Gibbs-White",
+        "#8 Nicolás Domínguez",
+        "#24 James McAtee"
+      ],
+      "fwd": [
+        "#9 Chris Wood",
+        "#7 Callum Hudson-Odoi",
+        "#14 Dan Ndoye",
+        "#11 Igor Jesus",
+        "#15 Arnaud Kalimuendo",
+        "#19 Liam Delap"
+      ],
+      "craque": {
+        "nome": "Ibrahim Sangaré",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Morgan Gibbs-White",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_363": {
+    "ts": 1788999520.8735976,
+    "data": {
+      "gk": [
+        "#1 Emiliano Martínez",
+        "#44 Gaga Slonina",
+        "#28 Teddy Sharman-Lowe",
+        "#39 Mike Penders"
+      ],
+      "def": [
+        "#24 Reece James",
+        "#5 Maxence Lacroix",
+        "#3 Wesley Fofana",
+        "#6 Levi Colwill",
+        "#29 Pep Chavarría",
+        "#27 Malo Gusto",
+        "#21 Jorrel Hato",
+        "#2 Marco Palestra"
+      ],
+      "mid": [
+        "#14 Jordan Henderson",
+        "#17 Morgan Rogers",
+        "#25 Moisés Caicedo",
+        "#10 Cole Palmer",
+        "#45 Romeo Lavia",
+        "#4 Valentín Barco",
+        "#23 Geovany Quenda",
+        "#32 Mahdi Nicoll-Jazuli"
+      ],
+      "fwd": [
+        "#18 Danny Welbeck",
+        "#7 Pedro Neto",
+        "#9 João Pedro",
+        "#22 Emmanuel Emegha",
+        "#11 Jamie Gittens",
+        "#41 Estêvão"
+      ],
+      "craque": {
+        "nome": "Jordan Henderson",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Morgan Rogers",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_306": {
+    "ts": 1789010327.171669,
+    "data": {
+      "gk": [
+        "#1 Jack Butland",
+        "#12 Dillon Phillips",
+        "#19 Konstantinos Tzolakis",
+        "#55 Archie Howard"
+      ],
+      "def": [
+        "#15 John Egan",
+        "#6 Semi Ajayi",
+        "#23 Matt Targett",
+        "#17 Paddy McNair",
+        "#2 Lewie Coyle",
+        "#3 Ryan Giles",
+        "#18 Brooke Norton-Cuffy",
+        "#4 Charlie Hughes"
+      ],
+      "mid": [
+        "#25 Matt Crooks",
+        "#26 Kieran Dowell",
+        "#33 Abdülkadir Ömür",
+        "#27 Regan Slater",
+        "#5 Hidemasa Morita",
+        "#29 Lucas Gourna-Douath",
+        "#8 Eliot Matazo",
+        "#24 Darko Gyabi"
+      ],
+      "fwd": [
+        "#9 Oliver McBurnie",
+        "#30 Babajide David",
+        "#7 Sorba Thomas",
+        "#11 Joe Gelhardt",
+        "#50 Mohamed-Ali Cho",
+        "#10 Mohamed Belloumi",
+        "Ilyas Ansah"
+      ],
+      "craque": {
+        "nome": "Matt Crooks",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Semi Ajayi",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_384": {
+    "ts": 1789003123.772029,
+    "data": {
+      "gk": [
+        "#44 Walter Benítez",
+        "#31 Remi Matthews",
+        "#1 Dean Henderson"
+      ],
+      "def": [
+        "#33 Ben Chilwell",
+        "#5 Axel Disasi",
+        "#17 Takehiro Tomiyasu",
+        "#26 Chris Richards",
+        "#30 Óscar Mingueza",
+        "#3 Tyrick Mitchell",
+        "#4 Chadi Riad",
+        "#25 Anan Khalaili"
+      ],
+      "mid": [
+        "#19 Will Hughes",
+        "#8 Jefferson Lerma",
+        "#18 Daichi Kamada",
+        "#28 Cheick Doucouré",
+        "#23 Quinten Timber",
+        "#10 Yéremy Pino",
+        "#24 Darío Osorio",
+        "#20 Adam Wharton"
+      ],
+      "fwd": [
+        "#7 Ismaïla Sarr",
+        "#14 Jean-Philippe Mateta",
+        "#22 Jørgen Strand Larsen",
+        "#9 Eddie Nketiah",
+        "#11 Dwight McNeil",
+        "#29 Evann Guessand",
+        "#12 Zavier Gozo"
+      ],
+      "craque": {
+        "nome": "Will Hughes",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Tyrick Mitchell",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_373": {
+    "ts": 1789003124.0254645,
+    "data": {
+      "gk": [
+        "#27 David Button",
+        "#28 Christian Walton",
+        "#1 Alex Palmer",
+        "#37 Kjell Scherpen"
+      ],
+      "def": [
+        "#2 Darnell Furlong",
+        "#6 Issa Diop",
+        "#26 Dara O'Shea",
+        "#4 Cedric Kipre",
+        "#3 Leif Davis",
+        "#24 Jacob Greaves",
+        "#42 Abdoul Ouattara",
+        "#14 Jack Taylor"
+      ],
+      "mid": [
+        "#10 Julio Enciso",
+        "#23 Sasa Lukic",
+        "#25 Exequiel Palacios",
+        "#5 Azor Matusiwa",
+        "#12 Florentino",
+        "#32 Marcelino Núñez",
+        "#20 Kasey McAteer",
+        "#33 Anis Mehmeti"
+      ],
+      "fwd": [
+        "#29 Chuba Akpom",
+        "#9 Zian Flemming",
+        "#47 Jack Clarke",
+        "#38 Daizen Maeda",
+        "#11 Jaden Philogene",
+        "#7 Fatawu Issahaku",
+        "#19 Emersonn"
+      ],
+      "craque": {
+        "nome": "Julio Enciso",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Leif Davis",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_364": {
+    "ts": 1788999522.2089353,
+    "data": {
+      "gk": [
+        "#28 Freddie Woodman",
+        "#1 Alisson Becker",
+        "#25 Giorgi Mamardashvili",
+        "#56 Vitezslav Jaros"
+      ],
+      "def": [
+        "#44 Luke Chambers",
+        "#2 Joe Gomez",
+        "#4 Virgil van Dijk",
+        "#21 Kostas Tsimikas",
+        "#12 Conor Bradley",
+        "#33 Ronald Araújo",
+        "#30 Jeremie Frimpong",
+        "#6 Milos Kerkez"
+      ],
+      "mid": [
+        "#3 Wataru Endo",
+        "#10 Alexis Mac Allister",
+        "#8 Dominik Szoboszlai",
+        "#38 Ryan Gravenberch",
+        "#7 Florian Wirtz",
+        "#53 James McConnell",
+        "#42 Trey Nyoni"
+      ],
+      "fwd": [
+        "#14 Federico Chiesa",
+        "#9 Alexander Isak",
+        "#18 Cody Gakpo",
+        "#22 Hugo Ekitike",
+        "#29 Bradley Barcola",
+        "#67 Lewis Koumas",
+        "#76 Jayden Danns"
+      ],
+      "craque": {
+        "nome": "Wataru Endo",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Alexander Isak",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_370": {
+    "ts": 1789003124.2700388,
+    "data": {
+      "gk": [
+        "#23 Benjamin Lecomte",
+        "#1 Bernd Leno",
+        "#36 Alex Borto"
+      ],
+      "def": [
+        "#2 Kenny Tete",
+        "#5 Joachim Andersen",
+        "#21 Timothy Castagne",
+        "#33 Antonee Robinson",
+        "#4 Jorge Cuenca",
+        "#3 Calvin Bassey",
+        "#22 David Affengruber",
+        "#40 Bradley Slade"
+      ],
+      "mid": [
+        "#8 César Palacios",
+        "#10 Tom Cairney",
+        "#6 Harrison Reed",
+        "#16 Sander Berge",
+        "#30 Ryan Sessegnon",
+        "#32 Emile Smith Rowe",
+        "#14 Oscar Bobb",
+        "#19 Shea Charles"
+      ],
+      "fwd": [
+        "#7 Gonzalo García",
+        "#17 Alex Iwobi",
+        "#9 Rodrigo Muniz",
+        "#11 Kevin",
+        "#18 Jonah Kusi-Asare",
+        "#35 Macauley Zepa"
+      ],
+      "craque": {
+        "nome": "César Palacios",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Josh King",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_367": {
+    "ts": 1789003124.8657649,
+    "data": {
+      "gk": [
+        "#39 Martin Dúbravka",
+        "#40 Brandon Austin",
+        "#31 Antonín Kinsky"
+      ],
+      "def": [
+        "#33 Ben Davies",
+        "#3 Andy Robertson",
+        "#4 Tosin Adarabioyo",
+        "#5 Marcos Senesi",
+        "#23 Pedro Porro",
+        "#6 Jan Paul van Hecke",
+        "#13 Destiny Udogie",
+        "#37 Micky van de Ven"
+      ],
+      "mid": [
+        "#10 James Maddison",
+        "#30 Rodrigo Bentancur",
+        "#16 Sandro Tonali",
+        "#20 Mohammed Kudus",
+        "#8 Conor Gallagher",
+        "#21 Dejan Kulusevski",
+        "#27 Mykhailo Mudryk",
+        "#14 Archie Gray"
+      ],
+      "fwd": [
+        "#9 Richarlison",
+        "#19 Dominic Solanke",
+        "#22 Omar Marmoush",
+        "#17 Sávio",
+        "#11 Mathys Tel",
+        "#28 Wilson Odobert"
+      ],
+      "craque": {
+        "nome": "James Maddison",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Richarlison",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_368": {
+    "ts": 1789003125.482489,
+    "data": {
+      "gk": [
+        "#12 Mark Travers",
+        "#31 Tom King",
+        "#1 Jordan Pickford"
+      ],
+      "def": [
+        "#5 Michael Keane",
+        "#6 James Tarkowski",
+        "#16 Vitaliy Mykolenko",
+        "#15 Jake O'Brien",
+        "#4 Jarrad Branthwaite"
+      ],
+      "mid": [
+        "#10 Jack Grealish",
+        "#23 Christian Nørgaard",
+        "#2 Ainsley Maitland-Niles",
+        "#8 Kiernan Dewsbury-Hall",
+        "#37 James Garner",
+        "#30 Hayden Hackney",
+        "#24 Charly Alcaraz",
+        "#34 Merlin Röhl"
+      ],
+      "fwd": [
+        "#22 Brennan Johnson",
+        "#11 Thierno Barry",
+        "#20 Tyler Dibling",
+        "#58 Braiden Graham",
+        "#19 Tyrique George"
+      ],
+      "craque": {
+        "nome": "Jack Grealish",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "James Tarkowski",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_366": {
+    "ts": 1789010327.545689,
+    "data": {
+      "gk": [
+        "#21 Simon Moore",
+        "#22 Robin Roefs",
+        "#31 Melker Ellborg"
+      ],
+      "def": [
+        "#12 Thomas Meunier",
+        "#20 Nordi Mukiele",
+        "#15 Omar Alderete",
+        "#17 Reinildo Mandava",
+        "Jenson Arron Jones",
+        "#4 Kevin Danso",
+        "#5 Danny Ballard",
+        "#32 Trai Hume"
+      ],
+      "mid": [
+        "#34 Granit Xhaka",
+        "#13 Luke O'Nien",
+        "#8 Alan Browne",
+        "Jack Whittaker",
+        "#28 Enzo Le Fée",
+        "#19 Habib Diarra",
+        "#27 Noah Sadiki",
+        "#11 Chris Rigg"
+      ],
+      "fwd": [
+        "Juan Angulo",
+        "#18 Wilson Isidor",
+        "#9 Brian Brobbey",
+        "#10 Nilson Angulo",
+        "#14 Romaine Mundle",
+        "#39 Malick Fofana",
+        "#7 Chemsdine Talbi"
+      ],
+      "craque": {
+        "nome": "Granit Xhaka",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Enzo Le Fée",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_388": {
+    "ts": 1789003125.9488733,
+    "data": {
+      "gk": [
+        "#25 Daniel Bentley",
+        "#19 Carl Rushworth"
+      ],
+      "def": [
+        "#21 Jake Bidwell",
+        "#3 Jay Da Silva",
+        "#2 Ethan Pinnock",
+        "#22 Joel Latibeaudiere",
+        "#26 Luke Woolfenden",
+        "#27 Milan van Ewijk",
+        "#20 Kaine Kesler Hayden",
+        "#4 Bobby Thomas"
+      ],
+      "mid": [
+        "#13 Ben Wilson",
+        "#6 Matt Grimes",
+        "#38 Gustavo Hamer",
+        "#10 Ephron Mason-Clark",
+        "#29 Victor Torp",
+        "#16 Frank Onyeka",
+        "#28 Josh Eccles",
+        "#5 Jack Rudoni"
+      ],
+      "fwd": [
+        "#14 Taiwo Awoniyi",
+        "#11 Haji Wright",
+        "#23 Brandon Thomas-Asante",
+        "Yann Gboho",
+        "#9 Ellis Simms",
+        "#18 Loum Tchaouna",
+        "#49 Sidiki Cherif"
+      ],
+      "craque": {
+        "nome": "Ben Wilson",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Taiwo Awoniyi",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_331": {
+    "ts": 1789003126.152108,
+    "data": {
+      "gk": [
+        "#23 Jason Steele",
+        "#38 Tom McGill",
+        "#1 Bart Verbruggen"
+      ],
+      "def": [
+        "#5 Lewis Dunk",
+        "#21 Olivier Boscagli",
+        "#24 Ferdi Kadioglu",
+        "#4 Pascal Struijk",
+        "#20 Costinha",
+        "#30 Michael Svoboda",
+        "#29 Maxim De Cuyper",
+        "#6 Jaouen Hadjam"
+      ],
+      "mid": [
+        "#13 Pascal Gross",
+        "#25 Diego Gómez",
+        "#33 Matt O'Riley",
+        "#7 Kaoru Mitoma",
+        "#27 Mats Wieffer",
+        "#26 Yasin Ayari",
+        "#8 Jack Hinshelwood",
+        "#35 Malick Yalcouyé"
+      ],
+      "fwd": [
+        "#10 Georginio Rutter",
+        "#28 Evan Ferguson",
+        "#39 Femi Azeez",
+        "#12 Promise David",
+        "#11 Yankuba Minteh",
+        "#9 Stefanos Tzimas",
+        "#15 Ibrahim Osman"
+      ],
+      "craque": {
+        "nome": "Pascal Gross",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Jack Hinshelwood",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_360": {
+    "ts": 1789003126.3662956,
+    "data": {
+      "gk": [
+        "#22 Tom Heaton",
+        "#12 Karl Darlow",
+        "#1 Senne Lammens",
+        "#45 Dermot Mee"
+      ],
+      "def": [
+        "#5 Harry Maguire",
+        "#23 Luke Shaw",
+        "#6 Lisandro Martínez",
+        "#2 Diogo Dalot",
+        "#4 Matthijs de Ligt",
+        "#3 Noussair Mazraoui",
+        "#15 Leny Yoro",
+        "#26 Ayden Heaven"
+      ],
+      "mid": [
+        "#8 Bruno Fernandes",
+        "#18 Youri Tielemans",
+        "#38 Jack Fletcher",
+        "#7 Mason Mount",
+        "#25 Manuel Ugarte",
+        "#17 Andrey Santos",
+        "#37 Kobbie Mainoo",
+        "#20 Carlos Baleba"
+      ],
+      "fwd": [
+        "#9 Marcus Rashford",
+        "#10 Matheus Cunha",
+        "#19 Bryan Mbeumo",
+        "#11 Joshua Zirkzee",
+        "#30 Benjamin Sesko",
+        "#16 Amad Diallo",
+        "#61 Shea Lacey"
+      ],
+      "craque": {
+        "nome": "Bruno Fernandes",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Bruno Fernandes",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_357": {
+    "ts": 1789003127.0131588,
+    "data": {
+      "gk": [
+        "#21 Alex Cairns",
+        "#16 Michael Zetterer",
+        "#1 James Trafford",
+        "#49 Darryl Ombang"
+      ],
+      "def": [
+        "#30 Nico Elvedi",
+        "#24 James Justin",
+        "#6 Joe Rodon",
+        "#2 Jayden Bogle",
+        "#3 Gabriel Gudmundsson",
+        "#26 Melvin Bard",
+        "#15 Jaka Bijol",
+        "#5 Tarik Muharemovic"
+      ],
+      "mid": [
+        "#44 Ilia Gruev",
+        "#4 Ethan Ampadu",
+        "#8 Sean Longstaff",
+        "#22 Ao Tanaka",
+        "#11 Brenden Aaronson",
+        "#18 Anton Stach",
+        "#47 Rhys Chadwick",
+        "#50 Alfie Cresswell"
+      ],
+      "fwd": [
+        "#10 Harry Wilson",
+        "#9 Dominic Calvert-Lewin",
+        "#7 Daniel James",
+        "#14 Lukas Nmecha",
+        "#19 Noah Okafor",
+        "#23 Jean-Mattéo Bahoya"
+      ],
+      "craque": {
+        "nome": "Ilia Gruev",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Jayden Bogle",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "eng.1_361": {
+    "ts": 1789003127.2471023,
+    "data": {
+      "gk": [
+        "#29 Mark Gillespie",
+        "#1 Nick Pope",
+        "#21 Lukás Hornícek",
+        "#24 Ewen Jaouen"
+      ],
+      "def": [
+        "#5 Fabian Schär",
+        "#33 Dan Burn",
+        "#4 Sven Botman",
+        "#2 Tino Livramento",
+        "#12 Malick Thiaw",
+        "#37 Amar Dedic"
+      ],
+      "mid": [
+        "#3 Lewis Hall",
+        "#23 Jacob Murphy",
+        "#7 Joelinton",
+        "#11 Harvey Barnes",
+        "#28 Joe Willock",
+        "#41 Jacob Ramsey",
+        "#6 Nico González",
+        "#67 Lewis Miley"
+      ],
+      "fwd": [
+        "#9 Yoane Wissa",
+        "#19 Anthony Elanga",
+        "#10 William Osula",
+        "#17 Bazoumana Touré",
+        "#20 Matias Fernandez-Pardo"
+      ],
+      "craque": {
+        "nome": "Lewis Hall",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Anthony Elanga",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_142": {
+    "ts": 1789010333.454325,
+    "data": {
+      "gk": [
+        "#39 Liam Bossin",
+        "#33 Florian Kastenmeier",
+        "#1 Tjark Ernst",
+        "#37 Mannou Berger"
+      ],
+      "def": [
+        "#2 Bart Nieuwkoop",
+        "#6 Jerry St. Juste",
+        "#20 Mats Deijl",
+        "#5 Gijs Smal",
+        "#4 Tsuyoshi Watanabe",
+        "#16 Javi López",
+        "#3 Thomas Beelen",
+        "#15 Jordan Bos"
+      ],
+      "mid": [
+        "#34 Charles Vanhoutte",
+        "#14 Sem Steijn",
+        "#7 Jakub Moder",
+        "#28 Oussama Targhaline",
+        "#10 Luciano Valente",
+        "#24 Thijs Kraaijeveld",
+        "#8 Gjivai Zechiël",
+        "#22 Tobias van den Elshout"
+      ],
+      "fwd": [
+        "#17 Reiss Nelson",
+        "#11 Gonçalo Borges",
+        "#23 Anis Hadj Moussa",
+        "#19 Nacho Ferri",
+        "#27 Gaoussou Diarra",
+        "#36 Jivayno Zinhagel",
+        "#49 Shaqueel Van Persie"
+      ],
+      "craque": {
+        "nome": "Charles Vanhoutte",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Reiss Nelson",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_134": {
+    "ts": 1789010334.5206947,
+    "data": {
+      "gk": [
+        "#1 Fabian Bredlow",
+        "#33 Marius Funk",
+        "#46 Stefan Drljaca",
+        "#41 Dennis Seimen"
+      ],
+      "def": [
+        "#7 Maximilian Mittelstädt",
+        "#23 Dan-Axel Zagadou",
+        "#24 Jeff Chabot",
+        "#4 Josha Vagnoman",
+        "#20 Leonidas Stergiou",
+        "#3 Ramon Hendriks",
+        "#22 Lorenz Assignon",
+        "#2 Ameen Al Dakhil"
+      ],
+      "mid": [
+        "#21 Grischa Prömel",
+        "#16 Atakan Karazor",
+        "#28 Nikolas Nartey",
+        "#10 Chris Führich",
+        "#6 Angelo Stiller",
+        "#11 Bilal El Khannouss",
+        "#43 Jarzinho Malanga",
+        "#39 Ertugrul Yigit"
+      ],
+      "fwd": [
+        "#9 Ermedin Demirovic",
+        "#26 Deniz Undav",
+        "#18 Jamie Leweling",
+        "#8 Tiago Tomás",
+        "#17 Dzenan Pejcinovic",
+        "#44 Leo Sauer",
+        "#31 Justin Diehl"
+      ],
+      "craque": {
+        "nome": "Grischa Prömel",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Ermedin Demirovic",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_510": {
+    "ts": 1789010335.1684415,
+    "data": {
+      "gk": [
+        "#1 Arild Ostbo",
+        "#12 Elrend Jacobsen",
+        "#30 Lubomir Belko"
+      ],
+      "def": [
+        "#28 Kristoffer Haugen",
+        "#3 Viljar Vevatne",
+        "#4 Martin Ove Roseth",
+        "#21 Anders Baertelsen",
+        "#6 Gianni Stensness",
+        "#18 Sondre Flem Bjørnshol",
+        "#27 Jesper Daland",
+        "#2 Herman Haugen"
+      ],
+      "mid": [
+        "#16 Henrik Rorvik Bjordal",
+        "#8 Joe Bell",
+        "#7 Kristoffer Askildsen",
+        "#26 Simen Kvia-Egeskog",
+        "#15 Ola Visted",
+        "#33 Jakob Segadal Hansen",
+        "#29 Tobias Moi",
+        "#31 Jacob Middelthon"
+      ],
+      "fwd": [
+        "#20 Peter Christiansen",
+        "#14 Veton Berisha",
+        "#10 Zlatko Tripic",
+        "#9 Nicholas D'Agostino",
+        "#22 Erik Botheim",
+        "#11 Romano Postema",
+        "#23 Niklas Fuglestad"
+      ],
+      "craque": {
+        "nome": "Henrik Rorvik Bjordal",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Peter Christiansen",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_364": {
+    "ts": 1788999528.4606962,
+    "data": {
+      "gk": [
+        "#28 Freddie Woodman",
+        "#1 Alisson Becker",
+        "#25 Giorgi Mamardashvili",
+        "#56 Vitezslav Jaros"
+      ],
+      "def": [
+        "#44 Luke Chambers",
+        "#2 Joe Gomez",
+        "#4 Virgil van Dijk",
+        "#21 Kostas Tsimikas",
+        "#12 Conor Bradley",
+        "#33 Ronald Araújo",
+        "#30 Jeremie Frimpong",
+        "#6 Milos Kerkez"
+      ],
+      "mid": [
+        "#3 Wataru Endo",
+        "#10 Alexis Mac Allister",
+        "#8 Dominik Szoboszlai",
+        "#38 Ryan Gravenberch",
+        "#7 Florian Wirtz",
+        "#53 James McConnell",
+        "#42 Trey Nyoni"
+      ],
+      "fwd": [
+        "#14 Federico Chiesa",
+        "#9 Alexander Isak",
+        "#18 Cody Gakpo",
+        "#22 Hugo Ekitike",
+        "#29 Bradley Barcola",
+        "#67 Lewis Koumas",
+        "#76 Jayden Danns"
+      ],
+      "craque": {
+        "nome": "Wataru Endo",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Federico Chiesa",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_1068": {
+    "ts": 1789003128.9045742,
+    "data": {
+      "gk": [
+        "#13 Jan Oblak",
+        "#1 Juan Musso",
+        "#25 Salvi Esquivel"
+      ],
+      "def": [
+        "#21 Cristian Romero",
+        "#22 Alejandro Grimaldo",
+        "#24 Robin Le Normand",
+        "#17 Dávid Hancko",
+        "#18 Marc Pubill",
+        "#32 Arnau Solà",
+        "#27 Jorge Domínguez",
+        "#30 Daniel Martinez"
+      ],
+      "mid": [
+        "#4 Rodrigo Mendoza",
+        "#6 Koke",
+        "#46 Jorge Castillo",
+        "#14 Marcos Llorente",
+        "#7 Lee Kang-In",
+        "#23 Morten Hjulmand",
+        "#5 Johnny Cardoso",
+        "#10 Álex Baena"
+      ],
+      "fwd": [
+        "#9 Alexander Sørloth",
+        "#11 Ademola Lookman",
+        "#15 Jonathan David",
+        "#19 Julián Álvarez",
+        "#20 Giuliano Simeone",
+        "#16 Arnau Ortiz",
+        "#29 Miguel Cubo"
+      ],
+      "craque": {
+        "nome": "Rodrigo Mendoza",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Alexander Sørloth",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_114": {
+    "ts": 1789010341.4233105,
+    "data": {
+      "gk": [
+        "#14 Nikita Contini",
+        "#1 Alex Meret",
+        "#32 Vanja Milinkovic-Savic",
+        "#12 Claudio Pugliese"
+      ],
+      "def": [
+        "#37 Leonardo Spinazzola",
+        "#22 Giovanni Di Lorenzo",
+        "#13 Amir Rrahmani",
+        "#17 Mathías Olivera",
+        "#4 Alessandro Buongiorno",
+        "#31 Sam Beukema",
+        "#5 Benoît Badiashile",
+        "#16 Rafa Marín"
+      ],
+      "mid": [
+        "#11 Kevin De Bruyne",
+        "#68 Stanislav Lobotka",
+        "#99 Frank Anguissa",
+        "#8 Scott McTominay",
+        "#6 Billy Gilmour",
+        "#26 Antonio Vergara"
+      ],
+      "fwd": [
+        "#21 Matteo Politano",
+        "#7 David Neres",
+        "#70 Noa Lang",
+        "#20 Lorenzo Lucca",
+        "#19 Rasmus Højlund",
+        "#27 Alisson Santos",
+        "#23 Giovane"
+      ],
+      "craque": {
+        "nome": "Kevin De Bruyne",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Matteo Politano",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_160": {
+    "ts": 1789003134.996843,
+    "data": {
+      "gk": [
+        "#39 Matvei Safonov",
+        "#30 Lucas Chevalier",
+        "#16 Alessandro Longoni"
+      ],
+      "def": [
+        "#5 Marquinhos",
+        "#12 Lucas Digne",
+        "#21 Lucas Hernández",
+        "#2 Achraf Hakimi",
+        "#51 Willian Pacho",
+        "#25 Nuno Mendes",
+        "#6 Illia Zabarnyi",
+        "#4 Lucas Beraldo"
+      ],
+      "mid": [
+        "#8 Fabián Ruiz",
+        "#17 Vitinha",
+        "#11 Maghnes Akliouche",
+        "#33 Warren Zaïre-Emery",
+        "#87 João Neves",
+        "#24 Senny Mayulu",
+        "#27 Dro Fernández"
+      ],
+      "fwd": [
+        "#10 Ousmane Dembélé",
+        "#9 Ferran Torres",
+        "#7 Khvicha Kvaratskhelia",
+        "#14 Désiré Doué",
+        "#22 Mika Godts",
+        "#47 Quentin Ndjantou"
+      ],
+      "craque": {
+        "nome": "Fabián Ruiz",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Ousmane Dembélé",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_521": {
+    "ts": 1789010341.5318546,
+    "data": {
+      "gk": [
+        "#1 Aleksander Popovic",
+        "#44 Matus Macik",
+        "#71 Dominik Takac",
+        "#32 Dávid Balog"
+      ],
+      "def": [
+        "#6 Kevin Wimmer",
+        "#17 Jurij Medvedev",
+        "#12 Kenan Bajric",
+        "#28 César Blackman",
+        "#15 Svetozar Markovic",
+        "#2 Samuel Kozlovsky",
+        "#57 Sandro Cruz",
+        "#49 Sahmkou Camara"
+      ],
+      "mid": [
+        "#70 Cristian Martínez",
+        "#11 Tigran Barseghyan",
+        "#77 Danylo Ignatenko",
+        "#20 Alen Mustafic",
+        "#88 Daiki Matsuoka",
+        "#97 Kelvin Ofori",
+        "#3 Peter Pokorny",
+        "#8 Artur Gajdos"
+      ],
+      "fwd": [
+        "#99 Andraz Sporar",
+        "#21 Suleiman Camara",
+        "#30 Adam Griger",
+        "#9 Mykola Kukharevych",
+        "#13 Roman Cerepkai",
+        "Jakub Murko",
+        "#24 Matús Tomásko"
+      ],
+      "craque": {
+        "nome": "Cristian Martínez",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Andraz Sporar",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_2250": {
+    "ts": 1789010341.7929947,
+    "data": {
+      "gk": [
+        "#1 Rui Silva",
+        "#41 Diego Callai",
+        "#30 Kaique",
+        "#99 Francisco Silva"
+      ],
+      "def": [
+        "#55 Ibrahima Ba",
+        "#11 Nuno Santos",
+        "#72 Eduardo Quaresma",
+        "#13 Georgios Vagiannidis",
+        "#25 Gonçalo Inácio",
+        "#6 Zeno Debast",
+        "#22 Iván Fresneda",
+        "#18 Moncef Zekri"
+      ],
+      "mid": [
+        "#20 Maxi Araújo",
+        "#17 Rodrigo Zalazar",
+        "#10 Geny Catamo",
+        "#21 Pedro Lima",
+        "#5 Sergi Altimira",
+        "#4 Silas Andersen",
+        "#96 Samuel Justo",
+        "#77 Issa Doumbia"
+      ],
+      "fwd": [
+        "#7 Fotis Ioannidis",
+        "#97 Luis Suárez",
+        "#19 Nestory Irankunda",
+        "#31 Luis Guilherme",
+        "#28 Jesse Derry",
+        "#9 Rafael Nel",
+        "#76 Rodrigo Rodrigues"
+      ],
+      "craque": {
+        "nome": "Maxi Araújo",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Fotis Ioannidis",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_432": {
+    "ts": 1789010342.0343802,
+    "data": {
+      "gk": [
+        "#19 Günay Güvenc",
+        "#1 Ugurcan Çakir",
+        "#24 Jankat Yilmaz",
+        "#70 Enes Büyük"
+      ],
+      "def": [
+        "#23 Kaan Ayhan",
+        "#42 Abdülkerim Bardakçi",
+        "#6 Davinson Sánchez",
+        "#4 Ismail Jakobs",
+        "#90 Wilfried Singo",
+        "#17 Eren Elmali",
+        "#88 Kazimcan Karatas",
+        "#3 El Chadaille Bitshiabu"
+      ],
+      "mid": [
+        "#20 Ilkay Gündogan",
+        "#99 Mario Lemina",
+        "#34 Lucas Torreira",
+        "#8 Gabriel Sara",
+        "#18 Lesley Ugochukwu",
+        "#5 Eyüp Aydin",
+        "#83 Alexey Batrakov",
+        "#74 Renato Nhaga"
+      ],
+      "fwd": [
+        "#10 Leroy Sané",
+        "#7 Roland Sallai",
+        "#45 Victor Osimhen",
+        "#27 Rafael Leão",
+        "#11 Yunus Akgün",
+        "#53 Baris Alper Yilmaz",
+        "#21 Deniz Gül"
+      ],
+      "craque": {
+        "nome": "Ilkay Gündogan",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Leroy Sané",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_436": {
+    "ts": 1789003136.3124006,
+    "data": {
+      "gk": [
+        "#34 Mert Günok",
+        "#31 Ederson",
+        "#13 Tarik Cetin",
+        "#75 Kuzey Sapaz"
+      ],
+      "def": [
+        "#15 Nathan Aké",
+        "#37 Milan Skriniar",
+        "#27 Nélson Semedo",
+        "#18 Mert Müldür",
+        "#22 Munir Mercan",
+        "#24 Jayden Oosterwolde",
+        "#3 Archie Brown",
+        "#14 Yiğit Demir"
+      ],
+      "mid": [
+        "#91 N'Golo Kanté",
+        "#10 Marco Asensio",
+        "#17 Irfan Can Kahveci",
+        "#6 Matteo Guendouzi",
+        "#8 Mert Yandas",
+        "#5 Ismail Yüksek",
+        "#28 Bartug Elmaz",
+        "#60 Abdou Fall"
+      ],
+      "fwd": [
+        "#9 Romelu Lukaku",
+        "#19 Vedat Muriqi",
+        "#11 Mason Greenwood",
+        "#7 Kerem Aktürkoglu",
+        "#70 Oguz Aydin",
+        "#45 Nene Dorgeles",
+        "#54 Alaettin Ekici"
+      ],
+      "craque": {
+        "nome": "N'Golo Kanté",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Romelu Lukaku",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_104": {
+    "ts": 1789003136.570663,
+    "data": {
+      "gk": [
+        "#95 Pierluigi Gollini",
+        "#32 Devis Vásquez",
+        "#99 Mile Svilar",
+        "#70 Giorgio De Marzi"
+      ],
+      "def": [
+        "#20 Nahuel Molina",
+        "#23 Gianluca Mancini",
+        "#22 Mario Hermoso",
+        "#5 Evan Ndicka",
+        "#26 Leonardo Balerdi",
+        "#34 Anass Salah-Eddine",
+        "#2 Devyne Rensch",
+        "#43 Wesley"
+      ],
+      "mid": [
+        "#15 Marten de Roon",
+        "#4 Bryan Cristante",
+        "#7 Lorenzo Pellegrini",
+        "#17 Manu Koné",
+        "#61 Niccolò Pisilli",
+        "#86 Rodrigo Mora"
+      ],
+      "fwd": [
+        "#21 Paulo Dybala",
+        "#9 Santiago Castro",
+        "#14 Donyell Malen",
+        "#18 Matìas Soulè",
+        "#68 Antonio Arena"
+      ],
+      "craque": {
+        "nome": "Marten de Roon",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Paulo Dybala",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_148": {
+    "ts": 1789003137.1378365,
+    "data": {
+      "gk": [
+        "#1 Nick Olij",
+        "#32 Matej Kovár",
+        "#51 Tijn Smolenaars",
+        "#41 Khadim Ngom"
+      ],
+      "def": [
+        "#4 Armando Obispo",
+        "#17 Mauro Júnior",
+        "#2 Lutsharel Geertruida",
+        "#8 Sergiño Dest",
+        "#25 Kiliann Sildillia",
+        "#6 Ryan Flamingo",
+        "#3 Yarek Gasiorowski",
+        "#38 Fabian Merién"
+      ],
+      "mid": [
+        "#18 Filip Kostic",
+        "#22 Jerdy Schouten",
+        "#20 Guus Til",
+        "#21 Sven Mijnans",
+        "#10 Paul Wanner",
+        "#24 Kodai Sano",
+        "#31 Noah Fernandez",
+        "#35 Ayoni Santos"
+      ],
+      "fwd": [
+        "#5 Ivan Perisic",
+        "#14 Alassane Pléa",
+        "#29 Sam Lammers",
+        "#27 Dennis Man",
+        "#9 Ricardo Pepi",
+        "#19 Esmir Bajraktarevic",
+        "#7 Ruben Van Bommel"
+      ],
+      "craque": {
+        "nome": "Filip Kostic",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Ivan Perisic",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_493": {
+    "ts": 1789003137.7956746,
+    "data": {
+      "gk": [
+        "#31 Dmytro Riznyk",
+        "#23 Kiril Fesiun",
+        "#48 Denys Tvardovskyi",
+        "Rostyslav Bahlai"
+      ],
+      "def": [
+        "#4 Marlon",
+        "#22 Mykola Matviyenko",
+        "#5 Valeriy Bondar",
+        "#16 Irakli Azarovi",
+        "#17 Vinicius Augusto",
+        "#13 Pedrinho",
+        "#18 Alaa Ghram",
+        "Alan Matturro"
+      ],
+      "mid": [
+        "Oleksandr Karavaev",
+        "#29 Yehor Nazaryna",
+        "#10 Pedrinho",
+        "#6 Marlon Gomes",
+        "#8 Dmytro Kryskiv",
+        "#27 Oleh Ocheretko",
+        "#7 Eguinaldo",
+        "#30 Alisson Santana"
+      ],
+      "fwd": [
+        "Gabriel Teixeira",
+        "#19 Kauã Elias",
+        "#49 Luca Meirelles",
+        "Ryan Roberto"
+      ],
+      "craque": {
+        "nome": "Karavaev",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Teixeira",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_132": {
+    "ts": 1789003138.394165,
+    "data": {
+      "gk": [
+        "#1 Manuel Neuer",
+        "#26 Sven Ulreich",
+        "#40 Jonas Urbig"
+      ],
+      "def": [
+        "#21 Hiroki Ito",
+        "#11 Nathaniel Brown",
+        "#3 Kim Min-Jae",
+        "#4 Jonathan Tah",
+        "#2 Dayot Upamecano",
+        "#19 Alphonso Davies",
+        "#44 Josip Stanisic"
+      ],
+      "mid": [
+        "#27 Konrad Laimer",
+        "#6 Joshua Kimmich",
+        "#17 Michael Olise",
+        "#10 Jamal Musiala",
+        "#34 Ismael Saibari",
+        "#8 Tom Bischof",
+        "#45 Aleksandar Pavlovic",
+        "#42 Lennart Karl"
+      ],
+      "fwd": [
+        "#9 Harry Kane",
+        "#7 Serge Gnabry",
+        "#14 Luis Díaz"
+      ],
+      "craque": {
+        "nome": "Konrad Laimer",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Harry Kane",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_2980": {
+    "ts": 1789003138.9818187,
+    "data": {
+      "gk": [
+        "#12 Nikita Haykin",
+        "#1 Julian Faye Lund",
+        "#45 Isak Sjong",
+        "#43 Martin Lund Andersen"
+      ],
+      "def": [
+        "#36 Mathias Olsen",
+        "#5 Haitam Aleesami",
+        "#6 Jostein Gundersen",
+        "#15 Fredrik André Bjørkan",
+        "#4 Odin Bjørtuft",
+        "#25 Isak Dybvik Määttä",
+        "#20 Fredrik Sjøvold",
+        "#2 Villads Nielsen"
+      ],
+      "mid": [
+        "#14 Ulrik Saltnes",
+        "#7 Patrick Berg",
+        "#19 Sondre Brunstad Fet",
+        "#10 Jens Petter Hauge",
+        "#16 Joshua Kitolano",
+        "#26 Hakon Evjen",
+        "#8 Sondre Auklend",
+        "#11 Ole Didrik Blomberg"
+      ],
+      "fwd": [
+        "#9 Andreas Helmersen",
+        "#17 Ola Brynhildsen",
+        "#94 August Mikkelsen",
+        "#31 Hindrin Chooly",
+        "Jakob Strand"
+      ],
+      "craque": {
+        "nome": "Ulrik Saltnes",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Andreas Helmersen",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_2572": {
+    "ts": 1789003139.2512817,
+    "data": {
+      "gk": [
+        "#97 Robert Sánchez",
+        "#22 Mauro Vigorito",
+        "#1 Jean Butez"
+      ],
+      "def": [
+        "#2 Marc-Oliver Kempf",
+        "#18 Edoardo Goldaniga",
+        "#3 Álex Valle",
+        "#99 Trevoh Chalobah",
+        "#13 Alberto Dossena",
+        "#27 Yan Couto",
+        "#16 Kaiki",
+        "#28 Ivan Smolcic"
+      ],
+      "mid": [
+        "#6 Luis Milla",
+        "#8 Maxence Caqueret",
+        "#14 Samuele Ricci",
+        "#7 Lucas Da Cunha",
+        "#5 Máximo Perrone",
+        "#20 Martin Baturina",
+        "#10 Nico Paz",
+        "#15 Adrian Lahdo"
+      ],
+      "fwd": [
+        "#90 Moise Kean",
+        "#9 Anastasios Douvikas",
+        "#42 Jayden Addai",
+        "#11 Assane Diao",
+        "#17 Jesús Rodriguez"
+      ],
+      "craque": {
+        "nome": "Luis Milla",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Moise Kean",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_11420": {
+    "ts": 1789003139.900643,
+    "data": {
+      "gk": [
+        "#1 Ørjan Nyland",
+        "#25 Leopold Zingerle",
+        "#26 Maarten Vandevoordt"
+      ],
+      "def": [
+        "#4 Willi Orbán",
+        "#16 Lukas Klostermann",
+        "#39 Benjamin Henrichs",
+        "#22 David Raum",
+        "#17 Ridle Baku",
+        "#3 Maxime Estève",
+        "#23 Castello Lukeba",
+        "#35 Max Finkgrafe"
+      ],
+      "mid": [
+        "#14 Christoph Baumgartner",
+        "#13 Nicolas Seiwald",
+        "#20 Rocco Reitz",
+        "#7 Antonio Nusa",
+        "#21 Neil El Aynaoui",
+        "#6 Ezechiel Banzuzi",
+        "#8 Assan Ouédraogo",
+        "#30 Andrija Maksimovic"
+      ],
+      "fwd": [
+        "#28 Christopher Nkunku",
+        "#11 Johan Bakayoko",
+        "#40 Rômulo",
+        "#10 Brajan Gruda",
+        "#9 Marc Guiu",
+        "#27 Tidiam Gomis",
+        "#45 Samba Konate"
+      ],
+      "craque": {
+        "nome": "Christoph Baumgartner",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Christopher Nkunku",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_360": {
+    "ts": 1789003140.1409183,
+    "data": {
+      "gk": [
+        "#22 Tom Heaton",
+        "#12 Karl Darlow",
+        "#1 Senne Lammens",
+        "#45 Dermot Mee"
+      ],
+      "def": [
+        "#5 Harry Maguire",
+        "#23 Luke Shaw",
+        "#6 Lisandro Martínez",
+        "#2 Diogo Dalot",
+        "#4 Matthijs de Ligt",
+        "#3 Noussair Mazraoui",
+        "#15 Leny Yoro",
+        "#26 Ayden Heaven"
+      ],
+      "mid": [
+        "#8 Bruno Fernandes",
+        "#18 Youri Tielemans",
+        "#38 Jack Fletcher",
+        "#7 Mason Mount",
+        "#25 Manuel Ugarte",
+        "#17 Andrey Santos",
+        "#37 Kobbie Mainoo",
+        "#20 Carlos Baleba"
+      ],
+      "fwd": [
+        "#9 Marcus Rashford",
+        "#10 Matheus Cunha",
+        "#19 Bryan Mbeumo",
+        "#11 Joshua Zirkzee",
+        "#30 Benjamin Sesko",
+        "#16 Amad Diallo",
+        "#31 Shea Lacey"
+      ],
+      "craque": {
+        "nome": "Bruno Fernandes",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Marcus Rashford",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_21922": {
+    "ts": 1789003140.8620262,
+    "data": {
+      "gk": [
+        "#92 Stas Pokatilov",
+        "#1 Amin Ramazanov",
+        "#94 Ravan Mirzammadov",
+        "Rauf Ayyubov"
+      ],
+      "def": [
+        "#80 Akim Zedadka",
+        "#17 Tellur Mutallimov",
+        "#3 Steve Solvet",
+        "#27 Tymoteusz Puchacz",
+        "#5 Rahman Dashdamirov",
+        "#33 Júnior Almeida",
+        "#4 Aden Mccarthy",
+        "#89 Cəfər Muxtarov"
+      ],
+      "mid": [
+        "#13 Ivan Lepinjica",
+        "#11 Kaheem Parris",
+        "#88 Rodrigo Fernandes",
+        "#10 Aleksey Isayev",
+        "#22 Zinédine Ould Khaled",
+        "#34 Xander Severina",
+        "#37 Du Queiroz",
+        "#6 Abdulakh Khaybulaev"
+      ],
+      "fwd": [
+        "#21 Veljko Simic",
+        "#20 Joy Lance Mickels",
+        "#99 Patrick Orphe M'Bina",
+        "Carlos Eduardo",
+        "#8 Christian Nwachukwu",
+        "#23 Younes Lachaab"
+      ],
+      "craque": {
+        "nome": "Ivan Lepinjica",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Veljko Simic",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_494": {
+    "ts": 1789003141.1575282,
+    "data": {
+      "gk": [
+        "#1 Ondrej Kolar",
+        "#35 Jakub Markovic",
+        "#29 Nazar Domchak"
+      ],
+      "def": [
+        "#6 Ange N'Guessan",
+        "#5 Igoh Ogbu",
+        "#3 Tomás Holes",
+        "#27 Tomás Vlcek",
+        "#4 David Zima",
+        "#39 David Jurásek",
+        "#42 Mikulás Konecny",
+        "#2 Stepán Chaloupek"
+      ],
+      "mid": [
+        "#23 Michal Sadílek",
+        "#16 David Moses",
+        "#17 Lukás Provod",
+        "#22 Toumani Diakité",
+        "#30 Wiktor Nowak",
+        "#15 Mubarak Suleiman",
+        "#32 Pavel Kacor",
+        "#20 Emmanuel Dennis Ayaosi"
+      ],
+      "fwd": [
+        "#26 Ivan Schranz",
+        "#25 Tomás Chorý",
+        "#10 Danijel Sturm",
+        "#13 Mojmír Chytil",
+        "#18 Adonija Bryan Ouanda"
+      ],
+      "craque": {
+        "nome": "Michal Sadílek",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Ivan Schranz",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "uefa.champions_175": {
+    "ts": 1789003141.412452,
+    "data": {
+      "gk": [
+        "#1 Régis Gurtner",
+        "#16 Mathieu Gorgelin",
+        "#40 Robin Risser",
+        "#60 Ilan Jourdren"
+      ],
+      "def": [
+        "#2 Ruben Aguilar",
+        "#24 Jonathan Gradit",
+        "#14 Matthieu Udol",
+        "#20 Jean-Clair Todibo",
+        "#23 Saud Abdulhamid",
+        "#3 Maik Nawrocki",
+        "#13 Jhoanner Chavez",
+        "#6 Samson Baidoo"
+      ],
+      "mid": [
+        "#9 Thorgan Hazard",
+        "#21 Amadou Haidara",
+        "#27 Michaël Cuisance",
+        "#8 Yassine Titraoui",
+        "#5 Andrija Bulatovic",
+        "#38 Mezian Soares"
+      ],
+      "fwd": [
+        "#10 Florian Thauvin",
+        "#37 Moussa Diarra",
+        "#7 Florian Sotoca",
+        "#11 Odsonne Édouard",
+        "#22 Michal Skoras",
+        "#19 Abdallah Sima",
+        "#28 Junior Kadile"
+      ],
+      "craque": {
+        "nome": "Thorgan Hazard",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Florian Thauvin",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_243": {
+    "ts": 1789004126.8233838,
+    "data": {
+      "gk": [
+        "#33 Rafael Romero",
+        "#1 Odisseas Vlachodimos",
+        "#13 Fran González"
+      ],
+      "def": [
+        "#23 Marcão",
+        "#15 Fábio Cardoso",
+        "#17 Gabriel Suazo",
+        "#22 José Ángel Carmona",
+        "#2 Juan Iglesias",
+        "#12 Arouna Sangante",
+        "#5 Andrés Castrín",
+        "#4 Enrique Salas"
+      ],
+      "mid": [
+        "#18 Jon Guridi",
+        "#8 Giorgi Kochorashvili",
+        "#11 Rubén Vargas",
+        "#24 Youssouf Fofana",
+        "#6 Lucien Agoumé",
+        "#14 Manu Bueno",
+        "#39 Edu Altozano",
+        "#27 Nico Guillén"
+      ],
+      "fwd": [
+        "#21 Chidera Ejuke",
+        "#7 Alfonso González",
+        "#20 Felix Correia",
+        "#9 Robbie Ure",
+        "#19 Lucas Stassin",
+        "#10 Peque",
+        "#16 Isaac Romero"
+      ],
+      "craque": {
+        "nome": "Jon Guridi",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Jon Guridi",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_94": {
+    "ts": 1789003141.9057777,
+    "data": {
+      "gk": [
+        "#13 Cristian Rivero",
+        "#1 Stole Dimitrievski",
+        "#25 Kayne Van Oevelen"
+      ],
+      "def": [
+        "#20 Dimitri Foulquier",
+        "#14 José Gayà",
+        "#21 Jesús Vázquez",
+        "#24 Pablo Maffeo",
+        "#4 Mouctar Diakhaby",
+        "#12 Justin de Haas",
+        "#3 Copete",
+        "#22 Arnau Martínez"
+      ],
+      "mid": [
+        "#8 Javi Guerra",
+        "#2 Guido Rodríguez",
+        "#18 Pepelu",
+        "#15 Aliou Dieng",
+        "#23 Filip Ugrinic",
+        "#10 Harvey Elliott",
+        "#39 Ryunosuke Sato",
+        "#33 Aaron Mayol"
+      ],
+      "fwd": [
+        "#6 Umar Sadiq",
+        "Sergi Canós",
+        "#7 Arnaut Danjuma",
+        "#19 Dani Raba",
+        "#11 Luis Rioja",
+        "#9 Hugo Duro",
+        "#16 Diego López"
+      ],
+      "craque": {
+        "nome": "Javi Guerra",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Umar Sadiq",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_87": {
+    "ts": 1789003142.171498,
+    "data": {
+      "gk": [
+        "#13 Julen Agirrezabala",
+        "#1 Simon Eriksson"
+      ],
+      "def": [
+        "#17 Jorge Salinas",
+        "#3 Aarón Martín",
+        "#4 Manu",
+        "#5 Pablo Ramon",
+        "#2 Alvaro Mantilla",
+        "#24 Jeanuël Belocian",
+        "#22 Pedro Felipe",
+        "#16 Facundo González"
+      ],
+      "mid": [
+        "#18 Matteo Prati",
+        "#20 Sergio Canales",
+        "#6 Íñigo Sainz",
+        "#8 André Almeida",
+        "#23 Iván Martín",
+        "#14 Maguette Gueye",
+        "#29 Andrés Vallecillo"
+      ],
+      "fwd": [
+        "#11 Andrés Martín",
+        "#12 Asier Villalibre",
+        "#10 Iñigo Vicente",
+        "#7 Giorgi Guliashvili",
+        "#9 Juan Carlos Arana",
+        "#21 Yassir Zabiri",
+        "#15 Pablo García"
+      ],
+      "craque": {
+        "nome": "Matteo Prati",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Yassir Zabiri",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_96": {
+    "ts": 1789003142.912401,
+    "data": {
+      "gk": [
+        "#13 Adrián Rodríguez",
+        "#1 Antonio Sivera",
+        "#31 Grégoire Swiderski"
+      ],
+      "def": [
+        "#16 Ville Koski",
+        "#17 Jonny",
+        "#5 Facundo Garcés",
+        "#14 Nahuel Tenaglia",
+        "#2 Nicolás Valentini",
+        "#7 Ángel Pérez",
+        "#3 Youssef Lekhedim",
+        "#27 Xanet Oláiz"
+      ],
+      "mid": [
+        "#19 Pablo Ibáñez",
+        "#4 Denis Suárez",
+        "#10 Carles Aleñá",
+        "#23 Carlos Protesoni",
+        "#6 Ander Guevara",
+        "#8 Antonio Blanco",
+        "#24 Selu Diallo",
+        "#18 Mikel Rodriguez"
+      ],
+      "fwd": [
+        "#22 Miguel Rodríguez",
+        "#11 Toni Martínez",
+        "#9 Mariano Díaz",
+        "#15 Lucas Boyé",
+        "#12 Hugo Novoa",
+        "#21 Abde Rebbach",
+        "#20 Aitor Mañas"
+      ],
+      "craque": {
+        "nome": "Pablo Ibáñez",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 4,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Lucas Boyé",
+        "gols": 4
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_97": {
+    "ts": 1789003143.170516,
+    "data": {
+      "gk": [
+        "#13 Aitor Fernández",
+        "#1 Sergio Herrera",
+        "#31 Rafa Fernández"
+      ],
+      "def": [
+        "#15 Diego Rico",
+        "#19 Valentin Rosier",
+        "#24 Alejandro Catena",
+        "#23 Abel Bretones",
+        "#5 Jorge Herrando",
+        "#22 Enzo Boyomo",
+        "#48 Rockson Yeboah",
+        "#27 Iñigo Arguibide"
+      ],
+      "mid": [
+        "#6 Lucas Torró",
+        "#14 Rubén García",
+        "#20 Romain Del Castillo",
+        "#7 Jon Moncayola",
+        "#10 Aimar Oroz",
+        "#8 Iker Muñoz",
+        "#29 Asier Osambela",
+        "#26 Mauro Echegoyen"
+      ],
+      "fwd": [
+        "#16 Moi Gómez",
+        "#17 Ante Budimir",
+        "#11 Enrique Barja",
+        "#9 Raúl García",
+        "#18 Raúl Moro",
+        "#21 Jonathan Dubasin",
+        "#30 Asier Bonel Aicua"
+      ],
+      "craque": {
+        "nome": "Lucas Torró",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 4,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Ante Budimir",
+        "gols": 4
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_88": {
+    "ts": 1789003143.3791842,
+    "data": {
+      "gk": [
+        "#13 Marko Dmitrovic",
+        "#1 Ángel Fortuño",
+        "#31 Llorenç Serred"
+      ],
+      "def": [
+        "#6 Leandro Cabrera",
+        "Andoni Gorosabel",
+        "#14 Unai Núñez",
+        "#16 Vanja Drkusic",
+        "#23 Omar El Hilali",
+        "#5 Clemens Riedel",
+        "#3 Quilindschy Hartman",
+        "#32 José Ángel López"
+      ],
+      "mid": [
+        "#11 Pere Milla",
+        "#8 Edu Expósito",
+        "#10 Pol Lozano",
+        "#4 Urko Gonzalez",
+        "#18 Gabriel Moscardo",
+        "#25 Javi Hernandez",
+        "#26 Rafael Bauza"
+      ],
+      "fwd": [
+        "#19 Enrique García",
+        "#7 Javier Puado",
+        "#24 Tyrhys Dolan",
+        "#17 Jofre Carreras",
+        "#15 Bryan Zaragoza",
+        "#9 Roberto Fernández",
+        "#30 Marcos Fernández"
+      ],
+      "craque": {
+        "nome": "Pere Milla",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Roberto Fernández",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_93": {
+    "ts": 1789003143.6388812,
+    "data": {
+      "gk": [
+        "#1 Unai Simón",
+        "#26 Mikel Santos",
+        "#13 Álex Padilla"
+      ],
+      "def": [
+        "#17 Yuri Berchiche",
+        "#14 Aymeric Laporte",
+        "#5 Yeray",
+        "#3 Dani Vivian",
+        "#12 Jesús Areso",
+        "#4 Aitor Paredes",
+        "#31 Johaneko Louis Jean",
+        "#15 Hugo Rincón"
+      ],
+      "mid": [
+        "#16 Iñigo Ruiz de Galarreta",
+        "#23 Robert Navarro",
+        "#8 Oihan Sancet",
+        "#6 Beñat Prados",
+        "#18 Mikel Jauregizar",
+        "#24 Beñat Gerenabarrena",
+        "#28 Peio Canales",
+        "#20 Alejandro Rego"
+      ],
+      "fwd": [
+        "#7 Álex Berenguer",
+        "#9 Iñaki Williams",
+        "#11 Gorka Guruzeta",
+        "#10 Nico Williams",
+        "#22 Nico Serrano",
+        "#25 Álvaro Djaló",
+        "#21 Maroan Sannadi"
+      ],
+      "craque": {
+        "nome": "Iñigo Ruiz de Galarreta",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Robert Navarro",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_3751": {
+    "ts": 1789003143.8752263,
+    "data": {
+      "gk": [
+        "#1 Matías Dituro",
+        "#13 Alejandro Iturbe"
+      ],
+      "def": [
+        "#6 Pedro Bigas",
+        "#23 Víctor Chust",
+        "#4 Bambo Diaby",
+        "Kevin Lomónaco",
+        "Rubén Sánchez",
+        "Roy Revivo",
+        "#2 Buba Sangaré",
+        "#26 Matia Barzic"
+      ],
+      "mid": [
+        "Thomas Lemar",
+        "#17 Josan",
+        "#12 Gonzalo Villar",
+        "#8 Marc Aguado",
+        "#5 Federico Redondo",
+        "#10 Facundo Buonanotte",
+        "#16 Martim Neto",
+        "#47 Javier Morcillo"
+      ],
+      "fwd": [
+        "#9 Ezequiel Ponce",
+        "#19 Grady Diangana",
+        "#20 José Antonio Morente",
+        "#11 Germán Valera",
+        "#14 Fernando Niño",
+        "#21 Lucas Cepeda",
+        "#7 Yago Alonso"
+      ],
+      "craque": {
+        "nome": "Lemar",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Fernando Niño",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_101": {
+    "ts": 1789003144.1620135,
+    "data": {
+      "gk": [
+        "#1 Daniel Cárdenas",
+        "#13 Augusto Batalla",
+        "#25 Emil Audero",
+        "#30 Adrián Molina"
+      ],
+      "def": [
+        "#24 Florian Lejeune",
+        "#20 Iván Balliu",
+        "#5 Luiz Felipe",
+        "Marash Kumbulla",
+        "#15 Mujaid Sadick",
+        "#17 Adrià Pedrosa",
+        "#2 Andrei Ratiu",
+        "#33 Jozhua Vertrouwd"
+      ],
+      "mid": [
+        "#27 Sergio Lozano",
+        "#18 Álvaro García",
+        "#8 Unai López",
+        "#4 Pedro Díaz",
+        "#7 Isi Palazón",
+        "#23 Óscar Valentín",
+        "#11 Randy Nteka",
+        "#6 Pathé Ciss"
+      ],
+      "fwd": [
+        "Raúl de Tomás",
+        "#19 Jorge de Frutos",
+        "#14 Giorgi Tsitaishvili",
+        "#10 Sergio Camello",
+        "#9 Alexandre Alemão",
+        "#21 Fran Pérez",
+        "#37 Rayane Belaid"
+      ],
+      "craque": {
+        "nome": "Sergio Lozano",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 5,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Sergio Camello",
+        "gols": 5
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_85": {
+    "ts": 1789003144.9133449,
+    "data": {
+      "gk": [
+        "#13 Andrei Radu",
+        "#1 Iván Villar",
+        "#1 Altay Bayindir"
+      ],
+      "def": [
+        "#4 Abdoulaye Faye",
+        "#3 Marcos Alonso",
+        "#2 Carl Starfelt",
+        "#22 Javi Galán",
+        "Sebastián Cáceres",
+        "#5 Sergio Carreira",
+        "#17 Javi Rueda",
+        "#15 Álvaro Núñez"
+      ],
+      "mid": [
+        "#23 Hugo Álvarez",
+        "#14 Aleix Febas",
+        "#6 Ilaix Moriba",
+        "#19 Williot Swedberg",
+        "#16 Hugo Gonzalez",
+        "#8 Miguel Román",
+        "#36 Andrés Antañón",
+        "#30 Hugo Burcio"
+      ],
+      "fwd": [
+        "#10 Iago Aspas",
+        "#11 Pablo Durán",
+        "#7 Borja Iglesias",
+        "#9 Ferran Jutglà",
+        "#24 Couhaib Driouech",
+        "#39 Jones El-Abdellaoui"
+      ],
+      "craque": {
+        "nome": "Hugo Álvarez",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Carl Starfelt",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_99": {
+    "ts": 1789003145.1586015,
+    "data": {
+      "gk": [
+        "#1 Alfonso Herrero",
+        "#13 Carlos López"
+      ],
+      "def": [
+        "#12 José Salinas",
+        "#4 Einar Galilea",
+        "#20 Fernando Calero",
+        "#25 Juan Berrocal",
+        "#5 Álex Pastor",
+        "#36 Ángel Recio",
+        "#3 Carlos Puga",
+        "#16 Diego Murillo"
+      ],
+      "mid": [
+        "#19 Juan Cruz",
+        "#18 Pablo Martínez",
+        "#2 Jens Cajuste",
+        "#6 Ramón Enríquez",
+        "#8 Carlos Dotor",
+        "#22 Daniel Lorenzo",
+        "#14 Rafa Rodríguez",
+        "#23 Izan Merino"
+      ],
+      "fwd": [
+        "#15 Moussa Diarra",
+        "#11 Joaquín Muñoz",
+        "#17 Eneko Jauregui",
+        "#10 David Larrubia",
+        "#24 Julen Lobete",
+        "#7 Haitam Abaida",
+        "#21 Adrián Niño"
+      ],
+      "craque": {
+        "nome": "Juan Cruz",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Chupete",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_1538": {
+    "ts": 1789003145.8200824,
+    "data": {
+      "gk": [
+        "#13 Mathew Ryan",
+        "#1 Pablo Cuñat",
+        "#32 Alejandro Primo",
+        "#36 Ihor Galdin"
+      ],
+      "def": [
+        "#2 Aïssa Mandi",
+        "#22 Jeremy Toljan",
+        "#17 Víctor García",
+        "#4 Adrián de la Fuente",
+        "#23 Manu Sánchez",
+        "#14 Jorge Cabello",
+        "#16 Axel Tape",
+        "#3 Ifeanyi Ndukwe"
+      ],
+      "mid": [
+        "#7 Roger Brugué",
+        "#20 Orio Rey",
+        "#8 Jon Ander Olasagasti",
+        "#5 Hugo Sotelo",
+        "#18 Enzo Bardeli",
+        "#6 Dani Requena",
+        "#34 Manel Usedo Domingo"
+      ],
+      "fwd": [
+        "#9 Iván Romero",
+        "#24 Thiago Fernández",
+        "#10 Petar Ratkov",
+        "#21 Etta Eyong",
+        "#27 Paco Cortés",
+        "#11 Yanis Kasonga Musuayi"
+      ],
+      "craque": {
+        "nome": "Roger Brugué",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Roger Brugué",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_2922": {
+    "ts": 1789003146.6315415,
+    "data": {
+      "gk": [
+        "#13 David Soria",
+        "#1 Jirí Letácek",
+        "#35 Diego Ferrer"
+      ],
+      "def": [
+        "#17 Kiko Femenía",
+        "#22 Johan Mojica",
+        "#2 Djené",
+        "#5 Abdel Abqar",
+        "#24 Zaid Romero",
+        "#4 Saba Sazonov",
+        "#21 Andrés García",
+        "#15 Sebastián Boselli"
+      ],
+      "mid": [
+        "#8 Nemanja Gudelj",
+        "#14 Javi Muñoz",
+        "#23 Orel Mangala",
+        "#16 Francho Serrano",
+        "#11 Ramón Terrats",
+        "#6 Mario Martín",
+        "#28 Alberto Risco",
+        "#8 Christantus Uche"
+      ],
+      "fwd": [
+        "#7 Juanmi",
+        "#19 Enes Ünal",
+        "#9 Borja Mayoral",
+        "#10 Martín Satriano",
+        "Ivan Azón",
+        "#32 Joselu Pérez",
+        "#27 Ibra Drammeh"
+      ],
+      "craque": {
+        "nome": "Nemanja Gudelj",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Enes Ünal",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_90": {
+    "ts": 1789003146.9324203,
+    "data": {
+      "gk": [
+        "#25 Álvaro Fernández",
+        "#1 Germán Parreño",
+        "#13 Leo Román"
+      ],
+      "def": [
+        "#23 Ximo Navarro",
+        "#20 José María Giménez",
+        "#17 Angeliño",
+        "#15 Miguel Loureiro",
+        "#12 Giacomo Quagliata",
+        "#3 Arnau Comas",
+        "#2 Adrià Altimira",
+        "#4 Lucas Noubi"
+      ],
+      "mid": [
+        "#14 Riki Rodríguez",
+        "#21 Mario Soriano Carreno",
+        "#8 Diego Villares",
+        "#6 Marc Casadó",
+        "#16 Lorenzo Amatucci",
+        "#34 Teun Gijselhart",
+        "#18 Jonathan Asp Jensen",
+        "#37 Noé Carrillo"
+      ],
+      "fwd": [
+        "#7 Pierre-Emerick Aubameyang",
+        "#24 Adama Traoré",
+        "#9 Zakaria Eddahchouri",
+        "#10 Yeremay Hernández",
+        "#19 Luis Cruz",
+        "#11 David Mella",
+        "#32 Bil Nsongo"
+      ],
+      "craque": {
+        "nome": "Riki Rodríguez",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 4,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Pierre-Emerick Aubameyang",
+        "gols": 4
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_89": {
+    "ts": 1789003147.2017372,
+    "data": {
+      "gk": [
+        "#1 Álex Remiro",
+        "#13 Unai Marrero",
+        "Aitor Fraga"
+      ],
+      "def": [
+        "#5 Igor Zubeldia",
+        "#20 Álvaro Odriozola",
+        "#3 Aihen Muñoz",
+        "#16 Jon Pacheco",
+        "#2 Jon Aramburu",
+        "#19 Mamadou Sarr",
+        "#22 Héctor Fort",
+        "#6 Jon Martín"
+      ],
+      "mid": [
+        "#18 Carlos Soler",
+        "#21 Yangel Herrera",
+        "#8 Beñat Turrientes",
+        "#24 Luka Sucic",
+        "#23 Arsen Zakharyan",
+        "#15 Pablo Marín",
+        "#28 Alex Lebarbier",
+        "#4 Jon Gorrotxategi"
+      ],
+      "fwd": [
+        "#11 Gonçalo Guedes",
+        "#10 Mikel Oyarzabal",
+        "#14 Takefusa Kubo",
+        "#17 Sergio Gómez",
+        "#7 Ander Barrenetxea",
+        "#9 Orri Óskarsson",
+        "#29 Alex Marchal"
+      ],
+      "craque": {
+        "nome": "Carlos Soler",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Luka Sucic",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_1068": {
+    "ts": 1789003147.923064,
+    "data": {
+      "gk": [
+        "#13 Jan Oblak",
+        "#1 Juan Musso",
+        "#25 Salvi Esquivel"
+      ],
+      "def": [
+        "#21 Cristian Romero",
+        "#22 Alejandro Grimaldo",
+        "#24 Robin Le Normand",
+        "#17 Dávid Hancko",
+        "#18 Marc Pubill",
+        "Arnau Solà",
+        "#27 Jorge Domínguez",
+        "#30 Daniel Martinez"
+      ],
+      "mid": [
+        "#4 Rodrigo Mendoza",
+        "#6 Koke",
+        "#46 Jorge Castillo",
+        "#14 Marcos Llorente",
+        "#7 Lee Kang-In",
+        "#23 Morten Hjulmand",
+        "#5 Johnny Cardoso",
+        "#10 Álex Baena"
+      ],
+      "fwd": [
+        "#9 Alexander Sørloth",
+        "#11 Ademola Lookman",
+        "#15 Jonathan David",
+        "#19 Julián Álvarez",
+        "#20 Giuliano Simeone",
+        "#16 Arnau Ortiz",
+        "#29 Miguel Cubo"
+      ],
+      "craque": {
+        "nome": "Rodrigo Mendoza",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Álex Baena",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_102": {
+    "ts": 1789003148.6363604,
+    "data": {
+      "gk": [
+        "#25 Péter Gulácsi",
+        "#1 Luiz Júnior",
+        "#13 Rubén Gómez",
+        "#35 Yakiv Kinareykin"
+      ],
+      "def": [
+        "#8 Juan Foyth",
+        "#3 Alex Freeman",
+        "#2 Logan Costa",
+        "#23 Sergi Cardona",
+        "#15 Santiago Mouriño",
+        "#12 Renato Veiga",
+        "#6 Pau Navarro"
+      ],
+      "mid": [
+        "#14 Santi Comesaña",
+        "#18 Pape Gueye",
+        "#10 Alberto Moleiro",
+        "#24 Nathan Saliba",
+        "#5 Alassane Diatta",
+        "#16 Carlos Macià",
+        "#30 Cheikh Ahmad Tidiane Thiam"
+      ],
+      "fwd": [
+        "#20 Carlos Romero",
+        "#7 Gerard Moreno",
+        "#22 Ayoze Pérez",
+        "#19 Nicolas Pépé",
+        "#17 Tajon Buchanan",
+        "#21 Tani Oluwaseyi",
+        "#9 Georges Mikautadze"
+      ],
+      "craque": {
+        "nome": "Santi Comesaña",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Nicolas Pépé",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "esp.1_244": {
+    "ts": 1789003148.881784,
+    "data": {
+      "gk": [
+        "#13 Diego Conde",
+        "#1 Álvaro Valles",
+        "#31 Manu González",
+        "#40 Álvaro De Pablo"
+      ],
+      "def": [
+        "#5 Marc Bartra",
+        "#2 Héctor Bellerín",
+        "#3 Diego Llorente",
+        "#11 Fran García",
+        "#23 Junior Firpo",
+        "#4 Natan",
+        "#16 Valentín Gómez",
+        "#12 Ángel Ortiz"
+      ],
+      "mid": [
+        "#17 Rodrigo Riquelme",
+        "#22 Isco",
+        "#25 Dani Ceballos",
+        "#20 Giovani Lo Celso",
+        "#8 Pablo Fornals",
+        "#21 Marc Roca",
+        "#15 Álvaro Fidalgo",
+        "#18 Nelson Deossa"
+      ],
+      "fwd": [
+        "#24 Aitor Ruibal",
+        "#19 Troy Parrott",
+        "#7 Antony",
+        "#14 Iker Losada",
+        "#10 Abde Ezzalzouli",
+        "#9 Cucho Hernández",
+        "#27 José Morante"
+      ],
+      "craque": {
+        "nome": "Rodrigo Riquelme",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Rodrigo Riquelme",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_17530": {
+    "ts": 1789006753.6952631,
+    "data": {
+      "gk": [
+        "#23 Matteo Grandi",
+        "#96 Lorenzo Montipò",
+        "#28 Alessio Pozzi",
+        "#1 Filip Stankovic"
+      ],
+      "def": [
+        "#15 Juan Jesus",
+        "#5 Ridgeciano Haps",
+        "#2 Matías Moreno",
+        "#33 Marin Sverko",
+        "#70 Pasquale Mazzocchi",
+        "#14 Thierry Correia",
+        "#17 Armel Bella-Kotchap",
+        "#4 Bartol Franjic"
+      ],
+      "mid": [
+        "#32 Alfred Duncan",
+        "#26 Toma Basic",
+        "#6 Gianluca Busio",
+        "#19 Simon Sohm",
+        "#21 Thorir Johann Helgason",
+        "#71 Enrique Perez",
+        "#55 Simone Panada",
+        "#8 Lamine Dabo"
+      ],
+      "fwd": [
+        "#29 Lion Lauberbach",
+        "#10 John Yeboah",
+        "#9 Andrea Adorante",
+        "#45 Akor Adams",
+        "#7 Albion Rrahmani",
+        "Toni Fernández",
+        "#56 Kornel Lisman"
+      ],
+      "craque": {
+        "nome": "Alfred Duncan",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Richie Sagrado",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_109": {
+    "ts": 1789006753.7908883,
+    "data": {
+      "gk": [
+        "#43 David de Gea",
+        "#19 Luca Lezzerini",
+        "#53 Oliver Christensen"
+      ],
+      "def": [
+        "#17 Joao Victor",
+        "#2 Dodô",
+        "#5 Marin Pongracic",
+        "#6 Luca Ranieri",
+        "#65 Fabiano Parisi",
+        "#3 Radu Dragusin",
+        "#33 Viery",
+        "#20 Álex Jiménez"
+      ],
+      "mid": [
+        "Pedro Gonçalves",
+        "#4 Marco Brescianini",
+        "#44 Nicolò Fagioli",
+        "#14 Arthur Atta",
+        "#27 Cher Ndour",
+        "#42 Christ Inao Oulaï",
+        "#73 Antonio Pirrò"
+      ],
+      "fwd": [
+        "#71 Sulayman Jallow",
+        "Beto",
+        "Wilfried Gnonto",
+        "#32 Mateo Pellegrino",
+        "Alieu Njie",
+        "#30 Franco Mastantuono",
+        "#70 Federico Croci"
+      ],
+      "craque": {
+        "nome": "Gonçalves",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Mateo Pellegrino",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_3263": {
+    "ts": 1789003150.5576768,
+    "data": {
+      "gk": [
+        "#1 Justin Bijlow",
+        "#39 Daniele Sommariva",
+        "#99 Franz Stolz"
+      ],
+      "def": [
+        "#20 Stefano Sabelli",
+        "#3 Kingsley Ehizibue",
+        "#22 Johan Vásquez",
+        "Cody Drameh",
+        "#5 Leo Østigard",
+        "#2 Mario Mitaj",
+        "#34 Sebastian Otoa",
+        "#27 Alessandro Marcandalli"
+      ],
+      "mid": [
+        "#97 Djibril Sow",
+        "#25 Hamed Traoré",
+        "#32 Morten Frendrup",
+        "#8 Tommaso Baldanzi",
+        "#77 Mikael Ellertsson",
+        "#4 Alexsandro Amorim",
+        "#11 Ethan Meichtry",
+        "#71 Samuel Wiafe"
+      ],
+      "fwd": [
+        "#92 Stephan El Shaarawy",
+        "#10 Junior Messias",
+        "#18 Milutin Osmajic",
+        "#29 Lorenzo Colombo",
+        "#17 Elias Havel",
+        "#76 Lorenzo Venturino",
+        "#19 Joi Nuredini"
+      ],
+      "craque": {
+        "nome": "Djibril Sow",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Milutin Osmajic",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_4057": {
+    "ts": 1789003150.7985773,
+    "data": {
+      "gk": [
+        "#12 Matteo Pisseri",
+        "#91 Sebastiano Desplanches",
+        "#22 Lorenzo Palmisani"
+      ],
+      "def": [
+        "#25 Kevin Akpoguma",
+        "#71 Aleksa Terzic",
+        "#30 Ilario Monterisi",
+        "#20 Anthony Oyono",
+        "#5 Wisdom Amey",
+        "#2 Giorgio Cittadini",
+        "#90 Enzo Tchato",
+        "#79 Gabriele Bracaglia"
+      ],
+      "mid": [
+        "#27 Florian Grillitsch",
+        "#14 Giacomo Calo",
+        "#10 Romano Schmid",
+        "#4 Ben Lhassine Kone",
+        "#96 Francesco Gelli",
+        "#34 Anouar El Azzouzi",
+        "#73 Patrizio Masini",
+        "#70 Luis Hasa"
+      ],
+      "fwd": [
+        "#24 Alessio Zerbin",
+        "#89 Tomas Bobcek",
+        "#9 Antonio Raimondo",
+        "#11 Daniel Birligea",
+        "#40 Seydou Fini",
+        "#7 Farès Ghedjemis",
+        "#17 Giorgi Kvernadze"
+      ],
+      "craque": {
+        "nome": "Florian Grillitsch",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 4,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Antonio Raimondo",
+        "gols": 4
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_112": {
+    "ts": 1789003151.029418,
+    "data": {
+      "gk": [
+        "#35 Christos Mandas",
+        "#55 Alessio Furlanetto",
+        "#47 Davide Renzetti",
+        "#40 Edoardo Motta"
+      ],
+      "def": [
+        "#4 Patric",
+        "#77 Adam Marusic",
+        "#23 Alfonso Pedraza",
+        "#5 Danilho Doekhi",
+        "#3 Luca Pellegrini",
+        "#2 Diogo Leite",
+        "#17 Nuno Tavares",
+        "#37 Josip Sutalo"
+      ],
+      "mid": [
+        "#32 Danilo Cataldi",
+        "#10 Mattia Zaccagni",
+        "#29 Manuel Lazzari",
+        "#16 Davide Frattesi",
+        "#24 Kenneth Taylor",
+        "#6 Nicolò Rovella",
+        "#7 Fisayo Dele-Bashiru",
+        "#21 Reda Belahyane"
+      ],
+      "fwd": [
+        "Albert Gudmundsson",
+        "#9 Andrea Pinamonti",
+        "#11 Gustav Isaksen",
+        "#22 Matteo Cancellieri",
+        "#14 Tijjani Noslin",
+        "#63 Federico Serra"
+      ],
+      "craque": {
+        "nome": "Danilo Cataldi",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Davide Frattesi",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_103": {
+    "ts": 1789003151.226665,
+    "data": {
+      "gk": [
+        "#1 Pietro Terracciano",
+        "#16 Mike Maignan",
+        "#96 Lorenzo Torriani",
+        "#41 Léo-Paul Bouyer"
+      ],
+      "def": [
+        "#2 Pervis Estupiñán",
+        "#23 Fikayo Tomori",
+        "#46 Matteo Gabbia",
+        "#31 Strahinja Pavlovic",
+        "#42 Filippo Terracciano",
+        "#5 Koni De Winter",
+        "#34 Mario Gila",
+        "#33 Davide Bartesaghi"
+      ],
+      "mid": [
+        "#14 Luka Modric",
+        "#12 Adrien Rabiot",
+        "#8 Ruben Loftus-Cheek",
+        "#11 Christian Pulisic",
+        "#30 Ardon Jashari",
+        "#80 Yunus Musah",
+        "#70 Alphadjo Cissè",
+        "#28 Christian Comotto"
+      ],
+      "fwd": [
+        "#21 Samuel Chukwueze",
+        "#56 Alexis Saelemaekers",
+        "#9 Gonçalo Ramos",
+        "#20 Omari Hutchinson",
+        "#22 Diego Moreira",
+        "#73 Francesco Camarda"
+      ],
+      "craque": {
+        "nome": "Luka Modric",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Alphadjo Cissè",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_105": {
+    "ts": 1789003151.46871,
+    "data": {
+      "gk": [
+        "#31 Francesco Rossi",
+        "#57 Marco Sportiello",
+        "#29 Marco Carnesecchi",
+        "Thomas Pompei"
+      ],
+      "def": [
+        "#31 Thomas Kristensen",
+        "#23 Sead Kolasinac",
+        "#77 Davide Zappacosta",
+        "#16 Raoul Bellanova",
+        "#3 Odilon Kossounou",
+        "#47 Lorenzo Bernasconi",
+        "#42 Giorgio Scalvini",
+        "#4 Isak Hien"
+      ],
+      "mid": [
+        "#8 Mario Pasalic",
+        "Franck Kessié",
+        "#99 Eljif Elmas",
+        "#70 Gianluca Gaetano",
+        "#13 Éderson",
+        "#59 Nicola Zalewski",
+        "#10 Lazar Samardzic",
+        "#52 Alberto Manzoni"
+      ],
+      "fwd": [
+        "Jon Rowe",
+        "#9 Gianluca Scamacca",
+        "#90 Nikola Krstovic",
+        "#18 Giacomo Raspadori",
+        "#17 Charles De Ketelaere",
+        "#7 Kamaldeen Sulemana",
+        "#50 Tommaso De Nipoti"
+      ],
+      "craque": {
+        "nome": "Mario Pasalic",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Éderson",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_2925": {
+    "ts": 1789003152.1105945,
+    "data": {
+      "gk": [
+        "#23 Boris Radunovic",
+        "#1 Elia Caprile",
+        "#12 Alen Sherri"
+      ],
+      "def": [
+        "#26 Yerry Mina",
+        "Yukinari Sugawara",
+        "#24 Giuseppe Aurelio",
+        "#33 Adam Obert",
+        "#2 Zé Pedro",
+        "#22 Raphael Kofler",
+        "#15 Juan Rodríguez",
+        "#3 Riyad Idrissi"
+      ],
+      "mid": [
+        "#4 Alessandro Romano",
+        "#14 Alessandro Deiola",
+        "#21 Roberto Gagliardini",
+        "#6 Harry Winks",
+        "#8 Michel Adopo",
+        "#10 Jacopo Fazzini",
+        "#79 Yanis Massolin",
+        "#30 Demi Akarakiri"
+      ],
+      "fwd": [
+        "#18 M'Bala Nzola",
+        "#17 Mattia Felici",
+        "#70 Daniel Maldini",
+        "#9 Kevin Carlos",
+        "#20 Riccardo Ciervo",
+        "#39 Alieu Fadera",
+        "Alessandro Sugamele"
+      ],
+      "craque": {
+        "nome": "Alessandro Romano",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Alessandro Romano",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_113": {
+    "ts": 1789003152.3980691,
+    "data": {
+      "gk": [
+        "#30 Wladimiro Falcone",
+        "#1 Marco Bleve",
+        "#33 Plamen Penev",
+        "#12 Christian Lupo"
+      ],
+      "def": [
+        "#25 Antonino Gallo",
+        "#3 Corrie Ndaba",
+        "#5 Jamil Siebert",
+        "#4 Kialonda Gaspar",
+        "#17 Danilo Veiga",
+        "#18 Gaby Jean",
+        "#2 Ali Dembélé",
+        "#44 Tiago Gabriel"
+      ],
+      "mid": [
+        "#29 Lassana Coulibaly",
+        "#14 Youssef Maleh",
+        "#20 Ivan Ilic",
+        "#8 Sadik Fofana",
+        "#16 Omri Gandelman",
+        "#79 Oumar Ngom",
+        "#10 Medon Berisha",
+        "#28 Olaf Gorter"
+      ],
+      "fwd": [
+        "#77 Mohamed Kaba",
+        "#69 Willem Geubbels",
+        "#11 Konan N’Dri",
+        "#50 Santiago Pierotti",
+        "#9 Nikola Stulic",
+        "#99 Joel Monteiro",
+        "#7 Amar Ahmed"
+      ],
+      "craque": {
+        "nome": "Lassana Coulibaly",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Tiago Gabriel",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_4007": {
+    "ts": 1789003152.6823711,
+    "data": {
+      "gk": [
+        "#1 Noel Törnqvist",
+        "#43 Aljaz Strajnar",
+        "#50 Aleksandr Ballabio"
+      ],
+      "def": [
+        "#20 Demba Thiam",
+        "#19 Samuele Birindelli",
+        "#7 Ricardo Mangas",
+        "#6 Valentin Antov",
+        "#44 Andrea Carboni",
+        "#24 Adam Bakoune",
+        "#2 Saba Goglichidze",
+        "Jan Ziólkowski"
+      ],
+      "mid": [
+        "#32 Matteo Pessina",
+        "Idrissa Touré",
+        "#90 Michael Folorunsho",
+        "#28 Andrea Colpani",
+        "#21 Leonardo Colombo",
+        "#14 Ebenezer Akinsanmiro",
+        "#8 Manga Foe Ondoa",
+        "#80 Mathis Mout"
+      ],
+      "fwd": [
+        "#17 Keita Baldé",
+        "#26 Patrick Ciurria",
+        "#70 Kevin Martins",
+        "#47 Dany Mota",
+        "#10 Patrick Cutrone",
+        "#16 Cyril Ngonge",
+        "Exequiel Zeballos"
+      ],
+      "craque": {
+        "nome": "Matteo Pessina",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Gustavo Varela",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_114": {
+    "ts": 1789003153.299872,
+    "data": {
+      "gk": [
+        "#14 Nikita Contini",
+        "#1 Alex Meret",
+        "#32 Vanja Milinkovic-Savic",
+        "#12 Claudio Pugliese"
+      ],
+      "def": [
+        "#37 Leonardo Spinazzola",
+        "#22 Giovanni Di Lorenzo",
+        "#13 Amir Rrahmani",
+        "#17 Mathías Olivera",
+        "#4 Alessandro Buongiorno",
+        "#31 Sam Beukema",
+        "#5 Benoît Badiashile",
+        "#16 Rafa Marín"
+      ],
+      "mid": [
+        "#11 Kevin De Bruyne",
+        "#68 Stanislav Lobotka",
+        "#99 Frank Anguissa",
+        "#8 Scott McTominay",
+        "#6 Billy Gilmour",
+        "#26 Antonio Vergara"
+      ],
+      "fwd": [
+        "#21 Matteo Politano",
+        "#7 David Neres",
+        "#70 Noa Lang",
+        "#20 Lorenzo Lucca",
+        "#19 Rasmus Højlund",
+        "#27 Alisson Santos",
+        "#23 Giovane"
+      ],
+      "craque": {
+        "nome": "Kevin De Bruyne",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Rasmus Højlund",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_107": {
+    "ts": 1789003153.9002812,
+    "data": {
+      "gk": [
+        "#1 Lukasz Skorupski",
+        "#25 Massimo Pessina",
+        "#72 Ukko Happonen"
+      ],
+      "def": [
+        "#29 Lorenzo De Silvestri",
+        "#16 Nicolo Casale",
+        "#33 Juan Miranda",
+        "#14 Torbjørn Heggem",
+        "#2 Emil Holm",
+        "#20 Nadir Zortea",
+        "#3 Arthur Theate",
+        "#41 Martin Vitík"
+      ],
+      "mid": [
+        "#19 Lewis Ferguson",
+        "#6 Nikola Moro",
+        "#4 Tommaso Pobega",
+        "#17 Oussama El Azzouzi",
+        "#8 Mikel Amondarain",
+        "#18 Marco Libra"
+      ],
+      "fwd": [
+        "#10 Federico Bernardeschi",
+        "#9 Artem Dovbyk",
+        "#7 Riccardo Orsolini",
+        "#21 Jens Odgaard",
+        "#91 Roberto Piccoli",
+        "#28 Nicolò Cambiaghi",
+        "Jay Enem"
+      ],
+      "craque": {
+        "nome": "Lewis Ferguson",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Artem Dovbyk",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_3997": {
+    "ts": 1789003154.1237152,
+    "data": {
+      "gk": [
+        "#12 Giacomo Satalino",
+        "#49 Arijanet Muric",
+        "#80 Stefano Turati",
+        "#22 Lorenzo Nyarko"
+      ],
+      "def": [
+        "#15 Duje Caleta-Car",
+        "#21 Jay Idzes",
+        "#5 Fali Candé",
+        "#6 Sebastian Walukiewicz",
+        "#3 Josh Doig",
+        "#26 Cas Odenthal",
+        "#20 Ignace van der Brempt",
+        "#33 Rafael Obrador"
+      ],
+      "mid": [
+        "#18 Nemanja Matic",
+        "#42 Kristian Thorstvedt",
+        "#8 Andrea Ghion",
+        "#11 Daniel Boloca",
+        "#90 Ismaël Koné",
+        "#7 Cristian Volpato",
+        "#17 Vasilije Adzic",
+        "#55 Sulemana"
+      ],
+      "fwd": [
+        "#10 Domenico Berardi",
+        "#77 Nicholas Pierini",
+        "#45 Armand Laurienté",
+        "#9 Kieron Bowie",
+        "#94 Sebastiano Esposito",
+        "#19 Laurs Skjellerup",
+        "#25 Benjamín Domínguez"
+      ],
+      "craque": {
+        "nome": "Nemanja Matic",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Josh Doig",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_111": {
+    "ts": 1789003154.3599923,
+    "data": {
+      "gk": [
+        "#23 Carlo Pinsoglio",
+        "#25 Guglielmo Vicario",
+        "#1 Kamil Grabara",
+        "#40 Riccardo Radu"
+      ],
+      "def": [
+        "#32 Juan Cabal",
+        "#24 Daniele Rugani",
+        "#26 Jhon Lucumí",
+        "#6 Lloyd Kelly",
+        "#3 Bremer",
+        "#2 Zeki Çelik",
+        "#15 Pierre Kalulu",
+        "#20 Andrea Cambiaso"
+      ],
+      "mid": [
+        "#5 Manuel Locatelli",
+        "#22 Weston McKennie",
+        "#8 Teun Koopmeiners",
+        "#19 Khéphren Thuram",
+        "Pape Matar Sarr",
+        "#12 Douglas Luiz",
+        "Filippo Pagnucco",
+        "Augusto Owusu"
+      ],
+      "fwd": [
+        "#31 Nico González",
+        "#14 Arkadiusz Milik",
+        "#13 Jérémie Boga",
+        "#9 Randal Kolo Muani",
+        "#11 Edon Zhegrova",
+        "Nick Woltemade",
+        "#7 Francisco Conceição"
+      ],
+      "craque": {
+        "nome": "Manuel Locatelli",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Bremer",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_2572": {
+    "ts": 1789003155.0557764,
+    "data": {
+      "gk": [
+        "#97 Robert Sánchez",
+        "#22 Mauro Vigorito",
+        "#1 Jean Butez"
+      ],
+      "def": [
+        "#2 Marc-Oliver Kempf",
+        "#18 Edoardo Goldaniga",
+        "#3 Álex Valle",
+        "#99 Trevoh Chalobah",
+        "#13 Alberto Dossena",
+        "#27 Yan Couto",
+        "#16 Kaiki",
+        "#28 Ivan Smolcic"
+      ],
+      "mid": [
+        "#6 Luis Milla",
+        "#8 Maxence Caqueret",
+        "#14 Samuele Ricci",
+        "#7 Lucas Da Cunha",
+        "#5 Máximo Perrone",
+        "#20 Martin Baturina",
+        "#10 Nico Paz",
+        "#15 Adrian Lahdo"
+      ],
+      "fwd": [
+        "#90 Moise Kean",
+        "#9 Anastasios Douvikas",
+        "#42 Jayden Addai",
+        "#11 Assane Diao",
+        "#17 Jesús Rodriguez"
+      ],
+      "craque": {
+        "nome": "Luis Milla",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Martin Baturina",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_115": {
+    "ts": 1789003155.3011048,
+    "data": {
+      "gk": [
+        "Simone Ghidotti",
+        "#40 Edoardo Corvi",
+        "#30 Giovanni Daffara",
+        "Gabriele Casentini"
+      ],
+      "def": [
+        "Diego Carlos",
+        "#14 Emanuele Valeri",
+        "#15 Enrico Del Prato",
+        "#5 Lautaro Valenti",
+        "#3 Abdoulaye Ndiaye",
+        "#29 Franco Carboni",
+        "#37 Mariano Troilo",
+        "#27 Sascha Britschgi"
+      ],
+      "mid": [
+        "Vincent Sierro",
+        "#10 Adrián Bernabé",
+        "#41 Hans Nicolussi Caviglia",
+        "#16 Mandela Keita",
+        "#80 Giovanni Fabbian",
+        "#32 Christian Ordoñez",
+        "#8 Benjamin Cremaschi",
+        "#47 Abdou-Salam Konate"
+      ],
+      "fwd": [
+        "#7 Ousmane Diallo",
+        "#11 Pontus Almqvist",
+        "#19 El Bilal Toure",
+        "#9 José Romero",
+        "#20 Matija Frigan",
+        "#23 Nesta Elphege",
+        "#25 Thomás De Martis"
+      ],
+      "craque": {
+        "nome": "Sierro",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Simone Lontani",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_239": {
+    "ts": 1789003155.938875,
+    "data": {
+      "gk": [
+        "#20 Lucas Perri",
+        "#81 Franco Israel",
+        "#76 Lapo Siviero",
+        "#26 Diego Mascardi"
+      ],
+      "def": [
+        "Ricardo Rodríguez",
+        "#3 Cristiano Biraghi",
+        "#5 Eray Cömert",
+        "#44 Adrian Ismajli",
+        "Nathan Patterson",
+        "#23 Saúl Coco",
+        "Rafik Belghali",
+        "#15 Pietro Comuzzo"
+      ],
+      "mid": [
+        "#10 Nikola Vlasic",
+        "Rolando Mandragora",
+        "Daniel Bragança",
+        "#11 Gaetano Oristanio",
+        "#28 Kian Fitz-Jim",
+        "#6 Emirhan Ilkhan",
+        "#22 Cesare Casadei",
+        "#66 Gvidas Gineitis"
+      ],
+      "fwd": [
+        "#18 Giovanni Simeone",
+        "#91 Duván Zapata",
+        "#19 Ché Adams",
+        "#17 Sandro Kulenovic",
+        "#9 Pietro Pellegri",
+        "#7 Zakaria Aboukhlal",
+        "#79 Andrea Luongo"
+      ],
+      "craque": {
+        "nome": "Nikola Vlasic",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Ché Adams",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_104": {
+    "ts": 1789003156.5407338,
+    "data": {
+      "gk": [
+        "#95 Pierluigi Gollini",
+        "#32 Devis Vásquez",
+        "#99 Mile Svilar",
+        "#70 Giorgio De Marzi"
+      ],
+      "def": [
+        "#20 Nahuel Molina",
+        "#23 Gianluca Mancini",
+        "#22 Mario Hermoso",
+        "#5 Evan Ndicka",
+        "#26 Leonardo Balerdi",
+        "#34 Anass Salah-Eddine",
+        "#2 Devyne Rensch",
+        "#43 Wesley"
+      ],
+      "mid": [
+        "#15 Marten de Roon",
+        "#4 Bryan Cristante",
+        "#7 Lorenzo Pellegrini",
+        "#17 Manu Koné",
+        "#61 Niccolò Pisilli",
+        "#86 Rodrigo Mora"
+      ],
+      "fwd": [
+        "#21 Paulo Dybala",
+        "#9 Santiago Castro",
+        "#14 Donyell Malen",
+        "#18 Matìas Soulè",
+        "#68 Antonio Arena"
+      ],
+      "craque": {
+        "nome": "Marten de Roon",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 5,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Donyell Malen",
+        "gols": 5
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_110": {
+    "ts": 1789003157.153173,
+    "data": {
+      "gk": [
+        "#12 Raffaele Di Gennaro",
+        "#49 Ivan Provedel",
+        "#1 Josep Martínez"
+      ],
+      "def": [
+        "#6 John Stones",
+        "#32 Federico Dimarco",
+        "#25 Manuel Akanji",
+        "#28 Benjamin Pavard",
+        "#95 Alessandro Bastoni",
+        "#31 Yann Bisseck",
+        "#99 Djed Spence",
+        "#30 Carlos Augusto"
+      ],
+      "mid": [
+        "#22 Henrikh Mkhitaryan",
+        "#20 Hakan Çalhanoglu",
+        "#7 Piotr Zielinski",
+        "#21 Curtis Jones",
+        "#23 Nicolò Barella",
+        "#5 Aleksandar Stankovic",
+        "#17 Andy Diouf",
+        "#8 Petar Sucic"
+      ],
+      "fwd": [
+        "#9 Marcus Thuram",
+        "#10 Lautaro Martínez",
+        "#11 Luis Henrique",
+        "#14 Ange-Yoan Bonny",
+        "#94 Pio Esposito",
+        "#48 Mattia Mosconi",
+        "#52 Jamal Iddrissou"
+      ],
+      "craque": {
+        "nome": "Henrikh Mkhitaryan",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Hakan Çalhanoglu",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ita.1_118": {
+    "ts": 1789003157.3970745,
+    "data": {
+      "gk": [
+        "#93 Daniele Padelli",
+        "#41 Bartosz Mrozek",
+        "#40 Maduka Okoye"
+      ],
+      "def": [
+        "#27 Christian Kabasele",
+        "#11 Hassane Kamara",
+        "#23 Mërgim Vojvoda",
+        "#77 Enzo Ebosse",
+        "#28 Oumar Solet",
+        "#59 Alessandro Zanoli",
+        "#13 Nicolò Bertola",
+        "#14 James Abankwah"
+      ],
+      "mid": [
+        "#4 Sandi Lovric",
+        "#8 Jesper Karlström",
+        "#10 Nicolò Zaniolo",
+        "#30 Giorgi Chakvetadze",
+        "#32 Jurgen Ekkelenkamp",
+        "#24 Jakub Piotrowski",
+        "#6 Oier Zarraga",
+        "#38 Lennon Miller"
+      ],
+      "fwd": [
+        "#9 Keinan Davis",
+        "Lazar Jovanovic",
+        "#15 Bayo Youssouf",
+        "#7 Idrissa Gueye",
+        "#45 Giulio Vinciati"
+      ],
+      "craque": {
+        "nome": "Sandi Lovric",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Hassane Kamara",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_598": {
+    "ts": 1789006759.8549492,
+    "data": {
+      "gk": [
+        "#1 Frederik Ronnow",
+        "#25 Carl Klaus",
+        "#31 Matheo Raab",
+        "#48 Fritz Gagzow"
+      ],
+      "def": [
+        "#28 Christopher Trimmel",
+        "#5 Marvin Friedrich",
+        "#18 Josip Juranovic",
+        "#2 Felix Uduokhai",
+        "#17 Derrick Köhn",
+        "#34 Stanley N'Soki",
+        "#4 Zeno Van Den Bosch",
+        "#15 Tom Rothe"
+      ],
+      "mid": [
+        "#8 Rani Khedira",
+        "#19 Janik Haberer",
+        "#24 Robert Skov",
+        "#21 Tim Skarke",
+        "#20 Michel Aebischer",
+        "#11 Jeong Woo-Yeong",
+        "#13 András Schäfer",
+        "Kastriot Imeri"
+      ],
+      "fwd": [
+        "#7 Oliver Burke",
+        "#29 Emmanuel Latte Lath",
+        "#27 Marin Ljubicic",
+        "#9 Livan Burcu",
+        "#49 Linus Güther",
+        "#32 Mekhi Anthony Gray"
+      ],
+      "craque": {
+        "nome": "Rani Khedira",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Leopold Querfeld",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_133": {
+    "ts": 1789006760.359487,
+    "data": {
+      "gk": [
+        "#22 Kevin Müller",
+        "#1 Loris Karius",
+        "#36 Johannes Siebeking"
+      ],
+      "def": [
+        "#5 Timo Becker",
+        "#8 Robin Gosens",
+        "#25 Nikola Katic",
+        "#39 Maximilian Wöber",
+        "#4 Hasan Kurucay",
+        "#17 Adrian Gantenbein",
+        "#33 Vitalie Becker",
+        "#43 Mert Can Ayhan"
+      ],
+      "mid": [
+        "#14 Janik Bachmann",
+        "#27 Finn Porath",
+        "#6 Ron Schallenberg",
+        "#21 Dejan Ljubicic",
+        "#29 Junior Dina Ebimbe",
+        "#24 Adil Aouchiche",
+        "#13 Satoshi Tanaka",
+        "#23 Soufian El-Faouzi"
+      ],
+      "fwd": [
+        "#9 Moussa Sylla",
+        "#10 Edin Dzeko",
+        "#19 Kenan Karaman",
+        "Hwang Hee-Chan",
+        "#11 Bryan Lasme",
+        "#20 Junior Adamu",
+        "#15 Emil Höjlund"
+      ],
+      "craque": {
+        "nome": "Janik Bachmann",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Moussa Sylla",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_124": {
+    "ts": 1789003158.3480008,
+    "data": {
+      "gk": [
+        "#30 Patrick Drewes",
+        "#33 Alexander Meyer",
+        "#1 Gregor Kobel",
+        "#31 Silas Ostrzinski"
+      ],
+      "def": [
+        "#5 Ramy Bensebaini",
+        "#3 Waldemar Anton",
+        "#26 Julian Ryerson",
+        "#4 Nico Schlotterbeck",
+        "#24 Daniel Svensson",
+        "#22 Kouakou Gadou",
+        "#39 Filippo Mané",
+        "#36 Kauã Prates"
+      ],
+      "mid": [
+        "#23 Emre Can",
+        "#20 Marcel Sabitzer",
+        "#25 Joey Veerman",
+        "#8 Felix Nmecha",
+        "#17 Carney Chukwuemeka",
+        "#45 Giannis Konstantelias",
+        "#7 Jobe Bellingham",
+        "Ethan Nwaneri"
+      ],
+      "fwd": [
+        "#9 Serhou Guirassy",
+        "#14 Maximilian Beier",
+        "#21 Fábio Silva",
+        "#41 Mathis Albert",
+        "#40 Samuele Inácio"
+      ],
+      "craque": {
+        "nome": "Emre Can",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Serhou Guirassy",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_3307": {
+    "ts": 1789003158.5866754,
+    "data": {
+      "gk": [
+        "#1 Markus Schubert",
+        "#15 Nahuel Nicolas Noll",
+        "#31 Florian Pruhs"
+      ],
+      "def": [
+        "#20 Felix Götze",
+        "#33 Marcel Hoffmeier",
+        "#17 Laurin Curda",
+        "#22 Mattes Hansen",
+        "#21 Jano Horst",
+        "#4 Nyamekye Awortwie-Grant",
+        "#25 Tjark Scheller",
+        "#46 Tristan Zobel"
+      ],
+      "mid": [
+        "#6 Tom Baack",
+        "#23 Raphael Obermair",
+        "#26 Sebastian Klaas",
+        "#7 Oliver Batista Meier",
+        "#5 Santiago Castaneda",
+        "#28 Laurin Ulrich",
+        "#44 Timur Gayret",
+        "#3 Jonah Sticker"
+      ],
+      "fwd": [
+        "#11 Sven Michel",
+        "#27 Steffen Tigges",
+        "#9 Rayan Philippe",
+        "#18 Marvin Pieringer",
+        "#40 Gabriel Vidovic",
+        "#30 Stefano Marino",
+        "#38 Deniz Zeitler"
+      ],
+      "craque": {
+        "nome": "Tom Baack",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Sven Michel",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_3841": {
+    "ts": 1789003158.8353553,
+    "data": {
+      "gk": [
+        "#1 Finn Dahmen",
+        "#22 Nediljko Labrovic",
+        "#48 Tom Wisbereit"
+      ],
+      "def": [
+        "#6 Jeffrey Gouweleeuw",
+        "#27 Marius Wolf",
+        "#5 Chrislain Matsima",
+        "#7 Seol Young-Woo",
+        "#2 Calvin Brackelmann",
+        "Juma Bah",
+        "#40 Noahkai Banks",
+        "#16 Hennes Behrens"
+      ],
+      "mid": [
+        "#20 Alexis Claude-Maurice",
+        "#17 Kristijan Jakic",
+        "#14 Yannik Keitel",
+        "#4 Han-Noah Massengo",
+        "#19 Robin Fellhauer",
+        "#32 Fabian Rieder",
+        "#18 Tim Breithaupt",
+        "#21 Arijon Ibrahimovic"
+      ],
+      "fwd": [
+        "#11 Michael Gregoritsch",
+        "#15 Steve Mounié",
+        "#9 Rodrigo Ribeiro",
+        "#23 Faik Sakar",
+        "#39 Uchenna Ogundu"
+      ],
+      "craque": {
+        "nome": "Alexis Claude-Maurice",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Alexis Claude-Maurice",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_131": {
+    "ts": 1789003159.1010485,
+    "data": {
+      "gk": [
+        "#28 Janis Blaswich",
+        "#36 Niklas Lomb",
+        "#1 Mark Flekken"
+      ],
+      "def": [
+        "#17 Lucas Vázquez",
+        "#2 Facundo Medina",
+        "#12 Edmond Tapsoba",
+        "#3 Miguel Gutiérrez",
+        "#4 Jarell Quansah",
+        "#5 Loïc Badé",
+        "#15 Tim Oermann",
+        "Guela Doué"
+      ],
+      "mid": [
+        "#7 Jonas Hofmann",
+        "#8 Robert Andrich",
+        "#24 Aleix García",
+        "#10 Malik Tillman",
+        "#30 Ibrahim Maza",
+        "#6 Ezequiel Fernández",
+        "#18 Kennet Eichhorn",
+        "#42 Montrell Culbreath"
+      ],
+      "fwd": [
+        "#14 Patrik Schick",
+        "#11 Martin Terrier",
+        "#23 Nathan Tella",
+        "#19 Moussa Diaby",
+        "#22 Victor Boniface",
+        "#17 Eliesse Ben Seghir",
+        "#9 Afonso Moreira"
+      ],
+      "craque": {
+        "nome": "Jonas Hofmann",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Patrik Schick",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_2950": {
+    "ts": 1789003159.3309166,
+    "data": {
+      "gk": [
+        "#1 Alexander Schwolow",
+        "#27 Robin Zentner",
+        "#40 Maximilian Kinzig"
+      ],
+      "def": [
+        "#16 Stefan Bell",
+        "#21 Danny da Costa",
+        "#31 Dominik Kohr",
+        "#30 Silvan Widmer",
+        "#4 Stefan Posch",
+        "#2 Phillipp Mwene",
+        "#19 Anthony Caci",
+        "#48 Kacper Potulski"
+      ],
+      "mid": [
+        "#7 Lee Jae-Sung",
+        "#10 Nadiem Amiri",
+        "#15 Lennard Maloney",
+        "#13 Hong Hyun-Seok",
+        "#5 Eric Martel",
+        "#8 Paul Nebel",
+        "#24 Sota Kawasaki",
+        "#20 Otto Ruoppi"
+      ],
+      "fwd": [
+        "#23 Sheraldo Becker",
+        "#9 Phillip Tietz",
+        "#26 Silas Katompa-Mvumpa",
+        "#11 Ransford-Yeboah Königsdörffer",
+        "#17 Benedict Hollerbach",
+        "#39 Alynho Haïdara"
+      ],
+      "craque": {
+        "nome": "Lee Jae-Sung",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Phillip Tietz",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_125": {
+    "ts": 1789003159.9749079,
+    "data": {
+      "gk": [
+        "#33 Jens Grahl",
+        "#1 Noah Atubolu",
+        "#40 Kauã Santos",
+        "#39 Amil Siljevic"
+      ],
+      "def": [
+        "#22 Timothy Chandler",
+        "#4 Robin Koch",
+        "Lilian Brassier",
+        "#34 Nnamdi Collins",
+        "#26 Keita Kosugi",
+        "#2 Elias Baum",
+        "#5 Otávio",
+        "#37 Jeremiaha Maluze"
+      ],
+      "mid": [
+        "#27 Mario Götze",
+        "#20 Ritsu Doan",
+        "#25 Raphael Onyedika",
+        "#8 Farès Chaïbi",
+        "#15 Noël Aséko",
+        "#42 Can Uzun",
+        "#6 Oscar Højlund",
+        "#31 Love Arrhov"
+      ],
+      "fwd": [
+        "#44 Jessic Ngankam",
+        "#9 Jonathan Burkardt",
+        "#7 Ansgar Knauff",
+        "#19 Jean-Mattéo Bahoya",
+        "#11 Younes Ebnoutalib",
+        "#29 Ayoube Amaimouni",
+        "#35 Malik Pimpong"
+      ],
+      "craque": {
+        "nome": "Mario Götze",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Younes Ebnoutalib",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_126": {
+    "ts": 1789003160.2383766,
+    "data": {
+      "gk": [
+        "#21 Florian Müller",
+        "#24 Jannik Huth",
+        "#1 Mio Backhaus"
+      ],
+      "def": [
+        "#5 Anthony Jung",
+        "#28 Matthias Ginter",
+        "#17 Lukas Kübler",
+        "#30 Christian Günter",
+        "#3 Philipp Lienhart",
+        "#29 Philipp Treu",
+        "#37 Max Rosenfelder",
+        "#33 Jordy Makengo"
+      ],
+      "mid": [
+        "#32 Vincenzo Grifo",
+        "#8 Maximilian Eggestein",
+        "#19 Niklas Beste",
+        "#23 Florent Muslija",
+        "#6 Patrick Osterhage",
+        "#14 Yuito Suzuki",
+        "#16 Yannick Engelhardt",
+        "#20 Rihito Yamamoto"
+      ],
+      "fwd": [
+        "#9 Lucas Höler",
+        "#31 Igor Matanovic",
+        "#42 Keisuke Goto",
+        "#7 Derry Scherhant",
+        "#22 Cyriaque Irié",
+        "#40 Mateo Zelic"
+      ],
+      "craque": {
+        "nome": "Vincenzo Grifo",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Yuito Suzuki",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_268": {
+    "ts": 1789003160.451518,
+    "data": {
+      "gk": [
+        "#21 Tobias Sippel",
+        "#33 Daniel Batz",
+        "#1 Moritz Nicolas",
+        "#23 Jan Olschowsky"
+      ],
+      "def": [
+        "#4 Kevin Diks",
+        "#6 Kou Itakura",
+        "#14 Daiki Hashioka",
+        "#29 Joe Scally",
+        "#22 Yukhym Konoplia",
+        "#2 Fabio Chiarodia",
+        "#20 David Herold",
+        "#26 Lukas Ullrich"
+      ],
+      "mid": [
+        "#7 Kevin Stöger",
+        "#9 Franck Honorat",
+        "#10 Florian Neuhaus",
+        "#25 Robin Hack",
+        "#16 Philipp Sander",
+        "#17 Jens Castrop",
+        "#38 Hugo Bolin",
+        "#47 Zento Uno"
+      ],
+      "fwd": [
+        "#11 Tim Kleindienst",
+        "#3 Isac Lidberg",
+        "Nicolas Kühn",
+        "#18 Shuto Machino",
+        "#31 Tomas Cvancara",
+        "#39 Iaia Manco Danfa"
+      ],
+      "craque": {
+        "nome": "Kevin Stöger",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Hugo Bolin",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_7911": {
+    "ts": 1789003161.411829,
+    "data": {
+      "gk": [
+        "#1 Oliver Baumann",
+        "#37 Luca Philipp",
+        "#36 Lúkas Petersson"
+      ],
+      "def": [
+        "#34 Vladimír Coufal",
+        "#13 Bernardo",
+        "#28 Koki Machida",
+        "#5 Ozan Kabak",
+        "#15 Valentin Gendrey",
+        "#21 Albian Hajdari",
+        "#35 Arthur Chaves",
+        "#22 Alexander Prass"
+      ],
+      "mid": [
+        "#18 Wouter Burger",
+        "#8 Patrick Wimmer",
+        "#20 Bambasé Conté",
+        "#7 Leon Avdullahu",
+        "#16 Luis Engelns",
+        "#17 Nathan De Cat",
+        "#32 Cajetan Lenz"
+      ],
+      "fwd": [
+        "#27 Andrej Kramaric",
+        "#10 Adam Hlozek",
+        "#19 Tim Lemperle",
+        "#11 Fisnik Asllani",
+        "#14 Adam Daghim",
+        "#9 Max Moerstedt"
+      ],
+      "craque": {
+        "nome": "Wouter Burger",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Ozan Kabak",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_134": {
+    "ts": 1789003161.868258,
+    "data": {
+      "gk": [
+        "#1 Fabian Bredlow",
+        "#33 Marius Funk",
+        "#46 Stefan Drljaca",
+        "#41 Dennis Seimen"
+      ],
+      "def": [
+        "#7 Maximilian Mittelstädt",
+        "#23 Dan-Axel Zagadou",
+        "#24 Jeff Chabot",
+        "#4 Josha Vagnoman",
+        "#20 Leonidas Stergiou",
+        "#3 Ramon Hendriks",
+        "#22 Lorenz Assignon",
+        "#2 Ameen Al Dakhil"
+      ],
+      "mid": [
+        "#21 Grischa Prömel",
+        "#16 Atakan Karazor",
+        "#28 Nikolas Nartey",
+        "#10 Chris Führich",
+        "#6 Angelo Stiller",
+        "#11 Bilal El Khannouss",
+        "#43 Jarzinho Malanga",
+        "#39 Ertugrul Yigit"
+      ],
+      "fwd": [
+        "#9 Ermedin Demirovic",
+        "#26 Deniz Undav",
+        "#18 Jamie Leweling",
+        "#8 Tiago Tomás",
+        "#17 Dzenan Pejcinovic",
+        "#44 Leo Sauer",
+        "#31 Justin Diehl"
+      ],
+      "craque": {
+        "nome": "Grischa Prömel",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Josha Vagnoman",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_122": {
+    "ts": 1789003162.1064398,
+    "data": {
+      "gk": [
+        "#20 Ron-Robert Zieler",
+        "#1 Marvin Schwäbe",
+        "#44 Matthias Köbbing",
+        "#21 Martin James"
+      ],
+      "def": [
+        "#24 Luka Lochoshvili",
+        "Borna Sosa",
+        "#4 Timo Hübers",
+        "#14 Gideon Mensah",
+        "#28 Sebastian Sebulonsen",
+        "#33 Rav van den Berg",
+        "#2 Joel Schmied",
+        "#22 Jahmai Simpson-Pusey"
+      ],
+      "mid": [
+        "#6 Ellyes Skhiri",
+        "#37 Linton Maina",
+        "#17 Alessio Castro-Montes",
+        "#5 Tom Krauss",
+        "#8 Ísak Jóhannesson",
+        "#29 Jan Thielmann",
+        "#10 Said El Mala",
+        "#23 Paul Okon-Engstler"
+      ],
+      "fwd": [
+        "#7 Luca Waldschmidt",
+        "#9 Ragnar Ache",
+        "#27 Thijs Dallinga",
+        "#30 Marius Bulter",
+        "Imad Rondic",
+        "Mikey Moore",
+        "#11 Reigan Heskey"
+      ],
+      "craque": {
+        "nome": "Ellyes Skhiri",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Thijs Dallinga",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_137": {
+    "ts": 1789003162.3143137,
+    "data": {
+      "gk": [
+        "#25 Markus Kolke",
+        "#30 Alexander Schlager",
+        "#1 Karl Hein",
+        "#37 Stefan Smarkalev"
+      ],
+      "def": [
+        "#8 Mitchell Weiser",
+        "#4 Niklas Stark",
+        "#32 Marco Friedl",
+        "#5 Amos Pieper",
+        "#27 Felix Agu",
+        "#2 Olivier Deman",
+        "#3 Oskar Wójcik",
+        "#22 Julian Malatini"
+      ],
+      "mid": [
+        "#6 Jens Stage",
+        "#15 Ludovit Reis",
+        "#14 Senne Lynen",
+        "Youri Regeer",
+        "#28 Skelly Alvero",
+        "#20 Chuki",
+        "#23 Dariusz Stalmach",
+        "#34 Darwin Kaan Soylu"
+      ],
+      "fwd": [
+        "#10 Niclas Füllkrug",
+        "#21 Dawid Kownacki",
+        "#26 Cedric Itten",
+        "#17 Marco Grüll",
+        "#18 Eren Dinkci",
+        "#9 Keke Topp",
+        "#11 Justin Njinmah"
+      ],
+      "craque": {
+        "nome": "Jens Stage",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Dariusz Stalmach",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_11420": {
+    "ts": 1789003162.916935,
+    "data": {
+      "gk": [
+        "#1 Ørjan Nyland",
+        "#25 Leopold Zingerle",
+        "#26 Maarten Vandevoordt"
+      ],
+      "def": [
+        "#4 Willi Orbán",
+        "#16 Lukas Klostermann",
+        "#39 Benjamin Henrichs",
+        "#22 David Raum",
+        "#17 Ridle Baku",
+        "#3 Maxime Estève",
+        "#23 Castello Lukeba",
+        "#35 Max Finkgrafe"
+      ],
+      "mid": [
+        "#14 Christoph Baumgartner",
+        "#13 Nicolas Seiwald",
+        "#20 Rocco Reitz",
+        "#7 Antonio Nusa",
+        "#21 Neil El Aynaoui",
+        "#6 Ezechiel Banzuzi",
+        "#8 Assan Ouédraogo",
+        "#30 Andrija Maksimovic"
+      ],
+      "fwd": [
+        "#28 Christopher Nkunku",
+        "#11 Johan Bakayoko",
+        "#40 Rômulo",
+        "#10 Brajan Gruda",
+        "#9 Marc Guiu",
+        "#27 Tidiam Gomis",
+        "#18 Sani Suleiman"
+      ],
+      "craque": {
+        "nome": "Christoph Baumgartner",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Ridle Baku",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_127": {
+    "ts": 1789003163.1613054,
+    "data": {
+      "gk": [
+        "#1 Daniel Heuer Fernandes",
+        "#12 Sander Tangvik",
+        "#41 Fernando Dickes"
+      ],
+      "def": [
+        "#28 Miro Muheim",
+        "#23 Jordan Torunarigha",
+        "#33 Sebastiaan Bornauw",
+        "#44 Mario Vuskovic",
+        "#17 Warmed Omari",
+        "David Møller Wolfe",
+        "Zakaria El Ouahdi",
+        "#39 Joel Agyekum"
+      ],
+      "mid": [
+        "Fabio Vieira",
+        "#18 Bakery Jatta",
+        "#6 Albert Sambi Lokonga",
+        "#24 Nicolás Capaldo",
+        "#10 Immanuel Pherai",
+        "#11 Albert Grønbaek",
+        "#21 Nicolai Remberg",
+        "#4 Bilal Nadir"
+      ],
+      "fwd": [
+        "#15 Yussuf Poulsen",
+        "#27 Patson Daka",
+        "#9 Terem Moffi",
+        "#19 Otto Stange",
+        "#38 Alexander Røssing-Lelesiit",
+        "#46 Kelvin Ojo"
+      ],
+      "craque": {
+        "nome": "Vieira",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 6,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Yussuf Poulsen",
+        "gols": 6
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_10388": {
+    "ts": 1789003163.3982008,
+    "data": {
+      "gk": [
+        "#1 Frank Lehmann",
+        "#28 Tim Boss",
+        "#20 Nicolas Kristof",
+        "#12 Elias Etringer"
+      ],
+      "def": [
+        "#30 Jan Gyamerah",
+        "#31 Maximilian Rohr",
+        "#3 Florian Le Joncour",
+        "#2 Nicholas Mickelson",
+        "#21 Lasse Günther",
+        "#26 Luca Sirch",
+        "#43 Felix Keidel",
+        "#19 Lukas Finn Pinckert"
+      ],
+      "mid": [
+        "#24 Luca Schnellbacher",
+        "#6 Amara Conde",
+        "#8 Lukasz Poreba",
+        "#7 Maurice Krattenmacher",
+        "#10 Noah Darvich",
+        "#40 Francis-Ikechukwu Onyeka",
+        "#17 Frederik Schmahl"
+      ],
+      "fwd": [
+        "#16 Luca Pfeiffer",
+        "#11 Jason Ceka",
+        "#9 Noel Futkeu",
+        "#25 Lukas Petkov",
+        "#29 Tom Zimmerschied",
+        "#39 Cole Campbell",
+        "#42 David Mokwa"
+      ],
+      "craque": {
+        "nome": "Luca Schnellbacher",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Maurice Krattenmacher",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "ger.1_132": {
+    "ts": 1789003164.0462236,
+    "data": {
+      "gk": [
+        "#1 Manuel Neuer",
+        "#26 Sven Ulreich",
+        "#40 Jonas Urbig"
+      ],
+      "def": [
+        "#21 Hiroki Ito",
+        "#11 Nathaniel Brown",
+        "#3 Kim Min-Jae",
+        "#4 Jonathan Tah",
+        "#2 Dayot Upamecano",
+        "#19 Alphonso Davies",
+        "#44 Josip Stanisic"
+      ],
+      "mid": [
+        "#27 Konrad Laimer",
+        "#6 Joshua Kimmich",
+        "#17 Michael Olise",
+        "#10 Jamal Musiala",
+        "#34 Ismael Saibari",
+        "#8 Tom Bischof",
+        "#45 Aleksandar Pavlovic",
+        "#42 Lennart Karl"
+      ],
+      "fwd": [
+        "#9 Harry Kane",
+        "#7 Serge Gnabry",
+        "#14 Luis Díaz"
+      ],
+      "craque": {
+        "nome": "Konrad Laimer",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Dayot Upamecano",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_169": {
+    "ts": 1789006765.4417112,
+    "data": {
+      "gk": [
+        "#30 Brice Samba",
+        "#16 Nicolas Lemaitre",
+        "#60 Kilian Belazzoug"
+      ],
+      "def": [
+        "#14 Bryan Reynolds",
+        "#24 Anthony Rouault",
+        "#36 Alidu Seidu",
+        "#4 Charlie Cresswell",
+        "#26 Quentin Merlin",
+        "#18 Mahamadou Nagida",
+        "#48 Abdelhamid Aït Boudlal",
+        "#5 Gonçalo Oliveira"
+      ],
+      "mid": [
+        "#28 Adrien Thomasson",
+        "#95 Przemyslaw Frankowski",
+        "#21 Valentin Rongier",
+        "#17 Sebastian Szymanski",
+        "#45 Mahdi Camara",
+        "#6 Djaoui Cissé",
+        "Ayanda Sishuba"
+      ],
+      "fwd": [
+        "#10 Ludovic Blas",
+        "#70 Arnaud Nordin",
+        "#11 Mousa Al-Tamari",
+        "#22 Boulaye Dia",
+        "#90 Issa Soumaré",
+        "#9 Esteban Lepaul",
+        "#12 Eliezer Mayenda"
+      ],
+      "craque": {
+        "nome": "Adrien Thomasson",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Esteban Lepaul",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_176": {
+    "ts": 1789006765.8911884,
+    "data": {
+      "gk": [
+        "#12 Jeffrey de Lange",
+        "#92 Théo Vermot",
+        "#40 Jelle Van Neck"
+      ],
+      "def": [
+        "#33 Emerson",
+        "#25 Ulisses Garcia",
+        "#13 Derek Cornelius",
+        "#21 Nayef Aguerd",
+        "#4 CJ Egan-Riley",
+        "#18 Bamo Meïté",
+        "#74 Kelyann Bezahaf"
+      ],
+      "mid": [
+        "#19 Geoffrey Kondogbia",
+        "#23 Pierre-Emile Højbjerg",
+        "#77 Amine Harit",
+        "#7 Angel Gomes",
+        "#8 Himad Abdelli",
+        "#6 Tochukwu Nnadi",
+        "#42 Nouhoum Kamissoko"
+      ],
+      "fwd": [
+        "#11 Neal Maupay",
+        "#9 Amine Gouiri",
+        "#22 Timothy Weah",
+        "#29 Faris Moumbagna",
+        "#14 Igor Paixão",
+        "#48 Keyliane Abdallah",
+        "#43 Tadjidine Mmadi"
+      ],
+      "craque": {
+        "nome": "Geoffrey Kondogbia",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 4,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Amine Gouiri",
+        "gols": 4
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_180": {
+    "ts": 1789003165.86665,
+    "data": {
+      "gk": [
+        "#1 Filip Jørgensen",
+        "#12 Milosz Piekutowski",
+        "#60 Gabriel Kerckaert"
+      ],
+      "def": [
+        "#31 Karim Coulibaly",
+        "#6 Ismael Doukoure",
+        "#15 Mateo Del Blanco",
+        "#24 Lucas Høgsberg",
+        "#4 Jeyland Mitchell",
+        "#16 Genesis Antwi",
+        "#36 Oso",
+        "Hermann Diandaga"
+      ],
+      "mid": [
+        "#13 Giovanni Reyna",
+        "#11 Sebastian Nanasi",
+        "#14 Dário Essugo",
+        "#26 Omari Kellyman",
+        "#8 Maximillian Oyedele",
+        "#21 Pape Diop",
+        "#23 Diogo Sousa",
+        "#29 Samir El Mourabet"
+      ],
+      "fwd": [
+        "#14 Sékou Mara",
+        "#20 Martial Godo",
+        "#27 Samuel Amo-Ameyaw",
+        "#9 Joaquín Panichelli",
+        "Deivid Washington",
+        "#40 Conrad Harder",
+        "#34 Yaya Diémé"
+      ],
+      "craque": {
+        "nome": "Giovanni Reyna",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Samuel Amo-Ameyaw",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_174": {
+    "ts": 1789003166.5082738,
+    "data": {
+      "gk": [
+        "#1 Lukas Hradecky",
+        "#16 Philipp Köhn",
+        "#50 Yann Lienard",
+        "#40 Jules Stawiecki"
+      ],
+      "def": [
+        "#3 Eric Dier",
+        "#4 Jordan Teze",
+        "#22 Mohammed Salisu",
+        "#2 Vanderson",
+        "#20 Názinho",
+        "#13 Christian Mawissa",
+        "#72 Sadibou Sané"
+      ],
+      "mid": [
+        "#15 Lamine Camara",
+        "#18 Takumi Minamino",
+        "#10 Aleksandr Golovin",
+        "#28 Mamadou Coulibaly",
+        "#6 Denis Zakaria",
+        "#37 Edan Diop",
+        "#17 Stanis Idumbo",
+        "#44 Samuel Nibombé"
+      ],
+      "fwd": [
+        "#9 Folarin Balogun",
+        "#31 Ansu Fati",
+        "#42 Oumar Konaté",
+        "#14 Mika Biereth",
+        "#39 Matthis Abline",
+        "#29 Paris Brunner",
+        "#7 Mathys Detourbet"
+      ],
+      "craque": {
+        "nome": "Lamine Camara",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Paris Brunner",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_172": {
+    "ts": 1789003167.0548244,
+    "data": {
+      "gk": [
+        "#1 Paul Nardi",
+        "#23 Mamadou Diop",
+        "#37 Louis Mezerette"
+      ],
+      "def": [
+        "#43 Mohamed Coulibaly",
+        "#4 Francisco Sierralta",
+        "Axel Tuanzebe",
+        "#93 Sekou Fofana",
+        "#20 Sinaly Diomande",
+        "#29 Marvin Senaya",
+        "#22 Fredrik Oppegard",
+        "#24 Bryan Okoh"
+      ],
+      "mid": [
+        "#6 Assane Dioussé",
+        "#28 Romain Faivre",
+        "#8 Naouirou Ahamada",
+        "#17 Pierre Ekwah",
+        "#5 Kévin Danois",
+        "#46 Arthur Piedfort",
+        "#77 Aristide Zossou",
+        "#36 Tidiane Devernois"
+      ],
+      "fwd": [
+        "#19 Danny Namaso",
+        "#11 Eros Maddy",
+        "#9 Cameron Archer",
+        "#7 Josué Casimir",
+        "#3 Remy Labeau Lascary",
+        "#49 Wei Xiangxin",
+        "#31 Ryan Rodin"
+      ],
+      "craque": {
+        "nome": "Assane Dioussé",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Lamine Sy",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_2502": {
+    "ts": 1789003167.2662332,
+    "data": {
+      "gk": [
+        "#23 Yehvann Diouf",
+        "#77 Teddy Boulhendi",
+        "#60 Martin Ponsot"
+      ],
+      "def": [
+        "#92 Jonathan Clauss",
+        "#5 Mohamed Abdelmoneim",
+        "#2 Ali Abdi",
+        "#27 Niels Nkounkou",
+        "#33 Antoine Mendy",
+        "#64 Moïse Bombito",
+        "#84 Hamza Koutoune"
+      ],
+      "mid": [
+        "#28 Axel Witsel",
+        "#8 Morgan Sanson",
+        "#19 Laurent Abergel",
+        "#22 Issiaga Camara",
+        "#7 Gauthier Hein",
+        "#55 Youssouf Ndayishimiye",
+        "#10 Sofiane Diop",
+        "#6 Hicham Boudaoui"
+      ],
+      "fwd": [
+        "#21 Isak Jansson",
+        "#29 Nathan N'Goumou",
+        "#11 Elye Wahi",
+        "#9 Mohamed Amoura",
+        "#44 Zoumana Diallo",
+        "#41 Djelan Morana"
+      ],
+      "craque": {
+        "nome": "Axel Witsel",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Elye Wahi",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_3236": {
+    "ts": 1789003167.9176657,
+    "data": {
+      "gk": [
+        "#93 Gauthier Gallon",
+        "#77 Lionel Mpasi",
+        "#50 Paul Argney"
+      ],
+      "def": [
+        "#23 Vincent Sasso",
+        "#5 Ahmed Touba",
+        "#15 Ayumu Seko",
+        "#32 Timothee Pembélé",
+        "#12 Elias Jelert",
+        "#29 Stephan Zagadou",
+        "#33 Djibril Ouziad"
+      ],
+      "mid": [
+        "#94 Abdoulaye Touré",
+        "#14 Rassoul Ndiaye",
+        "#7 Amir Richardson",
+        "Mathéo Bodmer",
+        "#17 Kaito Mizuta",
+        "#6 Junior Mwanga",
+        "#26 Simon Ebonog",
+        "#44 Ismail Bouneb"
+      ],
+      "fwd": [
+        "#25 Mbwana Samatta",
+        "#9 Josh Maja",
+        "#11 Godson Kyeremeh",
+        "#10 Félix Mambimbi",
+        "#19 Joan Tincres",
+        "#30 Sota Nakamura",
+        "Rayan Fofana"
+      ],
+      "craque": {
+        "nome": "Abdoulaye Touré",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Mbwana Samatta",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_7868": {
+    "ts": 1789003168.5178323,
+    "data": {
+      "gk": [
+        "#1 Anthony Lopes",
+        "#16 Melvin Zinga",
+        "#40 Oumar Pona"
+      ],
+      "def": [
+        "#21 Jordan Lefort",
+        "#2 Carlens Arcus",
+        "#3 Jacques Ekomie",
+        "#27 Lilian Raolisoa",
+        "#17 Joseph Kalulu Kyatengwa",
+        "#20 Marius Louãr",
+        "#4 Ousmane Camara",
+        "#34 Maël Gernigon"
+      ],
+      "mid": [
+        "#8 Branco van den Boomen",
+        "#93 Haris Belkebla",
+        "#6 Louis Mouton",
+        "#14 Yassin Belkhdim",
+        "#24 Emmanuel Biumla",
+        "#26 Anthony Bermont",
+        "#36 Bané Diatta",
+        "#37 Jules Bouffandeau"
+      ],
+      "fwd": [
+        "#18 Jim Allevinah",
+        "#19 Amine El Ouazzani",
+        "#7 Mamadou Simbakoli",
+        "#10 Amine Sbaï",
+        "#9 Prosper Peter",
+        "#31 Harouna Djibirin",
+        "#35 Mamadou Diallo"
+      ],
+      "craque": {
+        "nome": "Branco van den Boomen",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Carlens Arcus",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_273": {
+    "ts": 1789003169.1612887,
+    "data": {
+      "gk": [
+        "#1 Benjamin Leroy",
+        "#38 Yvon Mvogo",
+        "#21 Bingourou Kamara"
+      ],
+      "def": [
+        "#5 Formose Mendy",
+        "#2 Alec Georgen",
+        "#3 Montassar Talbi",
+        "#95 Isaak Touré",
+        "Srdjan Kuzmic",
+        "#32 Nathaniel Adjei",
+        "#20 Dembo Sylla",
+        "#77 Panos Katseris"
+      ],
+      "mid": [
+        "#17 Jean-Victor Makengo",
+        "#7 Bandiougou Fadiga",
+        "#8 Noah Cadiou",
+        "#72 Noah Mbamba",
+        "#11 Théo Le Bris",
+        "#62 Arthur Avom",
+        "#33 Gabin Bernardeau",
+        "#23 Daniel Semedo"
+      ],
+      "fwd": [
+        "#15 Tosin Aiyegun",
+        "#19 Souleymane Faye",
+        "#10 Isak Jensen",
+        "#18 Ibrahima Baldé",
+        "#42 Mamadou Koné"
+      ],
+      "craque": {
+        "nome": "Jean-Victor Makengo",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Jean-Victor Makengo",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_179": {
+    "ts": 1789003169.4238417,
+    "data": {
+      "gk": [
+        "#16 Guillaume Restes",
+        "#60 Mathys Niflore",
+        "#40 Naime Said Mchindra"
+      ],
+      "def": [
+        "#3 Mark McKenzie",
+        "#2 Rasmus Nicolaisen",
+        "#19 David Odogu",
+        "#12 Christ Tapé",
+        "#94 Ismail Diallo",
+        "#5 Seny Koumbassa"
+      ],
+      "mid": [
+        "#31 Niklas Schmidt",
+        "#15 Aron Donnum",
+        "#23 Cristian Cásseres Jr.",
+        "#17 Abu Francis",
+        "#8 Thomas Jørgensen",
+        "#14 Niko Sigur",
+        "#18 Mathis Amougou",
+        "#22 Rafik Messali"
+      ],
+      "fwd": [
+        "#10 Yann Gboho",
+        "#13 Jacen Russell-Rowe",
+        "#20 Casper Tengstedt",
+        "#9 Santiago Hidalgo",
+        "#7 Julián Vignolo",
+        "#11 Sion Oppong",
+        "#37 Ilyas Azizi"
+      ],
+      "craque": {
+        "nome": "Niklas Schmidt",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Christ Tapé",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_6851": {
+    "ts": 1789003169.6594386,
+    "data": {
+      "gk": [
+        "#16 Obed Nkambadio"
+      ],
+      "def": [
+        "#1 Kevin Trapp",
+        "#14 Hamari Traoré",
+        "#28 Thibault De Smet",
+        "#5 Moustapha Mbow",
+        "#31 Samir Chergui",
+        "#6 Otavio",
+        "#25 Yoan Koré",
+        "#42 Diego Coppola"
+      ],
+      "mid": [
+        "#4 Vincent Marchetti",
+        "#33 Pierre Lees-Melou",
+        "#21 Maxime López",
+        "#10 Ilan Kebbal",
+        "#17 Adama Camara",
+        "#8 Zabi Gueu",
+        "#23 Rudy Matondo"
+      ],
+      "fwd": [
+        "#27 Moses Simon",
+        "#93 Jonathan Ikoné",
+        "#11 Jean-Phillipe Krasso",
+        "#9 Lassine Sinayoko",
+        "#7 Pablo Pagis",
+        "#15 Luca Koleosho",
+        "#18 Omar Sissoko"
+      ],
+      "craque": {
+        "nome": "Vincent Marchetti",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 4,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Lassine Sinayoko",
+        "gols": 4
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_167": {
+    "ts": 1789003170.4098513,
+    "data": {
+      "gk": [
+        "#50 Lassine Diarra",
+        "#1 Dominik Greif",
+        "#40 Rémy Descamps",
+        "#25 Justin Bengui Joao"
+      ],
+      "def": [
+        "#3 Nicolás Tagliafico",
+        "#19 Moussa Niakhaté",
+        "#22 Clinton Mata",
+        "#16 Abner",
+        "#21 Ruben Kluivert",
+        "#20 Felix Bacher",
+        "#76 Mohamed Ouédraogo",
+        "#13 Zachary Athekame"
+      ],
+      "mid": [
+        "#8 Corentin Tolisso",
+        "#2 Mads Bidstrup",
+        "#23 Tyler Morton",
+        "#6 Tanner Tessmann",
+        "#10 Pavel Sulc",
+        "#99 Noah Nartey",
+        "#39 Mathys De Carvalho",
+        "#18 Khalis Merah"
+      ],
+      "fwd": [
+        "Keito Nakamura",
+        "#17 Loïs Openda",
+        "#7 Ernest Nuamah",
+        "#24 Julien Duranville",
+        "#26 Kail Boudache",
+        "#45 Rémi Himbert",
+        "#44 Adil Hamdani"
+      ],
+      "craque": {
+        "nome": "Corentin Tolisso",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Felix Bacher",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_166": {
+    "ts": 1789003170.6582975,
+    "data": {
+      "gk": [
+        "#16 Arnaud Bodart",
+        "#1 Berke Özer",
+        "#12 Orlando Gill"
+      ],
+      "def": [
+        "#24 Calvin Verdonk",
+        "#15 Romain Perraud",
+        "#23 Tanguy Nianzou",
+        "#3 Nathan Ngoy",
+        "#4 Alexsandro",
+        "#22 Tiago Santos",
+        "#2 Loun Srdanovic",
+        "#26 Isaac Cossier"
+      ],
+      "mid": [
+        "#21 Benjamin André",
+        "#6 Nabil Bentaleb",
+        "#14 Maurits Kjaergaard",
+        "#10 Hákon Haraldsson",
+        "#17 Ngal'ayel Mukau",
+        "#8 Ethan Mbappé"
+      ],
+      "fwd": [
+        "#9 Olivier Giroud",
+        "#28 Gaetan Perrin",
+        "#18 Ayase Ueda",
+        "#11 Osame Sahraoui",
+        "#7 Dilane Bakwa",
+        "#19 Basar Önal",
+        "#29 Hamza Igmane"
+      ],
+      "craque": {
+        "nome": "Benjamin André",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Tiago Santos",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_170": {
+    "ts": 1789003170.9544094,
+    "data": {
+      "gk": [
+        "#1 Zacharie Boucher",
+        "#40 Hillel Konaté",
+        "#33 Patrick Beach"
+      ],
+      "def": [
+        "#4 Michel Diaz",
+        "#6 Adrien Monfray",
+        "#5 Paolo Gozzi Iweru",
+        "#14 Ismael Boura",
+        "#2 Lucas Maronnier",
+        "#44 Yvann Titi",
+        "#3 Anis Ouzenadji",
+        "#31 Noah Donkor"
+      ],
+      "mid": [
+        "#17 Antoine Mille",
+        "#26 Alexandre Philiponeau",
+        "#11 Iron Gomis",
+        "#29 Dermane Karim",
+        "#8 Mouhamed Diop",
+        "#22 Hugo Picard",
+        "#10 Merwan Ifnaoui",
+        "#35 Roman Murcy"
+      ],
+      "fwd": [
+        "#20 Renaud Ripart",
+        "Timothé Nkada",
+        "#7 Kandet Diawara",
+        "Jeremy Le Douaron",
+        "#19 Ibrahim Traoré",
+        "#37 Christ Batola",
+        "#39 Yacouba Kone"
+      ],
+      "craque": {
+        "nome": "Antoine Mille",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 1,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Lucas Maronnier",
+        "gols": 1
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_2697": {
+    "ts": 1789003171.4690135,
+    "data": {
+      "gk": [
+        "#98 Nicolas Kocik",
+        "#1 Ewan Hatfout",
+        "#55 Augustin Delbecque"
+      ],
+      "def": [
+        "#19 Djibril Sidibé",
+        "#17 Samuel Yohou",
+        "#18 Lucas Buades",
+        "#76 Yasser Larouci",
+        "#16 Raúl Torrente",
+        "#22 Lucas Calodat",
+        "#19 Rayan Bamba",
+        "#5 Harold Voyer"
+      ],
+      "mid": [
+        "#23 Daouda Traoré",
+        "#6 Edwin Quarshie",
+        "#8 Alexandre Lauray",
+        "#10 Jean Vercruysse",
+        "#29 Lucas Bretelle",
+        "#27 Martin Rossignol",
+        "#11 Adil Bourabaa",
+        "#7 Brahimi Bilal"
+      ],
+      "fwd": [
+        "#13 Habib Diallo",
+        "#9 Antoine Rabillard",
+        "#25 Dame Guèye",
+        "#14 Louis Mafouta",
+        "#28 Erwan Colas",
+        "#20 William Harhouz",
+        "#99 Enzo Vágner"
+      ],
+      "craque": {
+        "nome": "Daouda Traoré",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Louis Mafouta",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_175": {
+    "ts": 1789003172.0563138,
+    "data": {
+      "gk": [
+        "#1 Régis Gurtner",
+        "#16 Mathieu Gorgelin",
+        "#40 Robin Risser",
+        "#60 Ilan Jourdren"
+      ],
+      "def": [
+        "#2 Ruben Aguilar",
+        "#24 Jonathan Gradit",
+        "#14 Matthieu Udol",
+        "#20 Jean-Clair Todibo",
+        "#23 Saud Abdulhamid",
+        "#3 Maik Nawrocki",
+        "#13 Jhoanner Chavez",
+        "#6 Samson Baidoo"
+      ],
+      "mid": [
+        "#9 Thorgan Hazard",
+        "#21 Amadou Haidara",
+        "#27 Michaël Cuisance",
+        "#8 Yassine Titraoui",
+        "#5 Andrija Bulatovic",
+        "#38 Mezian Soares"
+      ],
+      "fwd": [
+        "#10 Florian Thauvin",
+        "#37 Moussa Diarra",
+        "#7 Florian Sotoca",
+        "#11 Odsonne Édouard",
+        "#22 Michal Skoras",
+        "#19 Abdallah Sima",
+        "#28 Junior Kadile"
+      ],
+      "craque": {
+        "nome": "Thorgan Hazard",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Florian Thauvin",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_6997": {
+    "ts": 1789003172.659652,
+    "data": {
+      "gk": [
+        "#49 Romain Cagnon",
+        "#1 Egil Selvik",
+        "#30 Mathieu Patouillet",
+        "#16 Noé Poillion"
+      ],
+      "def": [
+        "#70 Kenny Lala",
+        "#4 Gautier Lloris",
+        "#5 Brendan Chardonnet",
+        "#2 Bradley Locko",
+        "#20 Luc Zogbe",
+        "#71 Raphaël Le Guen",
+        "#18 Justin Bourgault",
+        "#34 Evan Mailly"
+      ],
+      "mid": [
+        "#29 Lucas Tousart",
+        "#8 Hugo Magnetti",
+        "#13 Joris Chotard",
+        "#6 Mamady Diambou",
+        "#23 Kamory Doumbia",
+        "#7 Joseph Nonge",
+        "#32 Mathis Lainé"
+      ],
+      "fwd": [
+        "#19 Ludovic Ajorque",
+        "#17 Mama Baldé",
+        "Giovani Versini",
+        "#9 Pathé Mboup",
+        "Noah Edjouma",
+        "Djylian N'Guessan"
+      ],
+      "craque": {
+        "nome": "Lucas Tousart",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 4,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Kamory Doumbia",
+        "gols": 4
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "fra.1_160": {
+    "ts": 1789003172.9267018,
+    "data": {
+      "gk": [
+        "#39 Matvei Safonov",
+        "#30 Lucas Chevalier",
+        "#16 Alessandro Longoni"
+      ],
+      "def": [
+        "#5 Marquinhos",
+        "#12 Lucas Digne",
+        "#21 Lucas Hernández",
+        "#2 Achraf Hakimi",
+        "#51 Willian Pacho",
+        "#25 Nuno Mendes",
+        "#6 Illia Zabarnyi",
+        "#4 Lucas Beraldo"
+      ],
+      "mid": [
+        "#8 Fabián Ruiz",
+        "#17 Vitinha",
+        "#11 Maghnes Akliouche",
+        "#33 Warren Zaïre-Emery",
+        "#87 João Neves",
+        "#24 Senny Mayulu",
+        "#27 Dro Fernández"
+      ],
+      "fwd": [
+        "#10 Ousmane Dembélé",
+        "#9 Ferran Torres",
+        "#7 Khvicha Kvaratskhelia",
+        "#14 Désiré Doué",
+        "#22 Mika Godts",
+        "#47 Quentin Ndjantou"
+      ],
+      "craque": {
+        "nome": "Fabián Ruiz",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Marquinhos",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "conmebol.libertadores_4816": {
+    "ts": 1789006776.163562,
+    "data": {
+      "gk": [
+        "#22 Alexander Domínguez",
+        "#1 Gonzalo Valle",
+        "#12 Alexis Villa",
+        "#34 Jostin García"
+      ],
+      "def": [
+        "#44 Luis Segovia",
+        "#4 Ricardo Adé",
+        "#14 José Quintero",
+        "#33 Leonel Quiñonez",
+        "#57 Marcelo Weigandt",
+        "#3 Richard Mina",
+        "#28 Josué Cuero",
+        "#30 Gian Franco Allala"
+      ],
+      "mid": [
+        "#20 Fernando Cornejo",
+        "#5 Sebastián González",
+        "#7 Lucas Rodríguez",
+        "#15 Gabriel Villamil",
+        "#8 Jesús Pretell",
+        "#10 Alexander Alvarado",
+        "#67 José Carabali",
+        "#26 Iván Zambrano"
+      ],
+      "fwd": [
+        "#16 Deyverson",
+        "#11 Michael Estrada",
+        "#13 Janner Corozo",
+        "#77 Kevin Velasco",
+        "#23 Yerlin Quiñonez",
+        "#36 Kevin Pineda"
+      ],
+      "craque": {
+        "nome": "Fernando Cornejo",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Deyverson",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "conmebol.libertadores_8": {
+    "ts": 1789006776.8296325,
+    "data": {
+      "gk": [
+        "#16 Fernando Muslera",
+        "#1 Fabricio Iacovich",
+        "#12 Rodrigo Borzone",
+        "#30 Tiziano Van Der Tuin"
+      ],
+      "def": [
+        "#26 Ramiro Funes Mori",
+        "#14 Leandro González Pírez",
+        "#36 Joaquín Pereyra",
+        "#15 Santiago Arzamendia",
+        "#20 Eric Meza",
+        "#13 Gastón Benedetti",
+        "#40 Eros Mancuso",
+        "#4 Santiago Núñez"
+      ],
+      "mid": [
+        "#7 José Sosa",
+        "#39 Jalil Elías",
+        "#22 Alexis Castro",
+        "#21 Ezequiel Piovi",
+        "#8 Gabriel Neves",
+        "#10 Tiago Palacios",
+        "Miguel Monsalve",
+        "#52 Bautista Kociubinski"
+      ],
+      "fwd": [
+        "#9 Guido Carrillo",
+        "#27 Lucas Alario",
+        "#32 Joaquín Correa",
+        "#18 Edwin Cetre",
+        "#19 Adolfo Gaich",
+        "#28 Brian Aguirre",
+        "#29 Fabricio Pérez"
+      ],
+      "craque": {
+        "nome": "José Sosa",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Tiago Palacios",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "conmebol.libertadores_17086": {
+    "ts": 1789003175.0885284,
+    "data": {
+      "gk": [
+        "#70 Miguel Peralta",
+        "#1 Aldair Quintana",
+        "#22 Guido Villar",
+        "#12 Bolivar Pico"
+      ],
+      "def": [
+        "#5 Richard Schunke",
+        "#15 Gustavo Cortez",
+        "#23 Juan Viacava",
+        "#4 Jhon Jairo Espinoza",
+        "#29 Xavi Muñoz",
+        "#14 Mateo Carabajal",
+        "#2 Luis Zárate",
+        "#13 Daykol Romero"
+      ],
+      "mid": [
+        "#26 Cazares",
+        "#10 Junior Sornoza",
+        "#32 Jhegson Méndez",
+        "#20 Aníbal Gómez",
+        "#6 Jordy Alcívar",
+        "#28 Hugo Quintana",
+        "#16 Ronald Briones",
+        "#21 Jean Pierre Arroyo"
+      ],
+      "fwd": [
+        "#9 Carlos González",
+        "#24 Johan Martínez",
+        "#99 Djorkaeff Reasco",
+        "#17 Arón Rodríguez",
+        "#11 Matías Perello",
+        "#31 Emerson Pata",
+        "#52 Yandri Vásquez"
+      ],
+      "craque": {
+        "nome": "Cazares",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 2,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Junior Sornoza",
+        "gols": 2
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "conmebol.libertadores_7764": {
+    "ts": 1789003175.8369124,
+    "data": {
+      "gk": [
+        "#1 Brian Bustos",
+        "#30 Juan Pablo Cozzani",
+        "#22 Nicolás Sumavil",
+        "#36 Joaquín Giudice"
+      ],
+      "def": [
+        "#13 Ignacio Vázquez",
+        "#31 Víctor Cuesta",
+        "#42 Gonzalo Goñi",
+        "#45 Tomás Giménez",
+        "#4 Agustín Lagos",
+        "#25 Juan Ignacio Saborido",
+        "#3 Tomas Silva",
+        "#32 Santiago Quirós"
+      ],
+      "mid": [
+        "#5 Ivan Gomez",
+        "#23 Leonardo Heredia",
+        "#26 Pablo Ferreira",
+        "#24 Martín Barrios",
+        "#48 Agustín Funes",
+        "#10 Franco Zapiola",
+        "#15 Maximiliano Amarfil",
+        "#29 Franco Minerva"
+      ],
+      "fwd": [
+        "#11 Nico López",
+        "#55 Alejandro Vera",
+        "#21 Augusto Lotti",
+        "#7 Guido Mainero",
+        "#18 Bautista Merlini",
+        "#16 Gastón Togni",
+        "#33 Juan Gauto"
+      ],
+      "craque": {
+        "nome": "Ivan Gomez",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Franco Zapiola",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "conmebol.sudamericana_3372": {
+    "ts": 1789003176.6612651,
+    "data": {
+      "gk": [
+        "#1 Gonzalo Falcón",
+        "#31 Ítalo Espinoza",
+        "#30 Jean Roncal"
+      ],
+      "def": [
+        "#4 Maximiliano Amondarain",
+        "#13 Claudio Núñez",
+        "#16 Marcos Martinich",
+        "#3 Kevin Becerra",
+        "#26 Rotceh Aguilar",
+        "#22 Carlos Cabello",
+        "#14 Sebastian Cavero",
+        "#27 Freddy Yovera"
+      ],
+      "mid": [
+        "#10 Alejandro Hohberg",
+        "#88 Gerson Barreto",
+        "#8 Gonzalo Aguirre",
+        "#7 Cristian Souza",
+        "#29 Ademar Robles",
+        "#39 Henry Caparó"
+      ],
+      "fwd": [
+        "#5 Santiago Arias",
+        "#11 Neri Bandiera",
+        "#17 Ray Sandoval",
+        "#21 Carlos Garcés",
+        "#19 Matías Succar",
+        "#9 Juan Batista Romagnoli",
+        "#18 Didier La Torre"
+      ],
+      "craque": {
+        "nome": "Alejandro Hohberg",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 4,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Carlos Garcés",
+        "gols": 4
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "conmebol.sudamericana_19002": {
+    "ts": 1789003177.1789134,
+    "data": {
+      "gk": [
+        "#13 Gastón Rodríguez",
+        "#1 Franco Torgnascioli",
+        "#25 Martín Almeida",
+        "#12 Mathías Aguiar"
+      ],
+      "def": [
+        "#24 Gary Kagelmacher",
+        "#33 Jean López",
+        "#3 Kevin Silva",
+        "#26 Facundo Silvera",
+        "#15 Ezequiel Busquets",
+        "#22 Benjamín García",
+        "#17 Eduardo Agüero",
+        "#38 Lautaro Silveira"
+      ],
+      "mid": [
+        "#2 Brian Gutiérrez",
+        "#20 Gonzalo Montes",
+        "#5 Franco Pizzichillo",
+        "#8 Pablo Siles",
+        "#19 Diogo Guzmán",
+        "#14 Santiago Zampieri",
+        "#27 José Tarán",
+        "#23 Lucas Duré"
+      ],
+      "fwd": [
+        "#21 Nicolas Perez",
+        "#11 Alexander Da Silva",
+        "#29 Facundo Martínez",
+        "#30 Juan Quintana",
+        "#10 Esteban Obregon",
+        "#9 Salomón Rodríguez",
+        "#7 Luka Andrade"
+      ],
+      "craque": {
+        "nome": "Brian Gutiérrez",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 5,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Salomón Rodríguez",
+        "gols": 5
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "conmebol.sudamericana_5488": {
+    "ts": 1789003177.806144,
+    "data": {
+      "gk": [
+        "#1 Andrés Mosquera",
+        "#12 Weibmar Asprilla",
+        "#31 Juan Espitia",
+        "#33 Carlos Nemocón"
+      ],
+      "def": [
+        "#18 Emanuel Olivera",
+        "#32 Christian Mafla",
+        "#13 Helibelton Palacios",
+        "#24 Jeison Angulo",
+        "#4 Mateo Puerta",
+        "#20 Yilmar Velázquez",
+        "#15 Iván Scarpeta",
+        "#43 Jean Carlos Caicedo"
+      ],
+      "mid": [
+        "#3 Víctor Moreno",
+        "#35 Kevin Balanta",
+        "#10 Alexis Zapata",
+        "#16 Daniel Torres",
+        "#49 Andrés Amaya",
+        "#21 Ewil Murillo",
+        "#25 Emerson Rodríguez",
+        "#34 Marlon Balanta"
+      ],
+      "fwd": [
+        "#2 Juan Quintero",
+        "#11 Hugo Rodallega",
+        "#7 Johan Torres",
+        "#8 Omar Fernández",
+        "#38 Jimmy Martínez",
+        "#77 Jáder Obrian",
+        "#19 Nahuel Bustos"
+      ],
+      "craque": {
+        "nome": "Víctor Moreno",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Franco Fagúndez",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "conmebol.sudamericana_5": {
+    "ts": 1789003178.388764,
+    "data": {
+      "gk": [
+        "#13 Javier García",
+        "#1 Álvaro Montero",
+        "#1 Agustín Marchesín",
+        "#12 Leandro Brey"
+      ],
+      "def": [
+        "#4 Jorge Figal",
+        "#32 Ayrton Costa",
+        "#3 Lautaro Blanco",
+        "#26 Marco Pellegrino",
+        "#17 Leandro Lozano",
+        "#2 Lautaro Di Lollo",
+        "#24 Dylan Gorosito",
+        "#42 Facundo Herrera"
+      ],
+      "mid": [
+        "#23 Camilo Rey",
+        "#6 Rodrigo Battaglia",
+        "#5 Leandro Paredes",
+        "#7 Carlos Palacios",
+        "#25 Santiago Ascacibar",
+        "#8 Tomás Belmonte",
+        "#27 Malcom Braida",
+        "#15 William Alarcón"
+      ],
+      "fwd": [
+        "#22 Sebastián Villa",
+        "#30 Enner Valencia",
+        "#11 Ángel Romero",
+        "#28 Adam Bareiro",
+        "#16 Miguel Merentiel",
+        "#9 Milton Gimenez",
+        "#34 Juan Payal"
+      ],
+      "craque": {
+        "nome": "Camilo Rey",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 3,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Miguel Merentiel",
+        "gols": 3
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  },
+  "bra.1_3458": {
+    "ts": 1789000635.8457751,
+    "data": {
+      "gk": [
+        "#23 Santos",
+        "#1 Mycael",
+        "#42 Matheus Rocha",
+        "#76 Maksym Voronov"
+      ],
+      "def": [
+        "#13 Carlos Terán",
+        "#12 Gilberto",
+        "#3 Léo",
+        "#33 Juan Felipe Aguirre",
+        "#29 Gastón Benavídez",
+        "#37 Lucas Esquivel",
+        "#5 Filipinho",
+        "#61 Leonardo Derik"
+      ],
+      "mid": [
+        "#27 Juan Portilla",
+        "#14 Luiz Gustavo",
+        "#16 Jádson",
+        "#17 Alejandro García",
+        "#10 Bruno Zapelli",
+        "#53 Eduardo",
+        "#57 João Cruz",
+        "#47 Chiqueti"
+      ],
+      "fwd": [
+        "#7 Stiven Mendoza",
+        "#9 Kevin Viveros",
+        "#70 Renan",
+        "#50 Renan",
+        "#18 Kerwin Vargas",
+        "#11 Isaac",
+        "#19 Jorge Rivaldo"
+      ],
+      "craque": {
+        "nome": "Juan Portilla",
+        "posicao": "Meia-Atacante / Destaque",
+        "gols": 17,
+        "assistencias": 5,
+        "nota": "Líder técnico do elenco e titular absoluto"
+      },
+      "artilheiro": {
+        "nome": "Kevin Viveros",
+        "gols": 17
+      },
+      "source": "Sports Data API (ESPN JSON)"
+    }
+  }
+}
