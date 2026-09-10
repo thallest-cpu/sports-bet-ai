@@ -6,29 +6,17 @@ import plotly.graph_objects as go
 import importlib
 import datetime
 
-# Recarregamento explícito para garantir atualização imediata de módulos sem cache antigo
 import src.team_intelligence
-importlib.reload(src.team_intelligence)
 import src.live_tracker
-importlib.reload(src.live_tracker)
 import src.live_server
-importlib.reload(src.live_server)
 import src.sports_data_api
-importlib.reload(src.sports_data_api)
 import src.social_proof
-importlib.reload(src.social_proof)
 import src.telegram_notifier
-importlib.reload(src.telegram_notifier)
 import src.realtime_cache
-importlib.reload(src.realtime_cache)
 import src.livescore_engine
-importlib.reload(src.livescore_engine)
 import src.realtime_server
-importlib.reload(src.realtime_server)
 import src.realtime_widget
-importlib.reload(src.realtime_widget)
 import src.nba_intelligence
-importlib.reload(src.nba_intelligence)
 
 from src.nba_intelligence import (
     get_nba_teams,
