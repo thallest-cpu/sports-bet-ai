@@ -65,6 +65,7 @@ CALENDAR_YEAR_LEAGUES = {71, 13, 11}
 _SESSION = requests.Session()
 _SESSION.headers.update({"User-Agent": "BetAI-Quant-Pro/3.0"})
 _CACHE: Dict[str, Tuple[float, Any]] = {}
+_ESPN_FAILURES = {}
 _PROVIDER_STATUS: Dict[str, Dict[str, Any]] = {
     "api_football": {"ok": None, "message": "não consultada", "at": None},
     "espn": {"ok": None, "message": "não consultada", "at": None},
@@ -340,16 +341,24 @@ def _espn_get(slug: str, resource: str, *, params: Optional[Dict[str, Any]] = No
     if cached is not None:
         _set_status("espn", True, f"{slug} disponível (cache)")
         return cached
+    failure = _ESPN_FAILURES.get(cache_key)
+    if failure and failure[0] > time.time():
+        _set_status('espn', False, failure[1])
+        return None
     try:
         response = _SESSION.get(f"{base}/{slug}/{resource.lstrip('/')}", params=params or {}, timeout=10)
         if response.status_code != 200:
-            _set_status("espn", False, f"HTTP {response.status_code} em {slug}")
+            message = f"HTTP {response.status_code} em {slug}"
+            _set_status("espn", False, message)
+            _ESPN_FAILURES[cache_key] = (time.time() + 120, message)
             return None
         payload = response.json()
         _set_status("espn", True, f"{slug} atualizado")
         return _cache_set(cache_key, payload)
     except requests.RequestException as exc:
-        _set_status("espn", False, f"Falha de rede: {exc.__class__.__name__}")
+        message = f"Falha de rede: {exc.__class__.__name__}"
+        _set_status("espn", False, message)
+        _ESPN_FAILURES[cache_key] = (time.time() + 120, message)
         return None
     except (ValueError, TypeError):
         _set_status("espn", False, "Resposta inválida")
@@ -479,7 +488,7 @@ def _fetch_espn_fixtures(league_id: Optional[int] = None, *, live_only: bool = F
     for slug in slugs:
         payload = _espn_get(slug, "scoreboard", params={"dates": date_param, "limit": 200}, ttl=effective_ttl)
         if payload is None:
-            failures.append(slug)
+            failures.append(f"{slug}: {_PROVIDER_STATUS['espn'].get('message')}")
             continue
         successful += 1
         for event in payload.get("events", []) or []:
@@ -495,7 +504,7 @@ def _fetch_espn_fixtures(league_id: Optional[int] = None, *, live_only: bool = F
         suffix = f"; {len(failures)} liga(s) com falha" if failures else ""
         _set_status("espn", True, f"{successful}/{attempted} competição(ões) consultada(s){suffix}")
     elif attempted > 0:
-        _set_status("espn", False, "Não foi possível consultar a ESPN neste momento.")
+        _set_status("espn", False, "ESPN indisponível. " + "; ".join(failures[:2]))
     else:
         _set_status("espn", False, "Competição sem cobertura ESPN configurada.")
     return results

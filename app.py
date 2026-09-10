@@ -537,7 +537,7 @@ if page == "🔴 Ao vivo":
         c1.metric("Ao vivo agora", len(matches))
         c2.metric("Cobertura", "1 liga" if only_selected else f"{len(API_FOOTBALL_LEAGUES)} ligas",
                   help=selected_league_name if only_selected else "Competições monitoradas")
-        c3.metric("Dados verificados", now_live.strftime("%H:%M:%S"))
+        c3.metric("Painel consultado", now_live.strftime("%H:%M:%S"))
 
         if not matches:
             live_state = football_source_state()
@@ -859,6 +859,6 @@ for provider, state in get_api_status().get('providers', {}).items():
     st.caption(f"{'API-Football' if provider == 'api_football' else 'ESPN'} · {source_label(state)} · {state.get('message')} · {state.get('at') or 'Sem consulta'}")
 footer_now = local_now()
 st.markdown(
-    f"<div class='source-note'><b>Fontes:</b> {esc(provider_summary())}. Placar ao vivo prioriza ESPN para preservar a quota diária da API-Football; dados avançados usam API-Football quando disponível. Nenhum CSV histórico é apresentado como dado atual. Página renderizada: {footer_now.strftime('%d/%m/%Y %H:%M:%S')} (Brasília). O horário nos cartões indica a última verificação daquela seção.<br><br><b>Aviso:</b> probabilidades são estimativas estatísticas e não garantem resultados financeiros.</div>",
+    f"<div class='source-note'><b>Fontes:</b> {esc(provider_summary())}. Placar ao vivo prioriza ESPN para preservar a quota diária da API-Football; dados avançados usam API-Football quando disponível. Nenhum CSV histórico é apresentado como dado atual. Página renderizada: {footer_now.strftime('%d/%m/%Y %H:%M:%S')} (Brasília). Consultas podem usar cache dentro do prazo; o horário do painel não garante atualização interna do provedor.<br><br><b>Aviso:</b> probabilidades são estimativas estatísticas e não garantem resultados financeiros.</div>",
     unsafe_allow_html=True,
 )

@@ -30,4 +30,3 @@ class AppSmokeTests(unittest.TestCase):
             at.radio[0].set_value('📈 Análise').run()
             self.assertFalse(at.exception)
             self.assertTrue(any('Estimativa não registrada' in info.value for info in at.info))
-
