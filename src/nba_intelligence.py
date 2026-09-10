@@ -10,6 +10,11 @@ import requests
 
 NBA_BASE_URL = "https://api.balldontlie.io/v1"
 APP_TIMEZONE = "America/Sao_Paulo"
+_STATUS = {}
+
+def nba_status(path="games"):
+    return _STATUS.get(path, {"ok": None, "message": "Fonte ainda não consultada"})
+
 _CACHE: Dict[str, Tuple[float, Any]] = {}
 
 
@@ -31,6 +36,7 @@ def nba_key_configured() -> bool:
 def _get(path: str, params: Optional[Dict[str, Any]] = None, ttl: int = 60) -> List[Dict[str, Any]]:
     key = _resolve_nba_key()
     if not key:
+        _STATUS[path] = {"ok": False, "message": "Fonte NBA não configurada"}
         return []
     cache_key = f"{path}|{sorted((params or {}).items())}"
     item = _CACHE.get(cache_key)
@@ -39,11 +45,15 @@ def _get(path: str, params: Optional[Dict[str, Any]] = None, ttl: int = 60) -> L
     try:
         r = requests.get(f"{NBA_BASE_URL}/{path.lstrip('/')}", headers={"Authorization": key}, params=params or {}, timeout=10)
         if r.status_code != 200:
+            _STATUS[path] = {"ok": False, "message": "Cota esgotada" if r.status_code == 429 else "Dados indisponíveis nesta fonte/plano"}
+            _CACHE[cache_key] = (time.time(), [])
             return []
         data = r.json().get("data", []) or []
+        _STATUS[path] = {"ok": True, "message": "Operacional"}
         _CACHE[cache_key] = (time.time(), data)
         return data
     except Exception:
+        _STATUS[path] = {"ok": False, "message": "Falha na consulta NBA"}
         return []
 
 
@@ -52,7 +62,7 @@ def get_nba_teams() -> List[Dict[str, Any]]:
 
 
 def get_nba_players(team_id: int) -> List[Dict[str, Any]]:
-    return _get("players", {"team_ids[]": team_id, "per_page": 100}, ttl=6 * 3600)
+    return _get("players/active", {"team_ids[]": team_id, "per_page": 100}, ttl=6 * 3600)
 
 
 def get_nba_games_today() -> List[Dict[str, Any]]:

@@ -47,7 +47,7 @@ def calculate_current_probabilities(home_stats: Dict[str, Any], away_stats: Dict
         return None
 
     values = [h_for, h_against, a_for, a_against]
-    if any(v < 0 for v in values):
+    if any(not math.isfinite(v) or v < 0 for v in values):
         return None
 
     xg_home = max(0.15, min(4.5, (h_for + a_against) / 2.0))
