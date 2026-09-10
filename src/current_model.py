@@ -1,4 +1,8 @@
-"""Modelo Poisson transparente usando estatísticas da temporada atual da API."""
+"""Modelo Poisson transparente baseado em estatísticas da temporada atual.
+
+O módulo deliberadamente não cria dados ausentes. Se a fonte não fornecer
+médias de gols válidas, a função principal retorna ``None``.
+"""
 from __future__ import annotations
 
 from typing import Any, Dict, Optional
@@ -28,6 +32,12 @@ def _poisson(k: int, lam: float) -> float:
 
 
 def calculate_current_probabilities(home_stats: Dict[str, Any], away_stats: Dict[str, Any]) -> Optional[Dict[str, float]]:
+    """Calcula probabilidades 1X2/Over/BTTS usando médias casa/fora atuais.
+
+    A grade vai até 14 gols por equipe; depois normalizamos todas as métricas
+    pela massa de probabilidade coberta. Isso evita a pequena distorção que
+    ocorria quando a grade era truncada em 8 gols.
+    """
     h_for = _num(_nested(home_stats, "goals", "for", "average", "home"))
     h_against = _num(_nested(home_stats, "goals", "against", "average", "home"))
     a_for = _num(_nested(away_stats, "goals", "for", "average", "away"))
@@ -36,14 +46,19 @@ def calculate_current_probabilities(home_stats: Dict[str, Any], away_stats: Dict
     if None in (h_for, h_against, a_for, a_against):
         return None
 
+    values = [h_for, h_against, a_for, a_against]
+    if any(v < 0 for v in values):
+        return None
+
     xg_home = max(0.15, min(4.5, (h_for + a_against) / 2.0))
     xg_away = max(0.15, min(4.5, (a_for + h_against) / 2.0))
 
-    home_win = draw = away_win = over25 = btts = 0.0
-    for i in range(9):
+    home_win = draw = away_win = over25 = btts = covered_mass = 0.0
+    for i in range(15):
         pi = _poisson(i, xg_home)
-        for j in range(9):
+        for j in range(15):
             p = pi * _poisson(j, xg_away)
+            covered_mass += p
             if i > j:
                 home_win += p
             elif i == j:
@@ -55,10 +70,14 @@ def calculate_current_probabilities(home_stats: Dict[str, Any], away_stats: Dict
             if i > 0 and j > 0:
                 btts += p
 
-    total = home_win + draw + away_win
-    if total <= 0:
+    if covered_mass <= 0:
         return None
-    home_win, draw, away_win = home_win / total, draw / total, away_win / total
+
+    home_win /= covered_mass
+    draw /= covered_mass
+    away_win /= covered_mass
+    over25 /= covered_mass
+    btts /= covered_mass
 
     return {
         "home": round(home_win * 100, 1),
@@ -75,6 +94,7 @@ def calculate_current_probabilities(home_stats: Dict[str, Any], away_stats: Dict
 
 
 def extract_match_winner_odds(payload: list) -> list:
+    """Extrai odds 1X2 reais do payload da API-Football."""
     rows = []
     for page in payload or []:
         for bookmaker in page.get("bookmakers", []) or []:
@@ -88,9 +108,16 @@ def extract_match_winner_odds(payload: list) -> list:
                         odd = float(item.get("odd"))
                     except (TypeError, ValueError):
                         continue
-                    rows.append({"bookmaker": bookmaker_name, "selection": item.get("value") or "", "odd": odd})
+                    if odd <= 1.0:
+                        continue
+                    rows.append({
+                        "bookmaker": bookmaker_name,
+                        "selection": item.get("value") or "",
+                        "odd": odd,
+                    })
     return rows
 
 
 def calculate_ev(prob_pct: float, odd: float) -> float:
+    """Valor esperado percentual para uma odd decimal e probabilidade em %."""
     return round(((prob_pct / 100.0) * odd - 1.0) * 100.0, 1)
