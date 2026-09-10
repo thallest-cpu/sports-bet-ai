@@ -1,34 +1,7 @@
-# Python
+.venv/
 __pycache__/
 *.py[cod]
-*.pyo
-*.egg-info/
-dist/
-build/
-
-# Virtual environment
-.venv/
-venv/
-env/
-
-# Streamlit secrets (NUNCA subir)
 .streamlit/secrets.toml
-
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Arquivos gerados localmente
+.env
 *.zip
-node_modules/
-
-# Logs e testes locais
-test_*.py
-scratch_*.py
-send_test_*.py
-sync_real_data.py
-user_script_dump.py
+.DS_Store

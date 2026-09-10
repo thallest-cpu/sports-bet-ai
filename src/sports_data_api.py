@@ -1,649 +1,351 @@
-import requests
-import json
+"""Camada de dados esportivos do BetAI Quant Pro.
+
+Princípios:
+- dados atuais/LIVE nunca usam snapshots locais como se fossem atuais;
+- API-Football é a fonte principal quando a chave está configurada;
+- ESPN é fallback somente para fixtures/placares básicos;
+- cache possui TTL explícito por tipo de dado.
+"""
+from __future__ import annotations
+
 import os
-import time
 import re
-from typing import Dict, Any, List, Optional
+import time
+from datetime import datetime
+from typing import Any, Dict, List, Optional, Tuple
+from zoneinfo import ZoneInfo
 
-CACHE_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
-CACHE_FILE = os.path.join(CACHE_DIR, "rosters_cache.json")
+import requests
 
-# Mapeamento oficial de IDs de clubes na ESPN para busca direta na API
-ESPN_TEAM_IDS = {
-    # Brasileirão Série A
-    "Flamengo": {"id": "819", "league": "bra.1"},
-    "Palmeiras": {"id": "2029", "league": "bra.1"},
-    "Botafogo": {"id": "6086", "league": "bra.1"},
-    "Corinthians": {"id": "874", "league": "bra.1"},
-    "São Paulo": {"id": "2026", "league": "bra.1"},
-    "Sao Paulo": {"id": "2026", "league": "bra.1"},
-    "Cruzeiro": {"id": "2022", "league": "bra.1"},
-    "Atlético-MG": {"id": "7632", "league": "bra.1"},
-    "Atletico-MG": {"id": "7632", "league": "bra.1"},
-    "Atlético-GO": {"id": "3455", "league": "bra.1"},
-    "Atletico-GO": {"id": "3455", "league": "bra.1"},
-    "Atlético Goianiense": {"id": "3455", "league": "bra.1"},
-    "Internacional": {"id": "1936", "league": "bra.1"},
-    "Grêmio": {"id": "6273", "league": "bra.1"},
-    "Gremio": {"id": "6273", "league": "bra.1"},
-    "Bahia": {"id": "9967", "league": "bra.1"},
-    "Athletico Paranaense": {"id": "3458", "league": "bra.1"},
-    "Athletico-PR": {"id": "3458", "league": "bra.1"},
-    "Fluminense": {"id": "3445", "league": "bra.1"},
-    "Vasco da Gama": {"id": "3454", "league": "bra.1"},
-    "Vasco": {"id": "3454", "league": "bra.1"},
-    "Red Bull Bragantino": {"id": "6079", "league": "bra.1"},
-    "Bragantino": {"id": "6079", "league": "bra.1"},
-    "Juventude": {"id": "3448", "league": "bra.1"},
-    "Cuiabá": {"id": "9320", "league": "bra.1"},
-    "Cuiaba": {"id": "9320", "league": "bra.1"},
-    "Criciúma": {"id": "3450", "league": "bra.1"},
-    "Criciuma": {"id": "3450", "league": "bra.1"},
-    "Santos": {"id": "2674", "league": "bra.1"},
-    "Coritiba": {"id": "3456", "league": "bra.1"},
-    "Vitória": {"id": "3457", "league": "bra.1"},
-    "Vitoria": {"id": "3457", "league": "bra.1"},
-    "Chapecoense": {"id": "9318", "league": "bra.1"},
-    "Mirassol": {"id": "9169", "league": "bra.1"},
-    "Remo": {"id": "4936", "league": "bra.1"},
+APP_TIMEZONE = "America/Sao_Paulo"
+FOOTBALL_BASE_URL = "https://v3.football.api-sports.io"
 
-    # Premier League
-    "Manchester City": {"id": "382", "league": "eng.1"},
-    "Arsenal": {"id": "359", "league": "eng.1"},
-    "Liverpool": {"id": "364", "league": "eng.1"},
-    "Chelsea": {"id": "363", "league": "eng.1"},
-    "Aston Villa": {"id": "362", "league": "eng.1"},
-    "Tottenham Hotspur": {"id": "367", "league": "eng.1"},
-    "Tottenham": {"id": "367", "league": "eng.1"},
-    "Manchester United": {"id": "360", "league": "eng.1"},
-    "Newcastle United": {"id": "361", "league": "eng.1"},
 
-    # La Liga
-    "Real Madrid": {"id": "86", "league": "esp.1"},
-    "Barcelona": {"id": "83", "league": "esp.1"},
-    "Atlético Madrid": {"id": "1068", "league": "esp.1"},
-    "Atletico Madrid": {"id": "1068", "league": "esp.1"},
-
-    # Serie A
-    "Inter Milan": {"id": "110", "league": "ita.1"},
-    "Juventus": {"id": "111", "league": "ita.1"},
-    "AC Milan": {"id": "103", "league": "ita.1"},
-
-    # Bundesliga & Ligue 1
-    "Bayern Munich": {"id": "132", "league": "ger.1"},
-    "Bayer Leverkusen": {"id": "131", "league": "ger.1"},
-    "Paris Saint-Germain": {"id": "160", "league": "fra.1"},
-}
-
-_MEMORY_CACHE: Dict[str, Dict[str, Any]] = {}
-
-def load_disk_cache():
-    """Carrega o cache do disco se existir."""
-    global _MEMORY_CACHE
-    if os.path.exists(CACHE_FILE):
-        try:
-            with open(CACHE_FILE, "r", encoding="utf-8") as f:
-                _MEMORY_CACHE = json.load(f)
-        except Exception:
-            _MEMORY_CACHE = {}
-
-def save_disk_cache():
-    """Persiste o cache de elencos no disco."""
-    os.makedirs(CACHE_DIR, exist_ok=True)
-    try:
-        with open(CACHE_FILE, "w", encoding="utf-8") as f:
-            json.dump(_MEMORY_CACHE, f, ensure_ascii=False, indent=2)
-    except Exception:
-        pass
-
-load_disk_cache()
-
-def fetch_sports_data_roster(team_name: str, league_slug: Optional[str] = None, team_id: Optional[str] = None) -> Optional[Dict[str, Any]]:
-    """
-    Consome a Sports Data API (ESPN) via HTTP JSON e formata os dados do clube:
-    - Goleiros, Defensores, Meio-Campistas e Atacantes com camisas
-    - Artilheiro oficial e número de gols
-    - Craque da equipe
-    """
-    global _MEMORY_CACHE
-
-    # Resolução de ID e liga
-    resolved_id = team_id
-    resolved_league = league_slug
-
-    if not resolved_id:
-        info = ESPN_TEAM_IDS.get(team_name)
-        if not info:
-            t_low = team_name.lower().strip()
-            for k, v in ESPN_TEAM_IDS.items():
-                if t_low == k.lower().strip():
-                    info = v
-                    break
-        if not info:
-            for k, v in ESPN_TEAM_IDS.items():
-                if len(t_low) > 6 and t_low == k.lower().strip():
-                    info = v
-                    break
-        if info:
-            resolved_id = info["id"]
-            if not resolved_league:
-                resolved_league = info["league"]
-
-    if not resolved_id:
-        return None
-
-    if not resolved_league:
-        resolved_league = "bra.1"
-
-    cache_key = f"{resolved_league}_{resolved_id}"
-    now_ts = time.time()
-
-    # Verificar cache com TTL de 1 hora
-    if cache_key in _MEMORY_CACHE:
-        item = _MEMORY_CACHE[cache_key]
-        if now_ts - item.get("ts", 0) < 3600:
-            return item.get("data")
-
-    url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{resolved_league}/teams/{resolved_id}/roster"
-    
-    try:
-        resp = requests.get(url, timeout=5)
-        if resp.status_code != 200:
-            return None
-
-        data = resp.json()
-        athletes = data.get("athletes", [])
-        if not athletes:
-            return None
-
-        squad = {"gk": [], "def": [], "mid": [], "fwd": []}
-        top_scorers = []
-
-        for athlete in athletes:
-            name = athlete.get("displayName", "")
-            pos = (athlete.get("position") or {}).get("name", "")
-            jersey = athlete.get("jersey", "")
-            display_name = f"#{jersey} {name}" if jersey else name
-
-            # Gols marcados
-            goals = 0
-            try:
-                cats = athlete.get("statistics", {}).get("splits", {}).get("categories", [])
-                for cat in cats:
-                    if cat.get("name") == "offensive":
-                        for stat in cat.get("stats", []):
-                            if stat.get("name") == "totalGoals":
-                                goals = int(float(stat.get("value", 0)))
-            except Exception:
-                pass
-
-            if goals > 0:
-                top_scorers.append({"nome": name, "gols": goals})
-
-            if "Goalkeeper" in pos:
-                squad["gk"].append(display_name)
-            elif "Defender" in pos:
-                squad["def"].append(display_name)
-            elif "Midfielder" in pos:
-                squad["mid"].append(display_name)
-            elif "Forward" in pos:
-                squad["fwd"].append(display_name)
-
-        top_scorers.sort(key=lambda x: x["gols"], reverse=True)
-        artilheiro = top_scorers[0] if top_scorers else {"nome": squad["fwd"][0].split(" ", 1)[-1] if squad["fwd"] else "Atacante Principal", "gols": 6}
-
-        # Identificar craque do time
-        best_player_name = squad["mid"][0].split(" ", 1)[-1] if squad["mid"] else (squad["fwd"][0].split(" ", 1)[-1] if squad["fwd"] else team_name)
-        craque = {
-            "nome": best_player_name,
-            "posicao": "Meia-Atacante / Destaque",
-            "gols": artilheiro["gols"],
-            "assistencias": 5,
-            "nota": "Líder técnico do elenco e titular absoluto"
-        }
-
-        formatted_roster = {
-            "gk": squad["gk"][:4],
-            "def": squad["def"][:8],
-            "mid": squad["mid"][:8],
-            "fwd": squad["fwd"][:7],
-            "craque": craque,
-            "artilheiro": artilheiro,
-            "source": "Sports Data API (ESPN JSON)"
-        }
-
-        _MEMORY_CACHE[cache_key] = {"ts": now_ts, "data": formatted_roster}
-        save_disk_cache()
-        return formatted_roster
-
-    except Exception as err:
-        print(f"[SportsDataAPI] Erro ao buscar {team_name}: {err}")
-        return None
-
-# =============================================================
-# INTEGRAÇÃO OFICIAL API-FOOTBALL (v3.football.api-sports.io)
-# =============================================================
-# Prioridade: st.secrets > variável de ambiente > fallback padrão
 def _resolve_football_api_key() -> str:
     try:
-        import streamlit as _st
-        return _st.secrets["FOOTBALL_API_KEY"]
+        import streamlit as st
+        value = st.secrets.get("FOOTBALL_API_KEY", "")
+        if value:
+            return str(value).strip()
     except Exception:
         pass
-    env_key = os.environ.get("FOOTBALL_API_KEY", "")
-    if env_key:
-        return env_key
-    return ""  # sem chave configurada — funciona via ESPN fallback
+    return os.environ.get("FOOTBALL_API_KEY", "").strip()
+
 
 FOOTBALL_API_KEY = _resolve_football_api_key()
-FOOTBALL_BASE_URL = "https://v3.football.api-sports.io"
-FOOTBALL_HEADERS = {"x-apisports-key": FOOTBALL_API_KEY}
+FOOTBALL_HEADERS = {"x-apisports-key": FOOTBALL_API_KEY} if FOOTBALL_API_KEY else {}
 
-API_FOOTBALL_LEAGUES = {
+API_FOOTBALL_LEAGUES: Dict[str, int] = {
     "Brasileirão Série A": 71,
-    "Champions League": 2,
     "Premier League": 39,
     "La Liga": 140,
+    "Serie A (Itália)": 135,
+    "Bundesliga": 78,
+    "Ligue 1": 61,
+    "Champions League": 2,
+    "Copa Libertadores": 13,
+    "Copa Sul-Americana": 11,
 }
 
-LEAGUE_TO_ESPN_SLUG = {
+LEAGUE_TO_ESPN_SLUG: Dict[int, str] = {
     71: "bra.1",
     39: "eng.1",
     140: "esp.1",
+    135: "ita.1",
+    78: "ger.1",
+    61: "fra.1",
     2: "uefa.champions",
+    13: "conmebol.libertadores",
+    11: "conmebol.sudamericana",
 }
 
-# Mapeamento de nomes curtos (API_FOOTBALL_LEAGUES) para nomes completos (LEAGUE_CODES_CURRENT_SEASON)
 API_LEAGUE_TO_SEASON_KEY = {
-    "Brasileirão Série A": "Brasileirão Série A 2026/27",
+    "Brasileirão Série A": "Brasileirão Série A 2026",
+    "Premier League": "Premier League 2026/27",
+    "La Liga": "La Liga 2026/27",
+    "Serie A (Itália)": "Serie A 2026/27",
+    "Bundesliga": "Bundesliga 2026/27",
+    "Ligue 1": "Ligue 1 2026/27",
     "Champions League": "UEFA Champions League 2026/27",
-    "Premier League": "Premier League (Inglaterra) 2026/27",
-    "La Liga": "La Liga (Espanha) 2026/27",
+    "Copa Libertadores": "Copa Libertadores 2026",
+    "Copa Sul-Americana": "Copa Sul-Americana 2026",
 }
 
-_API_FOOTBALL_CACHE: Dict[str, Any] = {}
-LOCAL_DB_FILE = os.path.join(CACHE_DIR, "api_football_database.json")
-_LOCAL_DB: Optional[Dict[str, Any]] = None
-
-def _get_local_football_db() -> Dict[str, Any]:
-    """Carrega base de dados local completa como fallback caso a API exceda limite."""
-    global _LOCAL_DB
-    if _LOCAL_DB is None:
-        if os.path.exists(LOCAL_DB_FILE):
-            try:
-                with open(LOCAL_DB_FILE, "r", encoding="utf-8") as f:
-                    _LOCAL_DB = json.load(f)
-            except Exception:
-                _LOCAL_DB = {"leagues": {}, "teams_by_id": {}, "squads_by_team_id": {}}
-        else:
-            _LOCAL_DB = {"leagues": {}, "teams_by_id": {}, "squads_by_team_id": {}}
-    return _LOCAL_DB
-
-def get_api_football_teams(league_id: int, season: int = 2024, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
-    """
-    Busca times da liga via API-Football com cache em memória e fallback automático
-    para a base local se o limite de requisições for atingido ou der erro.
-    """
-    cache_k = f"teams_{league_id}_{season}"
-    if cache_k in _API_FOOTBALL_CACHE:
-        return _API_FOOTBALL_CACHE[cache_k]
-
-    active_key = api_key or FOOTBALL_API_KEY
-    headers = {"x-apisports-key": active_key} if active_key else FOOTBALL_HEADERS
-
-    if active_key:
-        try:
-            url = f"{FOOTBALL_BASE_URL}/teams"
-            params = {"league": league_id, "season": season}
-            r = requests.get(url, headers=headers, params=params, timeout=5)
-            if r.status_code == 200:
-                data = r.json()
-                # Verificar se a API retornou erro de quota
-                if not data.get("errors", {}).get("requests"):
-                    res = data.get("response", [])
-                    if res:
-                        _API_FOOTBALL_CACHE[cache_k] = res
-                        return res
-        except Exception as e:
-            print(f"[API-Football] Aviso ao buscar times online (liga {league_id}): {e}")
-
-    # Fallback confiável para base local
-    local_db = _get_local_football_db()
-    fallback_teams = local_db.get("leagues", {}).get(str(league_id), [])
-    if fallback_teams:
-        _API_FOOTBALL_CACHE[cache_k] = fallback_teams
-        return fallback_teams
-
-    return []
-
-def get_api_football_squad(team_id: int, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
-    """
-    Busca elenco oficial de atletas via API-Football com fallback para base local.
-    """
-    cache_k = f"squad_{team_id}"
-    if cache_k in _API_FOOTBALL_CACHE:
-        return _API_FOOTBALL_CACHE[cache_k]
-
-    active_key = api_key or FOOTBALL_API_KEY
-    headers = {"x-apisports-key": active_key} if active_key else FOOTBALL_HEADERS
-
-    if active_key:
-        try:
-            url = f"{FOOTBALL_BASE_URL}/players/squads"
-            params = {"team": team_id}
-            r = requests.get(url, headers=headers, params=params, timeout=5)
-            if r.status_code == 200:
-                data = r.json()
-                if not data.get("errors", {}).get("requests"):
-                    res = data.get("response", [])
-                    players = res[0]["players"] if res else []
-                    if players:
-                        _API_FOOTBALL_CACHE[cache_k] = players
-                        return players
-        except Exception as e:
-            print(f"[API-Football] Aviso ao buscar elenco online (time {team_id}): {e}")
-
-    # Fallback confiável para base local
-    local_db = _get_local_football_db()
-    fallback_squad = local_db.get("squads_by_team_id", {}).get(str(team_id), [])
-    if fallback_squad:
-        _API_FOOTBALL_CACHE[cache_k] = fallback_squad
-        return fallback_squad
-
-    return []
-
-def get_api_football_live_fixtures(league_id: Optional[int] = None, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
-    """
-    Busca partidas em andamento em tempo real via API-Football.
-    Caso a API atinja quota ou não haja jogos no momento na API-Football,
-    faz fallback para o feed ao vivo da ESPN (sem limite de requisições).
-    """
-    active_key = api_key or FOOTBALL_API_KEY
-    headers = {"x-apisports-key": active_key} if active_key else FOOTBALL_HEADERS
-
-    if active_key:
-        try:
-            url = f"{FOOTBALL_BASE_URL}/fixtures"
-            params = {"live": "all"}
-            if league_id:
-                params["league"] = league_id
-            r = requests.get(url, headers=headers, params=params, timeout=5)
-            if r.status_code == 200:
-                data = r.json()
-                if not data.get("errors", {}).get("requests"):
-                    fixtures = data.get("response", [])
-                    if fixtures:
-                        return fixtures
-        except Exception as e:
-            print(f"[API-Football] Aviso live fixtures: {e}")
-
-    # Fallback dinâmico via ESPN Open API (garante que sempre existam partidas ao vivo / de hoje)
-    return _fetch_espn_live_as_fixtures(league_id)
-
-def get_api_football_today_fixtures(league_id: Optional[int] = None, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
-    """
-    Busca TODOS os jogos de hoje (ao vivo, agendados e encerrados).
-    Garante retorno 100% real para o usuário.
-    """
-    return _fetch_espn_today_as_fixtures(league_id)
-
-def _fetch_espn_live_as_fixtures(league_id: Optional[int] = None) -> List[Dict[str, Any]]:
-    """Converte partidas ao vivo da ESPN para o formato padrão do API-Football."""
-    slugs = [LEAGUE_TO_ESPN_SLUG.get(league_id)] if league_id and league_id in LEAGUE_TO_ESPN_SLUG else ["bra.1", "eng.1", "esp.1", "uefa.champions"]
-    results = []
-    for slug in slugs:
-        if not slug:
-            continue
-        try:
-            url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard"
-            resp = requests.get(url, timeout=5)
-            if resp.status_code != 200:
-                continue
-            events = resp.json().get("events", [])
-            for ev in events:
-                comp = (ev.get("competitions") or [{}])[0]
-                status_obj = comp.get("status") or {}
-                state = (status_obj.get("type") or {}).get("state", "pre")
-                if state == "in": # Apenas partidas com bola rolando agora
-                    fixture = _format_espn_event_to_fixture(ev, comp, status_obj, slug)
-                    results.append(fixture)
-        except Exception:
-            continue
-    return results
-
-def _fetch_espn_today_as_fixtures(league_id: Optional[int] = None) -> List[Dict[str, Any]]:
-    """Converte todas as partidas do dia (ao vivo e agendadas) da ESPN para o formato API-Football."""
-    slugs = [LEAGUE_TO_ESPN_SLUG.get(league_id)] if league_id and league_id in LEAGUE_TO_ESPN_SLUG else ["bra.1", "eng.1", "esp.1", "uefa.champions"]
-    results = []
-    for slug in slugs:
-        if not slug:
-            continue
-        try:
-            url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard"
-            resp = requests.get(url, timeout=5)
-            if resp.status_code != 200:
-                continue
-            events = resp.json().get("events", [])
-            for ev in events:
-                comp = (ev.get("competitions") or [{}])[0]
-                status_obj = comp.get("status") or {}
-                fixture = _format_espn_event_to_fixture(ev, comp, status_obj, slug)
-                results.append(fixture)
-        except Exception:
-            continue
-    return results
-
-def _format_espn_event_to_fixture(ev: Dict[str, Any], comp: Dict[str, Any], status_obj: Dict[str, Any], slug: str) -> Dict[str, Any]:
-    competitors = comp.get("competitors", [])
-    h_c = next((c for c in competitors if c.get("homeAway") == "home"), {})
-    a_c = next((c for c in competitors if c.get("homeAway") == "away"), {})
-    h_t = h_c.get("team", {})
-    a_t = a_c.get("team", {})
-    h_score = int(h_c.get("score", "0") or 0)
-    a_score = int(a_c.get("score", "0") or 0)
-    state = (status_obj.get("type") or {}).get("state", "pre")
-    clock = status_obj.get("displayClock", "0'")
-    elapsed = int(re.sub(r"[^\d]", "", clock) or 45) if state == "in" else 0
-    short_status = "LIVE" if state == "in" else ("FT" if state == "post" else "NS")
-    
-    league_name_map = {"bra.1": "Brasileirão Série A", "eng.1": "Premier League", "esp.1": "La Liga", "uefa.champions": "Champions League"}
-    
-    return {
-        "fixture": {
-            "id": int(re.sub(r"[^\d]", "", str(ev.get("id", "99999"))[:7]) or 99999),
-            "date": ev.get("date", ""),
-            "status": {
-                "long": (status_obj.get("type") or {}).get("description", "Ao Vivo"),
-                "short": short_status,
-                "elapsed": elapsed
-            }
-        },
-        "league": {
-            "id": 71 if slug == "bra.1" else (39 if slug == "eng.1" else (140 if slug == "esp.1" else 2)),
-            "name": league_name_map.get(slug, "Futebol Profissional"),
-            "country": "Brasil" if slug == "bra.1" else ("Inglaterra" if slug == "eng.1" else "Espanha")
-        },
-        "teams": {
-            "home": {
-                "id": int(re.sub(r"[^\d]", "", str(h_t.get("id", "101"))) or 101),
-                "name": h_t.get("displayName", "Mandante"),
-                "logo": h_t.get("logo", "https://media.api-sports.io/football/teams/127.png")
-            },
-            "away": {
-                "id": int(re.sub(r"[^\d]", "", str(a_t.get("id", "102"))) or 102),
-                "name": a_t.get("displayName", "Visitante"),
-                "logo": a_t.get("logo", "https://media.api-sports.io/football/teams/121.png")
-            }
-        },
-        "goals": {
-            "home": h_score,
-            "away": a_score
-        }
-    }
-
-def get_api_football_predictions(fixture_id: int, api_key: Optional[str] = None) -> Optional[Dict[str, Any]]:
-    """Busca previsões e probabilidades estatísticas oficiais da API-Football."""
-    cache_k = f"pred_{fixture_id}"
-    if cache_k in _API_FOOTBALL_CACHE:
-        return _API_FOOTBALL_CACHE[cache_k]
-
-    active_key = api_key or FOOTBALL_API_KEY
-    headers = {"x-apisports-key": active_key} if active_key else FOOTBALL_HEADERS
-
-    if active_key:
-        try:
-            url = f"{FOOTBALL_BASE_URL}/predictions"
-            params = {"fixture": fixture_id}
-            r = requests.get(url, headers=headers, params=params, timeout=5)
-            if r.status_code == 200:
-                data = r.json()
-                if not data.get("errors", {}).get("requests"):
-                    res = data.get("response", [])
-                    pred = res[0] if res else None
-                    if pred:
-                        _API_FOOTBALL_CACHE[cache_k] = pred
-                        return pred
-        except Exception as e:
-            print(f"[API-Football] Aviso previsões fixture {fixture_id}: {e}")
-
-    # Fallback preditivo quantitativo
-    fallback_pred = {
-        "predictions": {
-            "winner": {"name": "Mandante Favorito", "comment": "Vantagem de mando de campo"},
-            "percent": {"home": "48%", "draw": "28%", "away": "24%"}
-        }
-    }
-    return fallback_pred
-
-def get_api_football_fixtures_by_league(league_id: int, season: int = 2024, next_n: int = 10, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
-    """Busca próximos confrontos de uma liga específica."""
-    cache_k = f"fixtures_{league_id}_{next_n}"
-    if cache_k in _API_FOOTBALL_CACHE:
-        return _API_FOOTBALL_CACHE[cache_k]
-
-    active_key = api_key or FOOTBALL_API_KEY
-    headers = {"x-apisports-key": active_key} if active_key else FOOTBALL_HEADERS
-
-    if active_key:
-        try:
-            url = f"{FOOTBALL_BASE_URL}/fixtures"
-            params = {"league": league_id, "season": season, "next": next_n}
-            r = requests.get(url, headers=headers, params=params, timeout=5)
-            if r.status_code == 200:
-                data = r.json()
-                if not data.get("errors", {}).get("requests"):
-                    res = data.get("response", [])
-                    if res:
-                        _API_FOOTBALL_CACHE[cache_k] = res
-                        return res
-        except Exception as e:
-            print(f"[API-Football] Aviso fixtures liga {league_id}: {e}")
-
-    # Fallback: retorna partidas do calendário oficial
-    return _fetch_espn_today_as_fixtures(league_id)
+_SESSION = requests.Session()
+_SESSION.headers.update({"User-Agent": "BetAI-Quant-Pro/2.0"})
+_CACHE: Dict[str, Tuple[float, Any]] = {}
+_LAST_STATUS: Dict[str, Any] = {
+    "source": "not_called",
+    "ok": None,
+    "message": "Nenhuma consulta realizada ainda.",
+    "at": None,
+}
 
 
-# =============================================================
-# FEED GLOBAL AO VIVO + EVENTOS + ESTATÍSTICAS POR PARTIDA
-# =============================================================
+def clear_api_cache() -> None:
+    _CACHE.clear()
+
+
+def _cache_get(key: str, ttl: int) -> Any:
+    item = _CACHE.get(key)
+    if not item:
+        return None
+    created, value = item
+    if time.time() - created <= ttl:
+        return value
+    _CACHE.pop(key, None)
+    return None
+
+
+def _cache_set(key: str, value: Any) -> Any:
+    _CACHE[key] = (time.time(), value)
+    return value
+
+
+def _set_status(source: str, ok: bool, message: str = "") -> None:
+    _LAST_STATUS.update({
+        "source": source,
+        "ok": ok,
+        "message": message,
+        "at": datetime.now(ZoneInfo(APP_TIMEZONE)).isoformat(timespec="seconds"),
+    })
+
+
+def get_api_status() -> Dict[str, Any]:
+    return dict(_LAST_STATUS)
+
+
+def api_key_configured() -> bool:
+    return bool(_resolve_football_api_key())
+
+
+def _api_get(path: str, params: Optional[Dict[str, Any]] = None, *, ttl: int = 0,
+             api_key: Optional[str] = None) -> Optional[Any]:
+    key = (api_key or _resolve_football_api_key()).strip()
+    if not key:
+        _set_status("API-Football", False, "FOOTBALL_API_KEY não configurada")
+        return None
+
+    params = {k: v for k, v in (params or {}).items() if v is not None and v != ""}
+    cache_key = f"{path}|{sorted(params.items())}|{key[-4:]}"
+    if ttl > 0:
+        cached = _cache_get(cache_key, ttl)
+        if cached is not None:
+            return cached
+
+    try:
+        response = _SESSION.get(
+            f"{FOOTBALL_BASE_URL}/{path.lstrip('/')}",
+            headers={"x-apisports-key": key},
+            params=params,
+            timeout=12,
+        )
+        if response.status_code != 200:
+            _set_status("API-Football", False, f"HTTP {response.status_code}")
+            return None
+        payload = response.json()
+        errors = payload.get("errors") or {}
+        if errors:
+            message = "; ".join(str(v) for v in errors.values() if v) or str(errors)
+            _set_status("API-Football", False, message)
+            return None
+        result = payload.get("response")
+        if result is None:
+            result = []
+        count = len(result) if hasattr(result, "__len__") else 1
+        _set_status("API-Football", True, f"{count} registro(s)")
+        return _cache_set(cache_key, result) if ttl > 0 else result
+    except requests.RequestException as exc:
+        _set_status("API-Football", False, f"Falha de rede: {exc.__class__.__name__}")
+        return None
+    except ValueError:
+        _set_status("API-Football", False, "Resposta JSON inválida")
+        return None
+
+
+def _local_date() -> str:
+    return datetime.now(ZoneInfo(APP_TIMEZONE)).strftime("%Y-%m-%d")
+
+
+def get_api_football_teams(league_id: int, season: int = 2026,
+                           api_key: Optional[str] = None) -> List[Dict[str, Any]]:
+    return _api_get("teams", {"league": league_id, "season": season}, ttl=6 * 3600, api_key=api_key) or []
+
+
+def get_api_football_squad(team_id: int, api_key: Optional[str] = None,
+                           allow_stale_fallback: bool = False) -> List[Dict[str, Any]]:
+    # Não existe fallback local por padrão: elenco antigo não deve parecer atual.
+    result = _api_get("players/squads", {"team": team_id}, ttl=6 * 3600, api_key=api_key)
+    if not result:
+        return []
+    return result[0].get("players", []) if result else []
+
+
+def get_api_football_live_fixtures(league_id: Optional[int] = None,
+                                   api_key: Optional[str] = None) -> List[Dict[str, Any]]:
+    params: Dict[str, Any] = {"live": "all", "timezone": APP_TIMEZONE}
+    if league_id:
+        params["league"] = league_id
+    result = _api_get("fixtures", params, ttl=12, api_key=api_key)
+    if result is not None:
+        return result
+    return _fetch_espn_fixtures(league_id=league_id, live_only=True)
+
 
 def get_api_football_all_live(api_key: Optional[str] = None) -> List[Dict[str, Any]]:
-    """
-    Busca TODOS os jogos ao vivo globalmente (fixtures?live=all) sem filtro de liga.
-    Cache de 15 segundos para evitar chamadas desnecessárias.
-    Fallback para ESPN se quota atingida.
-    """
-    cache_k = "global_live_all"
-    now_ts = time.time()
-    cached = _API_FOOTBALL_CACHE.get(cache_k)
-    if cached and now_ts - cached.get("_ts", 0) < 15:
-        return cached.get("data", [])
+    return get_api_football_live_fixtures(None, api_key=api_key)
 
-    active_key = api_key or FOOTBALL_API_KEY
-    headers = {"x-apisports-key": active_key} if active_key else FOOTBALL_HEADERS
 
-    if active_key:
-        try:
-            url = f"{FOOTBALL_BASE_URL}/fixtures"
-            params = {"live": "all"}
-            r = requests.get(url, headers=headers, params=params, timeout=8)
-            if r.status_code == 200:
-                data = r.json()
-                if not data.get("errors", {}).get("requests"):
-                    fixtures = data.get("response", [])
-                    _API_FOOTBALL_CACHE[cache_k] = {"_ts": now_ts, "data": fixtures}
-                    return fixtures
-        except Exception as e:
-            print(f"[API-Football] Aviso global live: {e}")
+def get_api_football_today_fixtures(league_id: Optional[int] = None,
+                                    api_key: Optional[str] = None) -> List[Dict[str, Any]]:
+    params: Dict[str, Any] = {"date": _local_date(), "timezone": APP_TIMEZONE}
+    if league_id:
+        params["league"] = league_id
+    result = _api_get("fixtures", params, ttl=60, api_key=api_key)
+    if result is not None:
+        return result
+    return _fetch_espn_fixtures(league_id=league_id, live_only=False)
 
-    # Fallback: ESPN live de todas as ligas
-    espn_live = _fetch_espn_live_as_fixtures(None)
-    _API_FOOTBALL_CACHE[cache_k] = {"_ts": now_ts, "data": espn_live}
-    return espn_live
+
+def get_api_football_fixtures_by_league(league_id: int, season: int = 2026,
+                                        next_games: int = 20, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
+    params = {"league": league_id, "season": season, "next": next_games, "timezone": APP_TIMEZONE}
+    return _api_get("fixtures", params, ttl=300, api_key=api_key) or []
+
+
+def get_api_football_fixture_details(fixture_id: int, api_key: Optional[str] = None) -> Optional[Dict[str, Any]]:
+    result = _api_get("fixtures", {"id": fixture_id, "timezone": APP_TIMEZONE}, ttl=12, api_key=api_key)
+    return result[0] if result else None
 
 
 def get_api_football_fixture_events(fixture_id: int, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
-    """
-    Busca eventos ao vivo de uma partida específica (gols, cartões, substituições, VAR).
-    Endpoint: fixtures/events?fixture={id}
-    Cache de 15 segundos por fixture_id.
-    """
-    cache_k = f"events_{fixture_id}"
-    now_ts = time.time()
-    cached = _API_FOOTBALL_CACHE.get(cache_k)
-    if cached and now_ts - cached.get("_ts", 0) < 15:
-        return cached.get("data", [])
-
-    active_key = api_key or FOOTBALL_API_KEY
-    headers = {"x-apisports-key": active_key} if active_key else FOOTBALL_HEADERS
-
-    if active_key:
-        try:
-            url = f"{FOOTBALL_BASE_URL}/fixtures/events"
-            params = {"fixture": fixture_id}
-            r = requests.get(url, headers=headers, params=params, timeout=5)
-            if r.status_code == 200:
-                data = r.json()
-                if not data.get("errors", {}).get("requests"):
-                    events = data.get("response", [])
-                    _API_FOOTBALL_CACHE[cache_k] = {"_ts": now_ts, "data": events}
-                    return events
-        except Exception as e:
-            print(f"[API-Football] Aviso eventos fixture {fixture_id}: {e}")
-
-    _API_FOOTBALL_CACHE[cache_k] = {"_ts": now_ts, "data": []}
-    return []
+    detail = get_api_football_fixture_details(fixture_id, api_key=api_key)
+    if detail is not None and "events" in detail:
+        return detail.get("events") or []
+    return _api_get("fixtures/events", {"fixture": fixture_id}, ttl=12, api_key=api_key) or []
 
 
 def get_api_football_fixture_statistics(fixture_id: int, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
-    """
-    Busca estatísticas ao vivo de uma partida específica (posse, finalizações, escanteios, etc.).
-    Endpoint: fixtures/statistics?fixture={id}
-    Cache de 60 segundos por fixture_id (atualiza mais devagar que eventos).
-    Retorna lista com 2 itens: [stats_home, stats_away], cada um contendo 'team' e 'statistics'.
-    """
-    cache_k = f"stats_{fixture_id}"
-    now_ts = time.time()
-    cached = _API_FOOTBALL_CACHE.get(cache_k)
-    if cached and now_ts - cached.get("_ts", 0) < 60:
-        return cached.get("data", [])
+    detail = get_api_football_fixture_details(fixture_id, api_key=api_key)
+    if detail is not None and "statistics" in detail:
+        return detail.get("statistics") or []
+    return _api_get("fixtures/statistics", {"fixture": fixture_id}, ttl=55, api_key=api_key) or []
 
-    active_key = api_key or FOOTBALL_API_KEY
-    headers = {"x-apisports-key": active_key} if active_key else FOOTBALL_HEADERS
 
-    if active_key:
+def get_api_football_fixture_lineups(fixture_id: int, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
+    detail = get_api_football_fixture_details(fixture_id, api_key=api_key)
+    if detail is not None and "lineups" in detail:
+        return detail.get("lineups") or []
+    return _api_get("fixtures/lineups", {"fixture": fixture_id}, ttl=60, api_key=api_key) or []
+
+
+def get_api_football_fixture_players(fixture_id: int, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
+    detail = get_api_football_fixture_details(fixture_id, api_key=api_key)
+    if detail is not None and "players" in detail:
+        return detail.get("players") or []
+    return _api_get("fixtures/players", {"fixture": fixture_id}, ttl=55, api_key=api_key) or []
+
+
+def get_api_football_standings(league_id: int, season: int = 2026,
+                               api_key: Optional[str] = None) -> List[List[Dict[str, Any]]]:
+    result = _api_get("standings", {"league": league_id, "season": season}, ttl=600, api_key=api_key) or []
+    if not result:
+        return []
+    league = result[0].get("league") or {}
+    return league.get("standings") or []
+
+
+def get_api_football_team_statistics(league_id: int, team_id: int, season: int = 2026,
+                                     api_key: Optional[str] = None) -> Optional[Dict[str, Any]]:
+    result = _api_get("teams/statistics", {"league": league_id, "season": season, "team": team_id}, ttl=900, api_key=api_key)
+    if isinstance(result, dict):
+        return result
+    return result[0] if isinstance(result, list) and result else None
+
+
+def get_api_football_odds(fixture_id: int, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
+    return _api_get("odds", {"fixture": fixture_id}, ttl=180, api_key=api_key) or []
+
+
+def get_api_football_predictions(fixture_id: int, api_key: Optional[str] = None) -> Optional[Dict[str, Any]]:
+    result = _api_get("predictions", {"fixture": fixture_id}, ttl=1800, api_key=api_key)
+    return result[0] if result else None
+
+
+def _fetch_espn_fixtures(league_id: Optional[int], live_only: bool) -> List[Dict[str, Any]]:
+    if league_id and league_id in LEAGUE_TO_ESPN_SLUG:
+        slugs = [LEAGUE_TO_ESPN_SLUG[league_id]]
+    elif league_id:
+        slugs = []
+    else:
+        slugs = list(dict.fromkeys(LEAGUE_TO_ESPN_SLUG.values()))
+
+    results: List[Dict[str, Any]] = []
+    date_param = datetime.now(ZoneInfo(APP_TIMEZONE)).strftime("%Y%m%d")
+    for slug in slugs:
+        cache_key = f"espn|{slug}|{date_param}|{live_only}"
+        cached = _cache_get(cache_key, 15 if live_only else 60)
+        if cached is not None:
+            results.extend(cached)
+            continue
+        league_results: List[Dict[str, Any]] = []
         try:
-            url = f"{FOOTBALL_BASE_URL}/fixtures/statistics"
-            params = {"fixture": fixture_id}
-            r = requests.get(url, headers=headers, params=params, timeout=5)
-            if r.status_code == 200:
-                data = r.json()
-                if not data.get("errors", {}).get("requests"):
-                    stats = data.get("response", [])
-                    _API_FOOTBALL_CACHE[cache_k] = {"_ts": now_ts, "data": stats}
-                    return stats
-        except Exception as e:
-            print(f"[API-Football] Aviso stats fixture {fixture_id}: {e}")
+            response = _SESSION.get(
+                f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard",
+                params={"dates": date_param, "limit": 200}, timeout=10,
+            )
+            if response.status_code != 200:
+                continue
+            for event in response.json().get("events", []) or []:
+                comp = (event.get("competitions") or [{}])[0]
+                status = comp.get("status") or event.get("status") or {}
+                state = ((status.get("type") or {}).get("state") or "pre").lower()
+                if live_only and state != "in":
+                    continue
+                league_results.append(_format_espn_event(event, comp, status, slug))
+            _cache_set(cache_key, league_results)
+            results.extend(league_results)
+        except requests.RequestException:
+            continue
 
-    _API_FOOTBALL_CACHE[cache_k] = {"_ts": now_ts, "data": []}
-    return []
+    _set_status("ESPN fallback", True, f"{len(results)} fixture(s); detalhes limitados")
+    return results
+
+
+def _format_espn_event(event: Dict[str, Any], comp: Dict[str, Any], status: Dict[str, Any], slug: str) -> Dict[str, Any]:
+    competitors = comp.get("competitors") or []
+    home = next((x for x in competitors if x.get("homeAway") == "home"), {})
+    away = next((x for x in competitors if x.get("homeAway") == "away"), {})
+    home_team, away_team = home.get("team") or {}, away.get("team") or {}
+    status_type = status.get("type") or {}
+    state = (status_type.get("state") or "pre").lower()
+    clock = status.get("displayClock") or ""
+    numbers = re.findall(r"\d+", clock)
+    elapsed = int(numbers[0]) if numbers and state == "in" else None
+    short = "LIVE" if state == "in" else ("FT" if state == "post" else "NS")
+
+    league_name = next((name for name, lid in API_FOOTBALL_LEAGUES.items() if LEAGUE_TO_ESPN_SLUG.get(lid) == slug), slug)
+    country_map = {"bra.1": "Brasil", "eng.1": "Inglaterra", "esp.1": "Espanha", "ita.1": "Itália", "ger.1": "Alemanha", "fra.1": "França"}
+    reverse_ids = {v: k for k, v in LEAGUE_TO_ESPN_SLUG.items()}
+
+    def _score(obj: Dict[str, Any]) -> int:
+        try:
+            return int(float(obj.get("score") or 0))
+        except (TypeError, ValueError):
+            return 0
+
+    return {
+        "fixture": {
+            "id": int(re.sub(r"\D", "", str(event.get("id") or "0")) or 0),
+            "date": event.get("date") or "",
+            "status": {"long": status_type.get("description") or "", "short": short, "elapsed": elapsed},
+            "source": "ESPN",
+        },
+        "league": {"id": reverse_ids.get(slug), "name": league_name, "country": country_map.get(slug, "")},
+        "teams": {
+            "home": {"id": home_team.get("id"), "name": home_team.get("displayName") or "Mandante", "logo": home_team.get("logo") or ""},
+            "away": {"id": away_team.get("id"), "name": away_team.get("displayName") or "Visitante", "logo": away_team.get("logo") or ""},
+        },
+        "goals": {"home": _score(home), "away": _score(away)},
+        "events": [], "statistics": [], "lineups": [], "players": [],
+    }
