@@ -259,7 +259,7 @@ def _get_local_football_db() -> Dict[str, Any]:
             _LOCAL_DB = {"leagues": {}, "teams_by_id": {}, "squads_by_team_id": {}}
     return _LOCAL_DB
 
-def get_api_football_teams(league_id: int, season: int = 2024, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
+def get_api_football_teams(league_id: int, season: int = 2026, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
     """
     Busca times da liga via API-Football com cache em memória e fallback automático
     para a base local se o limite de requisições for atingido ou der erro.
@@ -550,7 +550,7 @@ def get_api_football_predictions(fixture_id: int, api_key: Optional[str] = None)
     }
     return fallback_pred
 
-def get_api_football_fixtures_by_league(league_id: int, season: int = 2024, next_n: int = 10, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
+def get_api_football_fixtures_by_league(league_id: int, season: int = 2026, next_n: int = 10, api_key: Optional[str] = None) -> List[Dict[str, Any]]:
     """Busca próximos confrontos de uma liga específica."""
     cache_k = f"fixtures_{league_id}_{next_n}"
     if cache_k in _API_FOOTBALL_CACHE:
@@ -577,3 +577,16 @@ def get_api_football_fixtures_by_league(league_id: int, season: int = 2024, next
     # Fallback: retorna partidas do calendário oficial
     return _fetch_espn_today_as_fixtures(league_id)
 
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def get_api_football_top_players(league_id, category='topscorers', api_key=None):
+    if not api_key: return []
+    url = f'https://v3.football.api-sports.io/players/{category}'
+    headers = {'x-apisports-key': api_key}
+    params = {'league': league_id, 'season': 2026}
+    try:
+        response = requests.get(url, headers=headers, params=params, timeout=10)
+        return response.json().get('response', [])
+    except Exception:
+        return []

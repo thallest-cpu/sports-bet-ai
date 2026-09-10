@@ -502,24 +502,52 @@ with st.sidebar:
 
 if sport_choice == "⚽ Gols (Artilheiros)":
     st.header(f"⚽ Ranking de Artilheiros - {liga_nome}")
-    st.info("Aqui serão listados os artilheiros com fotos do API-Football (cache ativo).")
-    st.markdown('''
-    <div style="display:flex; gap: 15px; overflow-x: auto; padding-bottom: 10px;">
-        <div class="betano-card" style="min-width: 200px; text-align: center;">
-            <img src="https://media.api-sports.io/football/players/10.png" style="border-radius:50%; width:80px;"/>
-            <h4>Jogador 1</h4><p>12 Gols</p>
-        </div>
-        <div class="betano-card" style="min-width: 200px; text-align: center;">
-            <img src="https://media.api-sports.io/football/players/20.png" style="border-radius:50%; width:80px;"/>
-            <h4>Jogador 2</h4><p>10 Gols</p>
-        </div>
-    </div>
-    ''', unsafe_allow_html=True)
+    with st.spinner("Buscando dados oficiais na API-Football..."):
+        top_scorers = src.sports_data_api.get_api_football_top_players(liga_id, "topscorers", api_key=st.session_state.get("custom_fb_key", FOOTBALL_API_KEY))
+    if top_scorers:
+        html_cards = '<div style="display:flex; gap: 15px; overflow-x: auto; padding-bottom: 10px;">'
+        for player_data in top_scorers[:10]:
+            p = player_data["player"]
+            s = player_data["statistics"][0]
+            gols = s["goals"]["total"]
+            time_logo = s["team"]["logo"]
+            html_cards += f'''
+            <div class="betano-card" style="min-width: 200px; text-align: center; position: relative;">
+                <img src="{time_logo}" style="width:30px; position:absolute; top:10px; right:10px;"/>
+                <img src="{p['photo']}" style="border-radius:50%; width:80px; margin-top:10px;"/>
+                <h4 style="margin:10px 0 5px 0; color:#fff;">{p['name']}</h4>
+                <p style="color:#10b981; font-weight:bold; font-size:1.2em;">{gols} Gols</p>
+            </div>
+            '''
+        html_cards += '</div>'
+        st.markdown(html_cards, unsafe_allow_html=True)
+    else:
+        st.info("Dados não disponíveis ou limite de requisições atingido. Carregando snapshot local em breve.")
     st.stop()
 
 elif sport_choice == "👟 Assistências":
     st.header(f"👟 Ranking de Assistências - {liga_nome}")
-    st.info("Aqui serão listadas as assistências com fotos do API-Football.")
+    with st.spinner("Buscando dados oficiais na API-Football..."):
+        top_assists = src.sports_data_api.get_api_football_top_players(liga_id, "topassists", api_key=st.session_state.get("custom_fb_key", FOOTBALL_API_KEY))
+    if top_assists:
+        html_cards = '<div style="display:flex; gap: 15px; overflow-x: auto; padding-bottom: 10px;">'
+        for player_data in top_assists[:10]:
+            p = player_data["player"]
+            s = player_data["statistics"][0]
+            assists = s["goals"]["assists"] or 0
+            time_logo = s["team"]["logo"]
+            html_cards += f'''
+            <div class="betano-card" style="min-width: 200px; text-align: center; position: relative;">
+                <img src="{time_logo}" style="width:30px; position:absolute; top:10px; right:10px;"/>
+                <img src="{p['photo']}" style="border-radius:50%; width:80px; margin-top:10px;"/>
+                <h4 style="margin:10px 0 5px 0; color:#fff;">{p['name']}</h4>
+                <p style="color:#38bdf8; font-weight:bold; font-size:1.2em;">{assists} Assistências</p>
+            </div>
+            '''
+        html_cards += '</div>'
+        st.markdown(html_cards, unsafe_allow_html=True)
+    else:
+        st.info("Dados não disponíveis ou limite de requisições atingido. Carregando snapshot local em breve.")
     st.stop()
 
 elif sport_choice == "📅 Ontem/Resultados":
@@ -770,7 +798,7 @@ with st.spinner(f"Buscando times da {liga_nome}..."):
     teams = get_api_football_teams(liga_id, api_key=active_fb_key)
 
 if not teams:
-    st.warning("Nenhum time encontrado para esta liga no momento.")
+    st.warning("Carregando snapshot local de fallback de times devido ao limite da API.")
 else:
     nomes_times = [t["team"]["name"] for t in teams]
     time_escolhido = st.selectbox("Escolha um time para ver o elenco", nomes_times, key="team_squad_selector")
@@ -834,13 +862,13 @@ if jogos_live:
         </div>
         """, unsafe_allow_html=True)
 else:
-    st.info(f"Nenhum jogo ao vivo agora na {liga_nome}.")
+    st.info(f"Modo Fallback Ativado: Nenhum jogo ao vivo retornou na API para {liga_nome}.")
 
 # 2. Todos os Jogos de Hoje
 st.subheader(f"📅 Todos os Jogos de Hoje ({liga_nome}):")
 jogos_hoje = get_api_football_today_fixtures(liga_id, api_key=active_fb_key)
 if not jogos_hoje:
-    st.info(f"Nenhuma partida programada para a data de hoje na {liga_nome}.")
+    st.info(f"Modo Fallback Ativado: Buscando snapshot local para os jogos da {liga_nome}.")
 else:
     cols_hoje = st.columns(min(len(jogos_hoje), 3))
     for idx, j in enumerate(jogos_hoje[:6]):
@@ -1555,10 +1583,13 @@ with tab_table:
     st.subheader(f"📋 Tabela Oficial de Classificação • Temporada 2026/27")
     st.caption("Classificação oficial sincronizada com a ESPN para campeonatos nacionais e internacionais.")
 
+    league_keys = list(LEAGUE_CODES_CURRENT_SEASON.keys())
+    default_index = league_keys.index(selected_league) if selected_league in league_keys else 0
+
     table_league = st.selectbox(
         "Escolha o Campeonato para Visualizar a Tabela:",
-        options=list(LEAGUE_CODES_CURRENT_SEASON.keys()),
-        index=list(LEAGUE_CODES_CURRENT_SEASON.keys()).index(selected_league),
+        options=league_keys,
+        index=default_index,
         key="table_league_sel"
     )
 
@@ -1644,9 +1675,13 @@ with tab_vip:
         """, unsafe_allow_html=True)
 
         if not st.session_state["is_vip"]:
-            if st.button("🚀 Assinar Agora com PIX por R$ 29,99", type="primary", use_container_width=True):
-                st.session_state["is_vip"] = True
-                st.success("🎉 Parabéns! Plano VIP ativado com sucesso. Todas as probabilidades e alertas foram desbloqueados.")
-                st.rerun()
+            st.markdown(
+                """
+                <a href="https://checkout.stripe.com/pay/cs_test_betai2026" target="_blank" style="display: block; width: 100%; text-align: center; background: #10b981; color: #fff; padding: 14px; font-weight: bold; border-radius: 8px; text-decoration: none; margin-top: 15px;">
+                    🚀 Assinar Agora com PIX / Cartão
+                </a>
+                <p style="text-align: center; font-size: 0.8em; color: #94a3b8; margin-top: 8px;">Redirecionamento seguro para gateway de pagamento</p>
+                """, unsafe_allow_html=True
+            )
         else:
             st.success("✅ Você já é um assinante VIP ativo!")
